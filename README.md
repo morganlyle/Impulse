@@ -38,3 +38,10 @@ Social Media Forums:
     * Users can submit possible items for inventory and be voted on.
     * Users can leave reviews of boxes they have recieved and people can comment on them.
 ```
+
+## Design
+
+    * [API design](docs/apis.md)
+    * [Data model](docs/data-model.md)
+    * [GHI](docs/ghi.md)
+    * [Integrations](docs/integrations.md)
