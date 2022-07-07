@@ -41,7 +41,7 @@ Social Media Forums:
 
 ## Design
 
-    * [API design](docs/apis.md)
-    * [Data model](docs/data-model.md)
-    * [GHI](docs/ghi.md)
-    * [Integrations](docs/integrations.md)
+* [API design](docs/apis.md)
+* [Data model](docs/data-model.md)
+* [GHI](docs/ghi.md)
+* [Integrations](docs/integrations.md)
