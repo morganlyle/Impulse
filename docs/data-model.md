@@ -12,7 +12,6 @@
 
 The user entity is for customers and potential customers logging in, shopping and eventually checking out.
 
-
 ## Subscription product boxes
 
 | Name | Type | Unique | Optional |
