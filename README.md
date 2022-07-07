@@ -5,7 +5,7 @@
 * Morgan
 * Nellie
 
-* The one stop shop for anything you definitely need.
+* The one stop shop for subscription boxes with impulse buys catered directly to you!
 ```
 
 ## Intended Market
