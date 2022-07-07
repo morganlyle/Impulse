@@ -12,8 +12,8 @@ Input:
   "first_name": string,
   "last_name": string,
   "username": string,
-  "home address": string,
-  "email address": string,
+  "home_address": string,
+  "email_address": string,
   "password": string
 }
 ```
