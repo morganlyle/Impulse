@@ -35,7 +35,6 @@ services:
         environment:
             DATABASE_URL: postgresql://users:password@postgres/users
             WAIT_HOSTS: postgres:5432
-
     subscriptions:
         build:
             context: ./subscriptions
@@ -47,7 +46,6 @@ services:
         environment:
             DATABASE_URL: postgresql://subscriptions:password@postgres/subscriptions
             WAIT_HOSTS: postgres:5432
-
     clothing:
         build:
             context: ./clothing
@@ -59,3 +57,19 @@ services:
         environment:
             DATABASE_URL: postgresql://clothing:password@postgres/clothing
             WAIT_HOSTS: postgres:5432
+    ghi:
+        image: node:lts-bullseye
+        command: /bin/bash run.sh
+        working_dir: /app
+        volumes:
+            - ./ghi:/app
+        ports:
+            - "3000:3000"
+        environment:
+            HOST_OS: ${OS}
+            NODE_ENV: development
+            HOST: "0.0.0.0"
+            REACT_APP_USERS: http://localhost:8100
+            REACT_APP_SUBSCRIPTIONS: http://localhost:8200
+            REACT_APP_CLOTHING: http://localhost:8210
+            REACT_APP_PRODUCTS: http://localhost:8080
