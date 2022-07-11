@@ -22,7 +22,7 @@ services:
         volumes:
             - ./products:/app
         environment:
-            DATABASE_URL: postgresql://user-name:password@postgres/products
+            DATABASE_URL: postgresql://products:password@postgres/products
             WAIT_HOSTS: postgres:5432
     users:
         build:
@@ -33,10 +33,10 @@ services:
         volumes:
             - ./users:/app
         environment:
-            DATABASE_URL: postgresql://user-name:password@postgres/users
+            DATABASE_URL: postgresql://users:password@postgres/users
             WAIT_HOSTS: postgres:5432
 
-    subscriptiopns:
+    subscriptions:
         build:
             context: ./subscriptions
             dockerfile: ./Dockerfile.dev
@@ -45,5 +45,17 @@ services:
         volumes:
             - ./subscriptions:/app
         environment:
-            DATABASE_URL: postgresql://user-name:password@postgres/users
+            DATABASE_URL: postgresql://subscriptions:password@postgres/subscriptions
+            WAIT_HOSTS: postgres:5432
+
+    clothing:
+        build:
+            context: ./clothing
+            dockerfile: ./Dockerfile.dev
+        ports:
+            - "8210:8000"
+        volumes:
+            - ./clothing:/app
+        environment:
+            DATABASE_URL: postgresql://clothing:password@postgres/clothing
             WAIT_HOSTS: postgres:5432
