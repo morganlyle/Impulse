@@ -66,7 +66,7 @@ CORS_ALLOW_CREDENTIALS = True
 DJWTO_MODE = "TWO-COOKIES"
 DJWTO_ACCESS_TOKEN_LIFETIME = None
 
-ROOT_URLCONF = 'service_project.urls'
+ROOT_URLCONF = 'products.urls'
 
 TEMPLATES = [
     {
@@ -84,7 +84,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'service_project.wsgi.application'
+WSGI_APPLICATION = 'products.wsgi.application'
 
 
 # Database
