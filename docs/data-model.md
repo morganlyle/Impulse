@@ -25,9 +25,9 @@ ___
 
 The subscription product boxes entity refers to the users table for table name, and we'll use an external api to generate products for the monthly product box.
 ___
-` `
-` `
-` `
+`  `
+`  `
+`  `
 
 ## Subscription fashion boxes
 
