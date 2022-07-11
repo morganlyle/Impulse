@@ -24,3 +24,14 @@ services:
         environment:
             DATABASE_URL: postgresql://user-name:password@postgres/products
             WAIT_HOSTS: postgres:5432
+    users:
+        build:
+            context: ./users
+            dockerfile: ./Dockerfile.dev
+        ports:
+            - "8100:8000"
+        volumes:
+            - ./users:/app
+        environment:
+            DATABASE_URL: postgresql://user-name:password@postgres/users
+            WAIT_HOSTS: postgres:5432
