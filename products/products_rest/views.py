@@ -16,21 +16,21 @@ def api_product_category(request):
             {"product_categories": product_categories},
             encoder=ProductCategoryEncoder,
         )
-    else:
-        try:
-            content = json.loads(request.body)
-            category = Product_Category.objects.create(**content)
-            return JsonResponse(
-                category,
-                encoder=ProductCategoryEncoder,
-                safe=False,
-            )
-        except:
-            response = JsonResponse(
-                {"message": "Could not create the product category"}
-            )
-            response.status_code = 400
-            return response
+    # else:
+    #     try:
+    #         content = json.loads(request.body)
+    #         category = Product_Category.objects.create(**content)
+    #         return JsonResponse(
+    #             category,
+    #             encoder=ProductCategoryEncoder,
+    #             safe=False,
+    #         )
+    #     except:
+    #         response = JsonResponse(
+    #             {"message": "Could not create the product category"}
+    #         )
+    #         response.status_code = 400
+    #         return response
 
 @require_http_methods(["GET", "POST"])
 def api_product(request):
@@ -40,21 +40,22 @@ def api_product(request):
             {"products": products},
             encoder=ProductEncoder,
         )
-    else:
-        try:
-            content = json.loads(request.body)
-            product = Product.objects.create(**content)
-            return JsonResponse(
-                product,
-                encoder=ProductEncoder,
-                safe=False,
-            )
-        except:
-            response = JsonResponse(
-                {"message": "Could not create the product"}
-            )
-            response.status_code = 400
-            return response
+    # else:
+    #     try:
+    #         content = json.loads(request.body)
+    #         product = Product.objects.create(**content)
+    #         return JsonResponse(
+    #             product,
+    #             encoder=ProductEncoder,
+    #             safe=False,
+    #         )
+    #     except:
+    #         response = JsonResponse(
+    #             {"message": "Could not create the product"}
+    #         )
+    #         response.status_code = 400
+    #         return response
+
 
 @require_http_methods(["GET", "POST"])
 def api_clothing(request):
@@ -64,18 +65,18 @@ def api_clothing(request):
             {"clothing": clothing},
             encoder=ClothingEncoder,
         )
-    else:
-        try:
-            content = json.loads(request.body)
-            clothing = Clothing.objects.create(**content)
-            return JsonResponse(
-                clothing,
-                encoder=ClothingEncoder,
-                safe=False,
-            )
-        except:
-            response = JsonResponse(
-                {"message": "Could not create the article of clothing"}
-            )
-            response.status_code = 400
-            return response
+    # else:
+    #     try:
+    #         content = json.loads(request.body)
+    #         clothing = Clothing.objects.create(**content)
+    #         return JsonResponse(
+    #             clothing,
+    #             encoder=ClothingEncoder,
+    #             safe=False,
+    #         )
+    #     except:
+    #         response = JsonResponse(
+    #             {"message": "Could not create the article of clothing"}
+    #         )
+    #         response.status_code = 400
+    #         return response

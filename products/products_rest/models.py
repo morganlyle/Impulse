@@ -8,10 +8,10 @@ class Product_Category(models.Model):         #like manufacturer in Inventory mo
     category = models.CharField(max_length=255)
 
     def get_api_url(self):
-        return reverse("api_product_category", kwarges={"pk": self.id})
+        return reverse("api_product_category", kwargs={"pk": self.id})
 
-    def __str__(self):
-        return self.category
+    # def __str__(self):
+    #     return self.category
 
 
 class Product(models.Model):        # analogous to Veh Mod in Inventory models in CarCar
@@ -28,8 +28,8 @@ class Product(models.Model):        # analogous to Veh Mod in Inventory models i
     def get_api_url(self):
         return reverse("api_product", kwargs={"pk": self.id})
 
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
 
     #make a relaish to Prod Cat
 

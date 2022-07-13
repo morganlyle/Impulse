@@ -13,7 +13,6 @@ django.setup()
 # from subscriptions.models import models
 
 
-
 def poll():
     while True:
         try:
