@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class ProductsRestConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'service_rest'
+    name = 'products_rest'
