@@ -43,7 +43,7 @@ class Clothing(models.Model):           # analogous to global Auto Inventory in 
         XL = "4", "XLarge"
         XX = "5", "XXLarge"
 
-    size = models.TextChoices(
+    size = models.CharField(
         max_length=8,
         choices=size_choices.choices,
         default=size_choices.L,
