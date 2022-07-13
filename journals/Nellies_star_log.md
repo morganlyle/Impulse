@@ -9,4 +9,3 @@ Today I worked on:
 Definitely a good idea to make sure I have this microservice name, and not the default name from the docs, when setting up.
 
 Getting a better handle on git merges, I think.
-
