@@ -9,7 +9,7 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_MULTIPLE_DATABASES=users,products,clothing,subscriptions
+      - POSTGRES_MULTIPLE_DATABASES=products,subscriptions
       - POSTGRES_PASSWORD=test-databases
     ports:
       - 15432:5432
@@ -24,19 +24,29 @@ services:
     environment:
       DATABASE_URL: postgresql://products:password@postgres/products
       WAIT_HOSTS: postgres:5432
-
   subscriptions:
     build:
-      context: ./subscriptions
+      context: ./subscriptions/api
       dockerfile: ./Dockerfile.dev
     ports:
       - "8200:8000"
     volumes:
-      - ./subscriptions:/app
+      - ./subscriptions/api:/app
     environment:
       DATABASE_URL: postgresql://subscriptions:password@postgres/subscriptions
       WAIT_HOSTS: postgres:5432
-
+  subscriptions-poller:
+    build:
+      context: ./subscriptions/poll
+      dockerfile: ./Dockerfile.dev
+    volumes:
+      - ./subscriptions/poll:/app
+    depends_on:
+      - postgres
+      - subscriptions
+    environment:
+      DATABASE_URL: postgres://subscriptions:password@database:5432/subscriptions
+      WAIT_HOSTS: postgres:5432,subscriptions:8200
   ghi:
     image: node:lts-bullseye
     command: /bin/bash run.sh
@@ -49,7 +59,6 @@ services:
       HOST_OS: ${OS}
       NODE_ENV: development
       HOST: "0.0.0.0"
-      REACT_APP_USERS: http://localhost:8100
       REACT_APP_SUBSCRIPTIONS: http://localhost:8200
-      REACT_APP_CLOTHING: http://localhost:8210
+      REACT_APP_SUBSCRIPTIONS_POLLER: http://localhost:8100
       REACT_APP_PRODUCTS: http://localhost:8080
