@@ -19,15 +19,63 @@ def api_product_category(request):
     else:
         try:
             content = json.loads(request.body)
-            category = content["category"]
+            category = Product_Category.objects.create(**content)
             return JsonResponse(
-                product_categories,
+                category,
                 encoder=ProductCategoryEncoder,
                 safe=False,
             )
         except:
             response = JsonResponse(
                 {"message": "Could not create the product category"}
+            )
+            response.status_code = 400
+            return response
+
+@require_http_methods(["GET", "POST"])
+def api_product(request):
+    if request.method == "GET":
+        products = Product.objects.all()
+        return JsonResponse(
+            {"products": products},
+            encoder=ProductEncoder,
+        )
+    else:
+        try:
+            content = json.loads(request.body)
+            product = Product.objects.create(**content)
+            return JsonResponse(
+                product,
+                encoder=ProductEncoder,
+                safe=False,
+            )
+        except:
+            response = JsonResponse(
+                {"message": "Could not create the product"}
+            )
+            response.status_code = 400
+            return response
+
+@require_http_methods(["GET", "POST"])
+def api_clothing(request):
+    if request.method == "GET":
+        clothing = Clothing.objects.all()
+        return JsonResponse(
+            {"clothing": clothing},
+            encoder=ClothingEncoder,
+        )
+    else:
+        try:
+            content = json.loads(request.body)
+            clothing = Clothing.objects.create(**content)
+            return JsonResponse(
+                clothing,
+                encoder=ClothingEncoder,
+                safe=False,
+            )
+        except:
+            response = JsonResponse(
+                {"message": "Could not create the article of clothing"}
             )
             response.status_code = 400
             return response
