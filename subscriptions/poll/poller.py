@@ -13,11 +13,10 @@ django.setup()
 # from subscriptions.models import models
 
 
-
 def poll():
     while True:
         try:
-            print('Sales poller polling for data')
+            print('Subscriptions poller polling for data')
         except Exception as e:
             print(e, file=sys.stderr)
         time.sleep(10)

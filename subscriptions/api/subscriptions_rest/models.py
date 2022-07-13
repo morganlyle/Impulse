@@ -4,6 +4,7 @@ from django.db import models
 class ProductInventoryVO(models.Model):
     sku = models.PositiveSmallIntegerField(max_length=50, blank = True)
     product = models.CharField(max_length=200, blank = True)
+
 class ClothingInventoryVO(models.Model):
     sku = models.PositiveSmallIntegerField(max_length=50, blank = True)
     product = models.CharField(max_length=200, blank = True)
@@ -27,6 +28,7 @@ class Subscription(models.Model):
     price = models.PositiveSmallIntegerField(default=30)
     products = models.ForeignKey(ProductsBox, related_name="subscription", on_delete=models.PROTECT, null=True, blank=True)
     clothing = models.ForeignKey(ClothingBox, related_name='subscription', on_delete=models.PROTECT, null=True, blank=True)
+
 class Receipt(models.Model):
     username = models.ForeignKey(User, related_name="receipt",
         on_delete=models.CASCADE)
