@@ -6,11 +6,23 @@ from django.urls import reverse
 class Product_Category(models.Model):         #like manufacturer in Inventory models  in CC
     category = models.CharField(max_length=255)
 
+    def get_api_url(self):
+        return reverse("api_product_category", kwarges={"pk": self.id})
+
+    def __str__(self):
+        return self.category
+
 
 class Product(models.Model):        # analogous to Veh Mod in Inventory models in CarCar
     name = models.CharField(max_length=50)
     description = models.CharField(max_length=200)
     picture_url = models.URLField()
+
+    product_category = models.ForeignKey(
+        Product_Category,
+        related_name="products",
+        on_delete=models.CASCADE,
+    )
 
     def get_api_url(self):
         return reverse("api_product", kwargs={"pk": self.id})
@@ -38,6 +50,19 @@ class Clothing(models.Model):           # analogous to global Auto Inventory in 
         blank=True,
         null=True
     )
+
+    product_category = models.ForeignKey(
+        Product_Category,
+        related_name="clothing",
+        on_delete=models.CASCADE,
+    )
+
+    def get_api_url(self):
+        return reverse("api_clothing", kwargs={"pk": self.id})
+
+    def __str__(self):
+        return self.name
+
     # from stack overflow:
 # class Month(models.TextChoices):
 #         JAN = "1", "JANUARY"
