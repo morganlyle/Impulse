@@ -10,3 +10,15 @@ Definitely a good idea to make sure I have this microservice name, and not the d
 
 Getting a better handle on git merges, I think.
 
+
+## July 12, 2021
+
+* Collab'ed on more detailed context map, made flowchart of the 4 microservices.
+
+* Started to implement backend of clothing microservice.
+
+* Then discussion of the complexity of having so many microservices. Decided to pare the project down to just 2 microservices.
+
+* Deleted the clothing microservice and added the skeletons of its models to products.
+
+It was a little scary to collapse almost half the project but I think it was a good discussion and consideration of how to integrate everything. It would have been way more complex than needed, otherwise. And better to do a fundamental change now than later.
