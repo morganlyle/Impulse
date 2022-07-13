@@ -16,6 +16,9 @@ class ProductEncoder(ModelEncoder):
         "picture_url",
         "product_category",
     ]
+    encoders = {
+        "product_category": ProductCategoryEncoder(),
+    }
 
 class ClothingEncoder(ModelEncoder):
     model = Clothing
@@ -25,4 +28,7 @@ class ClothingEncoder(ModelEncoder):
         "size",
         "product_category",
     ]
+    encoders = {
+        "product_category": ProductCategoryEncoder(),
+    }
 
