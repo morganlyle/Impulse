@@ -1,3 +1,12 @@
+## July 12th, 2021
+
+Today the entire team worked on:
+* Theorizing how the pollers will work and scaling from four microservices to two.
+
+Today was something I wasn't expecting at ALL. It felt so strange just to nuke half of our project, but still end up with the same functionality.
+It was actually pretty neat to take a step back and reoutline what we needed to do. Now we have a project with everything set up to funnel data
+into the proper places and queries will be MUCH easier with this implementation.
+
 ## July 11th, 2021
 
 Today the entire team worked on:
