@@ -16,21 +16,21 @@ class ClothingInventoryVO(models.Model):
         return self.product
 
 class ClothingBox(models.Model):
-    name = models.CharField(max_length=100, blank = True)
+    name = models.CharField(max_length=100)
     clothing_items = models.ManyToManyField(ClothingInventoryVO, related_name="clothing")
 
     def __str__(self):
         return self.name
 
 class ProductsBox(models.Model):
-    name = models.CharField(max_length=100, blank = True)
+    name = models.CharField(max_length=100)
     product_items = models.ManyToManyField(ProductInventoryVO, related_name="products")
 
     def __str__(self):
         return self.name
 
 class User(models.Model):
-    username = models.CharField(max_length=50, unique= True)
+    username = models.CharField(max_length=16, unique= True)
     password = models.CharField(max_length=50)
     email = models.EmailField(max_length=250, unique = True)
     first_name = models.CharField(max_length=50, blank=True)
