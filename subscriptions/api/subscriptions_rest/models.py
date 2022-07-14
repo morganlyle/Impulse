@@ -28,7 +28,6 @@ class Subscription(models.Model):
     price = models.PositiveSmallIntegerField(default=30)
     products = models.ForeignKey(ProductsBox, related_name="subscription", on_delete=models.PROTECT, null=True, blank=True)
     clothing = models.ForeignKey(ClothingBox, related_name='subscription', on_delete=models.PROTECT, null=True, blank=True)
-
 class Receipt(models.Model):
     username = models.ForeignKey(User, related_name="receipt",
         on_delete=models.CASCADE)
