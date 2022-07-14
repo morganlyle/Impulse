@@ -2,13 +2,8 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
 import json
 
-<<<<<<< HEAD
-from .models import Product_Category, Product, Clothing, Product_Inventory
-from encoders.encoders import ProductCategoryEncoder, ProductEncoder, ProductInventoryEncoder, ClothingEncoder
-=======
-from .models import Clothing_Inventory, Product_Category, Product, Clothing
-from encoders.encoders import ProductCategoryEncoder, ProductEncoder, ClothingEncoder
->>>>>>> main
+from .models import Clothing_Inventory, Product_Category, Product_Inventory, Product
+from encoders.encoders import ProductCategoryEncoder, ProductEncoder, ClothingEncoder, ProductInventoryEncoder
 
 # Create your views here.
 
