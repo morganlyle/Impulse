@@ -1,4 +1,5 @@
 import json
+from json import encoder
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.http import require_http_methods
@@ -33,7 +34,8 @@ def product_box_list(request):
     if request.method == "GET":
         product_boxes = ProductsBox.objects.all()
         return JsonResponse(
-            {"product_boxes": product_boxes}
+            {"product_boxes": product_boxes},
+            encoder=ProductBoxEncoder
         )
     else:
         try:
@@ -54,16 +56,6 @@ def product_box_list(request):
             )
             return response
 
-
-@require_http_methods(['GET'])
-def product_inventory_vo_list(request):
-    if request.method == "GET":
-        product_inventory_vos = ProductInventoryVO.objects.all()
-        return JsonResponse(
-            {"product_inventory_vos": product_inventory_vos},
-            encoder=ProductInventoryVoEncoder
-        )
-
 @require_http_methods(['GET', 'POST'])
 def clothing_inventory_vo_list(request):
     if request.method == 'GET':
@@ -79,6 +71,7 @@ def clothing_box_list(request):
         clothing_box = ClothingBox.objects.all()
         return JsonResponse(
             {'clothing_box': clothing_box},
+            encoder=ClothingBoxEncoder
         )
     else:
         content = json.loads(request.body)

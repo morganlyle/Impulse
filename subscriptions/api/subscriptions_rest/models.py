@@ -30,7 +30,7 @@ class ProductsBox(models.Model):
         return self.name
 
 class User(models.Model):
-    username = models.CharField(max_length=16, unique= True)
+    username = models.CharField(max_length=16, unique=True)
     password = models.CharField(max_length=50)
     email = models.EmailField(max_length=250, unique = True)
     first_name = models.CharField(max_length=50, blank=True)
@@ -42,7 +42,7 @@ class User(models.Model):
         return f'{self.username}, {self.email}'
 
 class Subscription(models.Model):
-    username = models.ForeignKey(User, related_name='subscription', on_delete=models.PROTECT, unique=True)
+    username = models.OneToOneField(User, related_name='subscription', on_delete=models.PROTECT, primary_key=True)
     model_number = models.PositiveSmallIntegerField(unique=True)
     price = models.PositiveSmallIntegerField(default=30)
     products = models.ForeignKey(ProductsBox, related_name='subscription', on_delete=models.PROTECT, null=True, blank=True)
@@ -56,7 +56,7 @@ class Receipt(models.Model):
         on_delete=models.CASCADE)
     order_number = models.PositiveSmallIntegerField(unique=True)
     price = models.CharField(max_length=50, default = "$36.99")
-    model_number = models.ForeignKey(Subscription, related_name="receipt", on_delete=models.PROTECT)
+    model_number = models.ForeignKey(Subscription, related_name="receipt", on_delete=models.CASCADE)
     description = models.CharField(max_length=255, default="Here are your items")
 
     def __str__(self):
