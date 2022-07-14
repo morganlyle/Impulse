@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import (
-    Product, Product_Category, Clothing
+    Product, Product_Category, Product_Inventory, Clothing
 )
 
 
@@ -8,5 +8,6 @@ from .models import (
 class ProductAdmin(admin.ModelAdmin):
     pass
 
+admin.site.register(Product_Inventory)
 admin.site.register(Product_Category)
 admin.site.register(Clothing)

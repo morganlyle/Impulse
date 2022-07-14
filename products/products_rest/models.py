@@ -1,6 +1,7 @@
 
 from django.db import models
 from django.urls import reverse
+from uuid import uuid4
 
 # Create your models here.
 
@@ -16,12 +17,11 @@ class Product_Category(models.Model):         #like manufacturer in Inventory mo
 
 class Product(models.Model):        # analogous to Veh Mod in Inventory models in CarCar
     name = models.CharField(max_length=50)
-    description = models.CharField(max_length=200)
     picture_url = models.URLField()
 
     product_category = models.ForeignKey(
         Product_Category,
-        related_name="products",
+        related_name="product_category",
         on_delete=models.CASCADE,
     )
 
@@ -32,6 +32,19 @@ class Product(models.Model):        # analogous to Veh Mod in Inventory models i
     #     return self.name
 
     #make a relaish to Prod Cat
+
+class Product_Inventory(models.Model):
+    color = models.CharField(max_length=20)
+    sku = models.UUIDField(primary_key=True, default=uuid4, editable=False)
+    description = models.CharField(max_length=200)
+    product = models.ForeignKey(
+        Product,
+        related_name="product",
+        on_delete=models.CASCADE,
+    )
+
+    def get_api_url(self):
+        return reverse("api_product_inventory", kwargs={"pk": self.id})
 
 class Clothing(models.Model):           # analogous to global Auto Inventory in CarCar
     name = models.CharField(max_length=100, unique=True)
