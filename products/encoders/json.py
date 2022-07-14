@@ -2,6 +2,7 @@ from json import JSONEncoder
 from django.urls import NoReverseMatch
 from django.db.models import QuerySet
 from datetime import datetime
+from uuid import UUID
 
 
 class DateEncoder(JSONEncoder):
@@ -44,3 +45,10 @@ class ModelEncoder(DateEncoder, QuerySetEncoder, JSONEncoder):
 
     def get_extra_data(self, o):
         return {}
+
+
+class UUIDEncoder(JSONEncoder):
+    def default(self, o):
+        if isinstance(o, UUID):
+            return o.hex
+        return JSONEncoder.default(self, o)
