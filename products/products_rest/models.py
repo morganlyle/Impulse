@@ -1,6 +1,7 @@
 
 from django.db import models
 from django.urls import reverse
+from uuid import uuid4
 
 # Create your models here.
 
@@ -16,12 +17,11 @@ class Product_Category(models.Model):         #like manufacturer in Inventory mo
 
 class Product(models.Model):        # analogous to Veh Mod in Inventory models in CarCar
     name = models.CharField(max_length=50)
-    description = models.CharField(max_length=200)
     picture_url = models.URLField()
 
     product_category = models.ForeignKey(
         Product_Category,
-        related_name="products",
+        related_name="product_category",
         on_delete=models.CASCADE,
     )
 
@@ -33,7 +33,21 @@ class Product(models.Model):        # analogous to Veh Mod in Inventory models i
 
     #make a relaish to Prod Cat
 
-class Clothing(models.Model):           # analogous to global Auto Inventory in CarCar
+class Product_Inventory(models.Model):
+    color = models.CharField(max_length=20)
+    sku = models.UUIDField(primary_key=True, default=uuid4, editable=False)
+    description = models.CharField(max_length=200)
+    product = models.ForeignKey(
+        Product,
+        related_name="product",
+        on_delete=models.CASCADE,
+    )
+
+    def get_api_url(self):
+        return reverse("api_product_inventory", kwargs={"pk": self.id})
+        
+           # analogous to global Auto Inventory in CarCar
+class Clothing_Inventory(models.Model):           # analogous to global Auto Inventory in CarCar
     name = models.CharField(max_length=100, unique=True)
     color = models.CharField(max_length=50, blank=True, null=True)
 
@@ -54,15 +68,19 @@ class Clothing(models.Model):           # analogous to global Auto Inventory in 
 
     product_category = models.ForeignKey(
         Product_Category,
-        related_name="clothing",
+        related_name="clothing_inventory",
         on_delete=models.CASCADE,
     )
 
+    #unit_id = # a unique SKU
+
     def get_api_url(self):
-        return reverse("api_clothing", kwargs={"pk": self.id})
+        return reverse("api_clothing_inventory", kwargs={"pk": self.id})
 
     def __str__(self):
         return self.name
+
+
 
     # from stack overflow:
 # class Month(models.TextChoices):
@@ -76,9 +94,6 @@ class Clothing(models.Model):           # analogous to global Auto Inventory in 
 #         choices=Month.choices,
 #         default=Month.JAN
 #     )
-
-        #unit_id = # a unique SKU
-        pass
 
 
 
