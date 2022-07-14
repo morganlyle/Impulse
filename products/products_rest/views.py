@@ -2,8 +2,13 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
 import json
 
+<<<<<<< HEAD
 from .models import Product_Category, Product, Clothing, Product_Inventory
 from encoders.encoders import ProductCategoryEncoder, ProductEncoder, ProductInventoryEncoder, ClothingEncoder
+=======
+from .models import Clothing_Inventory, Product_Category, Product, Clothing
+from encoders.encoders import ProductCategoryEncoder, ProductEncoder, ClothingEncoder
+>>>>>>> main
 
 # Create your views here.
 
@@ -83,25 +88,25 @@ def api_product_inventory(request):
 
 
 @require_http_methods(["GET", "POST"])
-def api_clothing(request):
+def api_clothing_inventory(request):
     if request.method == "GET":
-        clothing = Clothing.objects.all()
+        clothing = Clothing_Inventory.objects.all()
         return JsonResponse(
             {"clothing": clothing},
             encoder=ClothingEncoder,
         )
-    else:
-        try:
-            content = json.loads(request.body)
-            clothing = Clothing.objects.create(**content)
-            return JsonResponse(
-                clothing,
-                encoder=ClothingEncoder,
-                safe=False,
-            )
-        except:
-            response = JsonResponse(
-                {"message": "Could not create the article of clothing"}
-            )
-            response.status_code = 400
-            return response
+    # else:
+    #     try:
+    #         content = json.loads(request.body)
+    #         clothing = Clothing_Inventory.objects.create(**content)
+    #         return JsonResponse(
+    #             clothing,
+    #             encoder=ClothingEncoder,
+    #             safe=False,
+    #         )
+    #     except:
+    #         response = JsonResponse(
+    #             {"message": "Could not create the article of clothing"}
+    #         )
+    #         response.status_code = 400
+    #         return response
