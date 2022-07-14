@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
 import json
 
-from .models import Product_Category, Product, Clothing
+from .models import Clothing_Inventory, Product_Category, Product, Clothing
 from encoders.encoders import ProductCategoryEncoder, ProductEncoder, ClothingEncoder
 
 # Create your views here.
@@ -58,9 +58,9 @@ def api_product(request):
 
 
 @require_http_methods(["GET", "POST"])
-def api_clothing(request):
+def api_clothing_inventory(request):
     if request.method == "GET":
-        clothing = Clothing.objects.all()
+        clothing = Clothing_Inventory.objects.all()
         return JsonResponse(
             {"clothing": clothing},
             encoder=ClothingEncoder,
@@ -68,7 +68,7 @@ def api_clothing(request):
     # else:
     #     try:
     #         content = json.loads(request.body)
-    #         clothing = Clothing.objects.create(**content)
+    #         clothing = Clothing_Inventory.objects.create(**content)
     #         return JsonResponse(
     #             clothing,
     #             encoder=ClothingEncoder,
