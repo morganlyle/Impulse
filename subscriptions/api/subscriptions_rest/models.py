@@ -42,10 +42,10 @@ class User(models.Model):
         return f'{self.username}, {self.email}'
 
 class Subscription(models.Model):
-    username = models.ForeignKey(User, related_name="subscription", on_delete=models.PROTECT, unique=True)
+    username = models.ForeignKey(User, related_name='subscription', on_delete=models.PROTECT, unique=True)
     model_number = models.PositiveSmallIntegerField(unique=True)
     price = models.PositiveSmallIntegerField(default=30)
-    products = models.ForeignKey(ProductsBox, related_name="subscription", on_delete=models.PROTECT, null=True, blank=True)
+    products = models.ForeignKey(ProductsBox, related_name='subscription', on_delete=models.PROTECT, null=True, blank=True)
     clothing = models.ForeignKey(ClothingBox, related_name='subscription', on_delete=models.PROTECT, null=True, blank=True)
 
     def __str__(self):
