@@ -1,6 +1,6 @@
 from encoders.json import ModelEncoder
 
-from products_rest.models import Product_Category, Product, Product_Inventory, Clothing
+from products_rest.models import Product_Category, Product, Product_Inventory, Clothing_Inventory
 
 class ProductCategoryEncoder(ModelEncoder):
     model = Product_Category
@@ -32,7 +32,7 @@ class ProductInventoryEncoder(ModelEncoder):
     }
 
 class ClothingEncoder(ModelEncoder):
-    model = Clothing
+    model = Clothing_Inventory
     properties = [
         "name",
         "color",
