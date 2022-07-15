@@ -3,7 +3,6 @@ from django.db import models
 from django.urls import reverse
 from uuid import uuid4
 
-# Create your models here.
 
 class Product_Category(models.Model):         #like manufacturer in Inventory models  in CC
     category = models.CharField(max_length=255)
@@ -31,7 +30,6 @@ class Product(models.Model):        # analogous to Veh Mod in Inventory models i
     # def __str__(self):
     #     return self.name
 
-    #make a relaish to Prod Cat
 
 class Product_Inventory(models.Model):
     color = models.CharField(max_length=20)
@@ -45,18 +43,19 @@ class Product_Inventory(models.Model):
 
     def get_api_url(self):
         return reverse("api_product_inventory", kwargs={"pk": self.id})
-        
+
            # analogous to global Auto Inventory in CarCar
 class Clothing_Inventory(models.Model):           # analogous to global Auto Inventory in CarCar
     name = models.CharField(max_length=100, unique=True)
     color = models.CharField(max_length=50, blank=True, null=True)
+    sku = models.UUIDField(primary_key=True, default=uuid4, editable=False)
 
     class size_choices(models.TextChoices):
-        S = "1", "Small"
-        M = "2", "Medium"
-        L = "3", "Large"
-        XL = "4", "XLarge"
-        XX = "5", "XXLarge"
+        S = "Small"
+        M = "Medium"
+        L = "Large"
+        XL = "XLarge"
+        XX = "XXLarge"
 
     size = models.CharField(
         max_length=8,
@@ -72,13 +71,11 @@ class Clothing_Inventory(models.Model):           # analogous to global Auto Inv
         on_delete=models.CASCADE,
     )
 
-    #unit_id = # a unique SKU
-
     def get_api_url(self):
-        return reverse("api_clothing_inventory", kwargs={"pk": self.id})
+        return reverse("api_clothing_inventory", kwargs={"pk": self.sku})
 
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
 
 
 

@@ -31,7 +31,7 @@ class ProductInventoryEncoder(ModelEncoder):
         "product": ProductEncoder(),
     }
 
-class ClothingEncoder(ModelEncoder):
+class ClothingInventoryEncoder(ModelEncoder):
     model = Clothing_Inventory
     properties = [
         "name",

@@ -1,9 +1,10 @@
+from unicodedata import category
 from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
 import json
 
 from .models import Clothing_Inventory, Product_Category, Product_Inventory, Product
-from encoders.encoders import ProductCategoryEncoder, ProductEncoder, ClothingEncoder, ProductInventoryEncoder
+from encoders.encoders import ProductCategoryEncoder, ProductEncoder, ClothingInventoryEncoder, ProductInventoryEncoder
 
 # Create your views here.
 
@@ -85,23 +86,27 @@ def api_product_inventory(request):
 @require_http_methods(["GET", "POST"])
 def api_clothing_inventory(request):
     if request.method == "GET":
-        clothing = Clothing_Inventory.objects.all()
+        clothings_inventory = Clothing_Inventory.objects.all()
         return JsonResponse(
-            {"clothing": clothing},
-            encoder=ClothingEncoder,
+            {"clothing_inventory": clothings_inventory},
+            encoder=ClothingInventoryEncoder,
         )
-    # else:
-    #     try:
-    #         content = json.loads(request.body)
-    #         clothing = Clothing_Inventory.objects.create(**content)
-    #         return JsonResponse(
-    #             clothing,
-    #             encoder=ClothingEncoder,
-    #             safe=False,
-    #         )
-    #     except:
-    #         response = JsonResponse(
-    #             {"message": "Could not create the article of clothing"}
-    #         )
-    #         response.status_code = 400
-    #         return response
+    else:
+        try:
+            content = json.loads(request.body)
+            content = {
+                **content,
+                "product_category": Product_Category.objects.get(category=content["product_category"])
+            }
+            clothing_inventory = Clothing_Inventory.objects.create(**content)
+            return JsonResponse(
+                clothing_inventory,
+                encoder=ClothingInventoryEncoder,
+                safe=False,
+            )
+        except:
+            response = JsonResponse(
+                {"message": "Could not create the article of clothing"}
+            )
+            response.status_code = 400
+            return response
