@@ -3,16 +3,15 @@ volumes:
         external: true
 services:
     postgres:
-        build:
-            context: ./relational-data
-            dockerfile: ./Dockerfile.dev
+        image: postgres:14.2-bullseye
         volumes:
             - postgres-data:/var/lib/postgresql/data
+            - ./db:/docker-entrypoint-initdb.d
         environment:
             - POSTGRES_MULTIPLE_DATABASES=products,subscriptions
             - POSTGRES_PASSWORD=test-databases
         ports:
-            - 15432:5432
+            - 5432:5432
     products:
         build:
             context: ./products
@@ -32,9 +31,12 @@ services:
             - "8200:8000"
         volumes:
             - ./subscriptions/api:/app
+        depends_on:
+            - postgres
         environment:
-            DATABASE_URL: postgresql://subscriptions:password@postgres/subscriptions
+            DATABASE_URL: postgresql://subscriptions:password@postgres:5432/subscriptions
             WAIT_HOSTS: postgres:5432
+            WAIT_TIMEOUT: 240
     subscriptions-poller:
         build:
             context: ./subscriptions/poll
@@ -45,8 +47,9 @@ services:
             - postgres
             - subscriptions
         environment:
-            DATABASE_URL: postgres://subscriptions:password@database:5432/subscriptions
-            WAIT_HOSTS: postgres:5432,subscriptions:8200
+            DATABASE_URL: postgres://subscriptions:password@postgres:5432/subscriptions
+            WAIT_HOSTS: postgres:5432,subscriptions:8000
+            WAIT_TIMEOUT: 240
     ghi:
         image: node:lts-bullseye
         command: /bin/bash run.sh
