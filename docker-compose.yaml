@@ -21,7 +21,7 @@ services:
         volumes:
             - ./products:/app
         environment:
-            DATABASE_URL: postgresql://products:password@postgres/products
+            DATABASE_URL: postgres://products:password@postgres/products
             WAIT_HOSTS: postgres:5432
     subscriptions:
         build:
@@ -34,7 +34,7 @@ services:
         depends_on:
             - postgres
         environment:
-            DATABASE_URL: postgresql://subscriptions:password@postgres:5432/subscriptions
+            DATABASE_URL: postgres://subscriptions:password@postgres:5432/subscriptions
             WAIT_HOSTS: postgres:5432
             WAIT_TIMEOUT: 240
     subscriptions-poller:
