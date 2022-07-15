@@ -43,8 +43,8 @@ class Product_Inventory(models.Model):
         on_delete=models.CASCADE,
     )
 
-    # def get_api_url(self):
-    #     return reverse("api_product_inventory", kwargs={"pk": self.id})
+    def get_api_url(self):
+        return reverse("api_product_inventory", kwargs={"pk": self.sku})
         
            # analogous to global Auto Inventory in CarCar
 class Clothing_Inventory(models.Model):           # analogous to global Auto Inventory in CarCar
