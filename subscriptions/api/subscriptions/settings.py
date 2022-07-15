@@ -90,6 +90,17 @@ WSGI_APPLICATION = 'subscriptions.wsgi.application'
 DATABASES = {}
 DATABASES["default"] = dj_database_url.config()
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'subscriptions',
+#         'USER':'subscriptions',
+#         'PASSWORD':'password',
+#         'HOST':'postgres',
+#         'PORT':'5432',
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
