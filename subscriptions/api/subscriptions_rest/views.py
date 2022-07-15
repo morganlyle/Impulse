@@ -192,7 +192,7 @@ def show_receipt(request, pk):
         return JsonResponse({"deleted": count > 0})
 
 @require_http_methods(['GET', 'POST'])
-def receipt_list(request):
+def receipts_list(request):
     if request.method == 'GET':
         receipt = Receipt.objects.all()
         return JsonResponse(
