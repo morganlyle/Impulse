@@ -1,6 +1,16 @@
+## July 15, 2021
+
+*
+
+*
+
 ## July 14, 2021
 
 * Worked on bugs in views on POST endpoints, and bugs in change of model to Clothing_Inventory
+
+* Learned about the UUID field
+
+* Worked on the TextChoices field for better experience
 
 Did some pair coding as driver with Adrian navigating. They were super helpful! A key takeaway: comment out try/except in order to see what the actual error is, try/except can be too blunt or general in its error message. Then fix accordingly!
 
