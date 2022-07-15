@@ -1,3 +1,14 @@
+## Just 14th, 2022
+
+Today the entire team worked on:
+*  Finishing up the loose ends on our backend! We have pretty much all of our views working and now we just need to create a bunch of products for the store/make the poller! 
+
+        I did NOT expect us to be done so quickly with backend, it almost feels *wrong*, but then I realize that we're 
+        finally starting to come into our own as software engineers. This sort of stuff is feeling easy because we have 
+        practiced so much that making the connections isn't *hard* at this point. 
+        I learned that the UUID field exists and that makes custom, unique skus for the field you put it on, and that makes
+        the process of adding our inventory so much faster than it would have been before.~
+
 ## July 13th, 2022
 
 Today the entire team worked on:
