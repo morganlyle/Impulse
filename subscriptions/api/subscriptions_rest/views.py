@@ -46,7 +46,7 @@ def user_details(request, pk):
     if request.method == 'GET':
         user = User.objects.get(id=pk)
         return JsonResponse(
-            {'users': user},
+            user,
             encoder=UserEncoder,
             safe=False
         )
@@ -138,9 +138,9 @@ def clothing_inventory_vo_list(request):
 @require_http_methods(['GET','POST'])
 def clothing_box_list(request):
     if request.method == 'GET':
-        clothing_box = ClothingBox.objects.all()
+        clothing_boxes = ClothingBox.objects.all()
         return JsonResponse(
-            {'clothing_box': clothing_box},
+            {'clothing_box': clothing_boxes},
             encoder=ClothingBoxEncoder
         )
     else:
@@ -194,9 +194,9 @@ def show_receipt(request, pk):
 @require_http_methods(['GET', 'POST'])
 def receipts_list(request):
     if request.method == 'GET':
-        receipt = Receipt.objects.all()
+        receipts = Receipt.objects.all()
         return JsonResponse(
-            {'receipt': receipt},
+            {'receipts': receipts},
             encoder=ReceiptEncoder
         )
     else:
