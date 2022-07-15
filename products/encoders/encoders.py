@@ -1,4 +1,4 @@
-from encoders.json import ModelEncoder
+from encoders.json import ModelEncoder, UUIDEncoder
 
 from products_rest.models import Product_Category, Product, Product_Inventory, Clothing_Inventory
 
@@ -29,6 +29,7 @@ class ProductInventoryEncoder(ModelEncoder):
     ]
     encoders = {
         "product": ProductEncoder(),
+        "sku": UUIDEncoder(),
     }
 
 class ClothingEncoder(ModelEncoder):
