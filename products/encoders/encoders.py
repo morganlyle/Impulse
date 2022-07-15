@@ -32,7 +32,7 @@ class ProductInventoryEncoder(ModelEncoder):
         "sku": UUIDEncoder(),
     }
 
-class ClothingEncoder(ModelEncoder):
+class ClothingInventoryEncoder(ModelEncoder):
     model = Clothing_Inventory
     properties = [
         "name",
