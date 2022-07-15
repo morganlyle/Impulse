@@ -1,3 +1,11 @@
+## July 14, 2021
+
+* Worked on bugs in views on POST endpoints, and bugs in change of model to Clothing_Inventory
+
+Did some pair coding as driver with Adrian navigating. They were super helpful! A key takeaway: comment out try/except in order to see what the actual error is, try/except can be too blunt or general in its error message. Then fix accordingly!
+
+I was trying to associate an input property for a POST endpoint like in inventory in CARCAR, when, say the vehicle model model had a foreign key to manufacturer, but it wasn't working. Adding a get query fixed it.
+
 ## July 13, 2021
 
 * Worked on models, views and registration for products service
