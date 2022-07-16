@@ -10,7 +10,7 @@ services:
             - postgres-data:/var/lib/postgresql/data
             - ./db:/docker-entrypoint-initdb.d
         environment:
-            - POSTGRES_MULTIPLE_DATABASES=subscriptions
+            - POSTGRES_MULTIPLE_DATABASES=subscriptions,products
             - POSTGRES_PASSWORD=test-databases
         ports:
             - 15432:5432
@@ -23,7 +23,7 @@ services:
         volumes:
             - ./products:/app
         environment:
-            DATABASE_URL: postgres://products:password@postgres/products
+            DATABASE_URL: postgres://products:password@postgres:5432/products
             WAIT_HOSTS: postgres:5432
     subscriptions:
         build:

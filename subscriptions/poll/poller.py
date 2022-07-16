@@ -3,7 +3,7 @@ import os
 import sys
 import time
 import json
-import requests
+import requests # type: ignore
 
 
 sys.path.append("")

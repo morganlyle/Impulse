@@ -61,6 +61,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
 
+DJWTO_MODE = "TWO-COOKIES"
+DJWTO_ACCESS_TOKEN_LIFETIME = None
+
 
 ROOT_URLCONF = 'subscriptions.urls'
 
@@ -111,6 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'OPTIONS': {'min_length': '8', 'max_length': '16'},
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
