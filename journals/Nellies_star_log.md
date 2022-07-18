@@ -1,8 +1,13 @@
+
+## July 16, 2021
+
+* Poller works now.
+
+Most of us had Docker issues with compose up, spent morning debugging. Bug re: absolute file path means, check yaml file for volume path, may need '/' or './'
+
 ## July 15, 2021
 
-*
-
-*
+CR/LF (Carriage return / line feed) issue took hours to discover! and a minute to fix. We needed this fix to get the poller working and then to continue onto working on frontend.
 
 ## July 14, 2021
 
