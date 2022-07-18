@@ -25,6 +25,7 @@ services:
         environment:
             DATABASE_URL: postgres://products:password@postgres:5432/products
             WAIT_HOSTS: postgres:5432
+            WAIT_TIMEOUT: 240
     subscriptions:
         build:
             context: ./subscriptions/api
@@ -45,6 +46,8 @@ services:
             dockerfile: ./Dockerfile.dev
         volumes:
             - ./subscriptions/poll:/app
+            - ./subscriptions/api/subscriptions_rest:/app/subscriptions_rest
+            - ./subscriptions/api/subscriptions:/app/subscriptions
         depends_on:
             - postgres
             - subscriptions
