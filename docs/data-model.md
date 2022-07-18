@@ -38,3 +38,8 @@ ___
 | accessories | reference to products api | no | no |
 
 The subscription fashion boxes entity refers to the users table for table name, and we'll use an external api to generate both clothing and accessories for the monthly product box.
+
+
+A more detailed version of the data-model can be found here:
+
+![Color-Coded Model Page](wireframes/color_coded_models_guide.png)
