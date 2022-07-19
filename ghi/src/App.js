@@ -3,9 +3,7 @@ import HomePage from './Homepage.js';
 import Footer from './Footer.js';
 import './App.css';
 import Nav from './Nav.js';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
-// import Nav from './Nav';
 import SignUpForm from './SignUpForm';
 import './index.css';
 
