@@ -3,7 +3,12 @@
 
 * Poller works now.
 
-Most of us had Docker issues with compose up, spent morning debugging. Bug re: absolute file path means, check yaml file for volume path, may need '/' or './'
+* Got first version of front end on sign-up page working.
+
+Most of us had Docker issues with compose up, spent morning debugging. If error message re: absolute file path, then check yaml file for volume path, may need '/' or './' in front of the path. And more CR/LF issues! for non-mac users.
+
+Evan and I worked on the sign-up page this afternoon. We'll change the styling, but it's a go for now. We had some trouble importing react-router-dom, so Adrian said to install npm on the docker command line. That worked!
+
 
 ## July 15, 2021
 
