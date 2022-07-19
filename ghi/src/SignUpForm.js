@@ -63,7 +63,7 @@ class SignUpForm extends React.Component {
     return (
       <div className="row">
         <div className="offset-3 col-6">
-          <div className="shadow p-4 mt-4">
+          <div className="shadow-lg p-4 mt-4 heliotrope_gray">
             <h1>Sign up for your subscription box!</h1>
             <form onSubmit={this.handleSubmit} id="create-signup-form">
 
@@ -100,7 +100,7 @@ class SignUpForm extends React.Component {
                 <input onChange={this.handleChange} value={this.state.address} placeholder="Address" type="text" id="address" className="form-control" />
                 <label htmlFor="first_name">Address</label>
               </div>
-              <button className="btn btn-primary">Sign up</button>
+              <button className="btn btn-light almond ob_button">Sign up</button>
             </form>
           </div>
         </div>
@@ -110,109 +110,3 @@ class SignUpForm extends React.Component {
 }
 
 export default SignUpForm;
-
-
-
-// from https://www.geeksforgeeks.org/how-to-develop-user-registration-form-in-reactjs/
-
-// import { useState } from 'react';
-
-// export default function Form() {
-
-// // States for registration
-// const [name, setName] = useState('');
-// const [email, setEmail] = useState('');
-// const [password, setPassword] = useState('');
-
-// // States for checking the errors
-// const [submitted, setSubmitted] = useState(false);
-// const [error, setError] = useState(false);
-
-// // Handling the name change
-// const handleName = (e) => {
-// 	setName(e.target.value);
-// 	setSubmitted(false);
-// };
-
-// // Handling the email change
-// const handleEmail = (e) => {
-// 	setEmail(e.target.value);
-// 	setSubmitted(false);
-// };
-
-// // Handling the password change
-// const handlePassword = (e) => {
-// 	setPassword(e.target.value);
-// 	setSubmitted(false);
-// };
-
-// // Handling the form submission
-// const handleSubmit = (e) => {
-// 	e.preventDefault();
-// 	if (name === '' || email === '' || password === '') {
-// 	setError(true);
-// 	} else {
-// 	setSubmitted(true);
-// 	setError(false);
-// 	}
-// };
-
-// // Showing success message
-// const successMessage = () => {
-// 	return (
-// 	<div
-// 		className="success"
-// 		style={{
-// 		display: submitted ? '' : 'none',
-// 		}}>
-// 		<h1>User {name} successfully registered!!</h1>
-// 	</div>
-// 	);
-// };
-
-// // Showing error message if error is true
-// const errorMessage = () => {
-// 	return (
-// 	<div
-// 		className="error"
-// 		style={{
-// 		display: error ? '' : 'none',
-// 		}}>
-// 		<h1>Please enter all the fields</h1>
-// 	</div>
-// 	);
-// };
-
-// return (
-// 	<div className="form">
-// 	<div>
-// 		<h1>User Registration</h1>
-// 	</div>
-
-// 	{/* Calling to the methods */}
-// 	<div className="messages">
-// 		{errorMessage()}
-// 		{successMessage()}
-// 	</div>
-
-// 	<form>
-// 		{/* Labels and inputs for form data */}
-// 		<label className="label">Name</label>
-// 		<input onChange={handleName} className="input"
-// 		value={name} type="text" />
-
-// 		<label className="label">Email</label>
-// 		<input onChange={handleEmail} className="input"
-// 		value={email} type="email" />
-
-// 		<label className="label">Password</label>
-// 		<input onChange={handlePassword} className="input"
-// 		value={password} type="password" />
-
-// 		<button onClick={handleSubmit} className="btn" type="submit">
-// 		Submit
-// 		</button>
-// 	</form>
-// 	</div>
-// );
-// }

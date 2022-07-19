@@ -28,6 +28,11 @@ export default function NavBar() {
                         <li><NavLink className="fs-4 dropdown-item nameText" aria-current="page" to="#">Clothing</NavLink></li>
                     </div>
                 </div>
+                <NavLink className="link-dark text-decoration-none" to="/signup">
+                    <button className="btn btn-toggle rounded border-0 collapsed fs-2 fw-semibold nameText">
+                        Sign Up
+                    </button>
+                </NavLink>
             </div>
         </>
     )

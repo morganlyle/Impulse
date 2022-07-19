@@ -1,5 +1,8 @@
-# 7/16
+# 7/18
 
+    Today we worked on:
+
+        Got the poller 100% working and fixed some classic Docker nonsense. We have begun working on our front pages, like the Home page, and setting up our Nav bar and Footers. Once we have all of those set up we will be diving into our project a little more and adding things that we see fit.
 
 # 7/15
 
