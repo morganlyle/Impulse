@@ -14,6 +14,11 @@ export default function NavBar() {
                         Home
                     </button>
                 </NavLink>
+                <NavLink className="link-dark text-decoration-none" to="subscriptions/">
+                    <button className="btn btn-toggle rounded border-0 collapsed fs-2 fw-semibold nameText">
+                        Subscription Boxes
+                    </button>
+                </NavLink>
                 <div className="dropdown">
                     <button className="btn btn-toggle rounded border-0 dropdown-toggle fs-2 fw-semibold nameText" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                         Products
@@ -23,11 +28,6 @@ export default function NavBar() {
                         <li><NavLink className="fs-4 dropdown-item nameText" aria-current="page" to="#">Clothing</NavLink></li>
                     </div>
                 </div>
-                <NavLink className="link-dark text-decoration-none" to="#">
-                    <button className="btn btn-toggle rounded border-0 collapsed fs-2 fw-semibold nameText">
-                        About Us
-                    </button>
-                </NavLink>
             </div>
         </>
     )

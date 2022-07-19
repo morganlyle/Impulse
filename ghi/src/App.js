@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
-// import Nav from './Nav';
 import SignUpForm from './SignUpForm';
+import SubscriptionsPage from "./SubscriptionsPage";
 import './index.css';
 
 export default function App() {
@@ -13,6 +13,7 @@ export default function App() {
           <Routes>
             {/* <Route path='/' element={<Homepage />} /> */}
             <Route path='signup/' element={<SignUpForm />} />
+            <Route path='subscriptions/' element={<SubscriptionsPage />} />
           </Routes>
         </div>
       </BrowserRouter>
