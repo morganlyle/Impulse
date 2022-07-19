@@ -14,12 +14,12 @@ code {
 
 
 .nameText {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Poiret One', cursive;
   font-weight: 800;
 }
 
 .siteText {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Poiret One', cursive;
   font-size: x-large;
   font-weight: 600;
 }
@@ -41,14 +41,23 @@ code {
   padding-bottom: 28px;
 }
 
-.dropdown-item.active{
-  background-color: #b56fad;
+.dropdown-item.active {
+  background-color: #474973;
 }
 
-.dropdown-menu> li> a:hover{
-  background-color:#e7c3dd !important;
+.dropdown-menu>li>a:hover {
+  background-color: #a69cac !important;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  background-color: #FF0000;
 }
 
 .center_image {
   margin: 0 auto;
+}
+
+.bbcolor {
+  border-bottom: 2px solid;
+  border-bottom-color: #161b33;
 }

@@ -30,7 +30,7 @@ DEBUG = True
 
 INSTALLED_APPS = [
     "products_rest.apps.ProductsRestConfig",
-    # 'corsheaders',
+    "corsheaders",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    # 'corsheaders.middleware.CorsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -50,11 +50,19 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ALLOWED_HOSTS = ["localhost", "subscriptions"]
+ALLOWED_HOSTS = ["localhost", "subscriptions", "products"]
 
-CSRF_TRUSTED_ORIGINS = ["http://localhost:3000", "http://localhost:8200"]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:8080",
+    "http://localhost:8200",
+]
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:8200"]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:8080",
+    "http://localhost:8200",
+]
 
 CORS_ALLOW_CREDENTIALS = True
 
