@@ -1,20 +1,21 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
+// import Nav from './Nav';
+import SignUpForm from './SignUpForm';
 import './index.css';
 
-function App() {
+export default function App() {
   return (
     <>
       <BrowserRouter>
-      <NavBar />
+        <NavBar />
         <div className="container">
           <Routes>
             {/* <Route path='/' element={<Homepage />} /> */}
+            <Route path='signup/' element={<SignUpForm />} />
           </Routes>
         </div>
       </BrowserRouter>
     </>
   );
-}
-
-export default App;
+};

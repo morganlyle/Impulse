@@ -28,7 +28,7 @@ export default function NavBar() {
                 </div>
                 <NavLink className="link-dark text-decoration-none" to="links/">
                     <button className="btn btn-toggle rounded border-0 collapsed fs-2 fw-semibold nameText">
-                        Links
+                        About Us
                     </button>
                 </NavLink>
             </div>
