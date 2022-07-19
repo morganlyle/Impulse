@@ -63,7 +63,7 @@ class SignUpForm extends React.Component {
     return (
       <div className="row">
         <div className="offset-3 col-6">
-          <div className="shadow p-4 mt-4">
+          <div className="shadow-lg p-4 mt-4 heliotrope_gray">
             <h1>Sign up for your subscription box!</h1>
             <form onSubmit={this.handleSubmit} id="create-signup-form">
 
@@ -100,7 +100,7 @@ class SignUpForm extends React.Component {
                 <input onChange={this.handleChange} value={this.state.address} placeholder="Address" type="text" id="address" className="form-control" />
                 <label htmlFor="first_name">Address</label>
               </div>
-              <button className="btn btn-primary">Sign up</button>
+              <button className="btn btn-light almond ob_button">Sign up</button>
             </form>
           </div>
         </div>
