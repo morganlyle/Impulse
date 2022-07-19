@@ -1,31 +1,30 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
 .nameText {
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   font-weight: 800;
 }
 
 .siteText {
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   font-size: x-large;
   font-weight: 600;
 }
 
 .almond {
-  color: #F1DAC4;
+  color: #f1dac4;
 }
 
 .heliotrope_gray {
@@ -39,13 +38,11 @@ code {
 .oxford_blue {
   color: #161b33;
 }
-
 .ob_button {
   background-color: #161b33;
 }
-
 .xiketic {
-  color: #0D0C1D;
+  color: #0d0c1d;
 }
 
 .wrapper {
@@ -54,7 +51,7 @@ code {
 }
 
 .bgcolor {
-  background-color: #F1DAC4;
+  background-color: #f1dac4;
 }
 
 .photomarg {
@@ -65,7 +62,7 @@ code {
   background-color: #161b33;
 }
 
-.dropdown-menu>li>a:hover {
+.dropdown-menu > li > a:hover {
   background-color: #a69cac !important;
 }
 
