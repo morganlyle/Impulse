@@ -2,17 +2,16 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './Homepage.js';
 import Footer from './Footer.js';
 import './App.css';
-import Nav from './Nav.js';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
-// import Nav from './Nav';
 import SignUpForm from './SignUpForm';
+import AboutUs from './AboutUs';
+
 import './index.css';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Nav />
+        <NavBar />
       <div className="container">
         <Routes>
           <Route path='/' element={<HomePage />} />
@@ -20,11 +19,12 @@ export default function App() {
 
         </Routes>
 
-        <NavBar />
 
         <Routes>
           {/* <Route path='/' element={<Homepage />} /> */}
           <Route path='signup/' element={<SignUpForm />} />
+          <Route path='aboutus/' element={<AboutUs />} />
+
         </Routes>
       </div>
     </BrowserRouter>
