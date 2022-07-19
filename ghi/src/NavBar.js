@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 export default function NavBar() {
     return (
         <>
-            <div href="/" className="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none  ">
+            <div href="/" className="d-flex align-items-center pb-2 mb-2 link-dark text-decoration-none border-bottom heliotrope_gray">
                 <NavLink className="link-dark text-decoration-none" to="/">
                     <span className="ms-3 mb-2 fs-2 fw-semibold nameText">Impulse</span>
                 </NavLink>
-                <span className="ms-1 fs-1 fw-semibold nameText csep">||</span>
+                <span className="ms-2 fs-1 fw-semibold nameText csep">||</span>
                 <span className="ms-1 mt-2 fs-4 fw-semibold nameText">The place for all your random needs! </span>
-                <NavLink to="/" className="ms-auto link-dark text-decoration-none">
+                <NavLink to="/" className="ms-auto link-dark text-decoration-underline">
                     <button className="btn btn-toggle rounded border-0 collapsed fs-2 fw-semibold nameText">
                         Home
                     </button>
@@ -23,11 +23,11 @@ export default function NavBar() {
                         <li><NavLink className="fs-4 dropdown-item nameText" aria-current="page" to="#">Clothing</NavLink></li>
                     </div>
                 </div>
-                {/* <NavLink className="link-dark text-decoration-none" to="#"> */}
-                <button className="btn btn-toggle rounded border-0 collapsed fs-2 fw-semibold nameText">
-                    About Us
-                </button>
-                {/* </NavLink> */}
+                <NavLink className="link-dark text-decoration-none" to="#">
+                    <button className="btn btn-toggle rounded border-0 collapsed fs-2 fw-semibold nameText">
+                        About Us
+                    </button>
+                </NavLink>
             </div>
         </>
     )

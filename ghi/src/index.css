@@ -24,8 +24,24 @@ code {
   font-weight: 600;
 }
 
-.color1 {
-  color: #b56fad;
+.almond {
+  color: #F1DAC4;
+}
+
+.heliotrope_gray {
+  background-color: #A69CAC;
+}
+
+.purple_navy {
+  color: #474973;
+}
+
+.oxford_blue {
+  color: #161b33;
+}
+
+.xiketic {
+  color: #0D0C1D;
 }
 
 .wrapper {
@@ -42,15 +58,11 @@ code {
 }
 
 .dropdown-item.active {
-  background-color: #474973;
+  background-color: #161b33;
 }
 
 .dropdown-menu>li>a:hover {
   background-color: #a69cac !important;
-}
-
-.navbar-nav>li>.dropdown-menu {
-  background-color: #FF0000;
 }
 
 .center_image {
