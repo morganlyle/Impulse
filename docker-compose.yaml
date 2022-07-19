@@ -75,7 +75,7 @@ services:
     pgadmin:
         image: dpage/pgadmin4
         volumes:
-            - ./pgadmin/var/lib/pgadmin4
+            - /pgadmin/var/lib/pgadmin4
         ports:
             - "8060:80"
         environment:
