@@ -1,3 +1,18 @@
+# 7/16
+
+
+# 7/15
+
+Today we worked on:
+
+    Today got a little crazy with our Docker and building files. After many hours and a lot of help it turns out that the file did not like that Adrian was running it on their Windows, and that it is fine running on a Mac. I am really curious to see if any other teams come across this issue. This took a lot out of us all today, but it was a great ad for Apple products :)
+
+# 7/14
+
+Today we worked on:
+
+    We basically completed our backend today! All the views, models and urls are done for the subscriptions and the products. I feel like we got this project up and running so quickly, I am super proud of us!! Now to get the poller up and we will be all set to move on to the front end.
+
 # 7/13
 
 Today we worked on:
