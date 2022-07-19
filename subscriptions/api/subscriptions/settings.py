@@ -54,6 +54,7 @@ ALLOWED_HOSTS = ["localhost", "products"]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
+    "http://localhost:8080"
 ]
 
 CORS_ALLOWED_ORIGINS = [

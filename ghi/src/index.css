@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.nameText {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 800;
+}
+
+.siteText {
+  font-family: 'Amatic SC', cursive;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.color1 {
+  color: #b56fad;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bgcolor {
+  background-color: #F1DAC4;
+}
+
+.photomarg {
+  padding-bottom: 28px;
+}
+
+.dropdown-item.active{
+  background-color: #b56fad;
+}
+
+.dropdown-menu> li> a:hover{
+  background-color:#e7c3dd !important;
+}
+
+.center_image {
+  margin: 0 auto;
+}
