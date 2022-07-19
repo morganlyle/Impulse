@@ -11,3 +11,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.nameText {
+  font-family: 'Poiret One', cursive;
+  font-weight: 800;
+}
+
+.siteText {
+  font-family: 'Poiret One', cursive;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.almond {
+  color: #F1DAC4;
+}
+
+.heliotrope_gray {
+  background-color: #A69CAC;
+}
+
+.purple_navy {
+  color: #474973;
+}
+
+.oxford_blue {
+  color: #161b33;
+}
+
+.xiketic {
+  color: #0D0C1D;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bgcolor {
+  background-color: #F1DAC4;
+}
+
+.photomarg {
+  padding-bottom: 28px;
+}
+
+.dropdown-item.active {
+  background-color: #161b33;
+}
+
+.dropdown-menu>li>a:hover {
+  background-color: #a69cac !important;
+}
+
+.center_image {
+  margin: 0 auto;
+}
+
+.bbcolor {
+  border-bottom: 2px solid;
+  border-bottom-color: #161b33;
+}

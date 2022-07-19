@@ -50,14 +50,17 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ALLOWED_HOSTS = ["localhost", "products"]
+ALLOWED_HOSTS = ["localhost", "products", "subscriptions"]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
+    "http://localhost:8080",
+    "http://localhost:8200",
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "http://localhost:8200",
     "http://localhost:8080",
 ]
 
