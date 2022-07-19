@@ -3,18 +3,31 @@ import HomePage from './Homepage.js';
 import Footer from './Footer.js';
 import './App.css';
 import Nav from './Nav.js';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./NavBar";
+// import Nav from './Nav';
+import SignUpForm from './SignUpForm';
+import './index.css';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Nav />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='footer' element={<Footer />} />
+      <div className="container">
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='footer' element={<Footer />} />
 
-      </Routes>
+        </Routes>
+
+        <NavBar />
+
+        <Routes>
+          {/* <Route path='/' element={<Homepage />} /> */}
+          <Route path='signup/' element={<SignUpForm />} />
+        </Routes>
+      </div>
     </BrowserRouter>
-  );
-}
 
-export default App;
+  );
+};

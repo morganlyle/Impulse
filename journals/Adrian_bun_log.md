@@ -1,4 +1,43 @@
-## Just 14th, 2022
+## July 19th, 2022
+
+Whoo! Finally caught up with the journals. Not sure how I forgot seeing as I'm the one that
+reminds my team about them daily... Anyways! Today was a bit more conceptiual as we 
+decided on a color scheme for the project and ended up with a nice set of blues 
+with a cream/off white background.
+
+Journal Entry:
+
+                I loved today!! We got to do arsty stuff which I loooove. Whenever we make
+        product mock ups, I'm gonna get to use my drawing tablet and stuff!! It's really
+        important to remember that as important code is, you won't be happy with a site if it
+        doesn't look like how we want it to.
+
+
+## July 18th, 2022
+
+This is a slighly late journal entry! Yesterday, we discussed how we're 
+gonna handle the front end, and ended up preparing the poller for launch.
+
+Journal Entry:
+
+                Today was interesting! We got to talk a lot about our design choices and it felt like the website was finally
+        staring to become its own thing. I'm really happy with how everything has been working so far. I couldn't think of 
+        a funner team to be on as we all really get along!
+        
+
+## July 15th, 2022
+
+This is a late journal entry! I remember Friday we fixed the databases and oh my goodness was that a full adventure.
+
+Journal Entry:
+---
+
+                Today we ended up dealing with the database issues that have been plauging us for some time now.
+        To be quite frank, dealing with this was a bit of a nightmare, I stayed up till about 5am trying to workshop a solution.
+        It wasn't actually any of my code, it ended up being a windows issue with line endings... ouch!
+        I learned the difference between dos and bash and I'm a better person all around for it.
+
+## July 14th, 2022
 
 Today the entire team worked on:
 *  Finishing up the loose ends on our backend! We have pretty much all of our views working 
@@ -9,7 +48,8 @@ Journal Entry:
 
                 I did NOT expect us to be done so quickly with backend, it almost feels *wrong*, but then I realize that we're 
         finally starting to come into our own as software engineers. This sort of stuff is feeling easy because we have 
-        practiced so much that making the connections isn't *hard* at this point. 
+        practiced 
+        so much that making the connections isn't *hard* at this point. 
         I learned that the UUID field exists and that makes custom, unique skus for the field you put it on, and that makes
         the process of adding our inventory so much faster than it would have been before.~
 
