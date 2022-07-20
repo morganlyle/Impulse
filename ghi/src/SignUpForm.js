@@ -66,28 +66,22 @@ class SignUpForm extends React.Component {
           <div className="shadow p-4 rounded mt-4 heliotrope_gray">
             <h1 className="nameText pb-3">Sign up for your subscription box!</h1>
             <form onSubmit={this.handleSubmit} id="create-signup-form">
-
               <div className="inputText form-floating mb-3">
                 <input onChange={this.handleChange} value={this.state.username} placeholder="Username" type="text" id="username" className="siteText form-control" />
                 <label htmlFor="name">Username</label>
               </div>
-
               <div className="inputText form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.name} placeholder="Email address" type="text" id="email" className="siteText form-control" />
+                <input onChange={this.handleChange} value={this.state.email} placeholder="Email address" type="text" id="email" className="siteText form-control" />
                 <label htmlFor="name">Email address</label>
               </div>
-
               <div className="inputText form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.name} placeholder="Password" type="text" id="password" className="siteText form-control" />
+                <input onChange={this.handleChange} value={this.state.password} placeholder="Password" type="text" id="password" className="siteText form-control" />
                 <label htmlFor="name">Password</label>
               </div>
-
               <div className="inputText form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.name} placeholder="Enter password again" type="text" id="password_verify" className="siteText form-control" />
+                <input onChange={this.handleChange} value={this.state.password_verify} placeholder="Enter password again" type="text" id="password_verify" className="siteText form-control" />
                 <label htmlFor="name">Enter password again</label>
               </div>
-
-
               <div className="inputText form-floating mb-3">
                 <input onChange={this.handleChange} value={this.state.first_name} placeholder="First Name" type="text" id="first_name" className="siteText form-control" />
                 <label htmlFor="first_name">First Name</label>
