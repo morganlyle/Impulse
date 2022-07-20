@@ -9,7 +9,7 @@ export default function AboutUs() {
       <p className="lead mb-4 text-center">
         Here are some paragraphs about how we started.
       </p>
-      <Card>
+      <Card className='shadow p-4 rounded mt-4 heliotrope_gray'>
       {/* <div className='container'> */}
         {/* <div> */}
             <Card.Body>
@@ -19,7 +19,7 @@ export default function AboutUs() {
         {/* </div> */}
       </Card>
         {/* <div> */}
-      <Card>
+      <Card className='shadow p-4 rounded mt-4 heliotrope_gray'>
             <Card.Body>
             <Card.Title className='display-3 siteText'>About the Creators</Card.Title>
               Our names spell MEAN, nothing average about us.

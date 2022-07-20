@@ -33,6 +33,9 @@ code {
   color: #f1dac4;
 }
 
+.white {
+  color: #ffffff;
+}
 .heliotrope_gray {
   background-color: #a69cac;
 }
@@ -41,8 +44,16 @@ code {
   color: #474973;
 }
 
+.bgpurple_navy {
+  background-color: #474973;
+}
+
 .oxford_blue {
   color: #161b33;
+}
+
+.bgoxford_blue {
+  background-color: #161b33;
 }
 
 .ob_button {
