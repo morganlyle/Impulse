@@ -18,45 +18,54 @@ class SignUpForm extends React.Component {
   }
 
 
+  // handleChange(event) {
+  //   const newState = {};
+  //   if (event.target.password === event.target.password_verify) {
+  //     newState[event.target.id] = event.target.value;
+  //     this.setState(newState);
+  //   } else {
+  //     // they must go back and fix so that passwords match
+  //   }
+  // }
+
   handleChange(event) {
-    const newState = {};
-    if (event.target.password === event.target.password_verify) {
-      newState[event.target.id] = event.target.value;
-      this.setState(newState);
-    } else {
-      // they must go back and fix so that passwords match
-    }
+    this.setState({ [event.target.id]: event.target.value })
   }
 
   // do I need a componentDidMount function? Not yet sure what that component would be here.
 
   async handleSubmit(event) {
-    event.preventDefault();
-    const data = { ...this.state };
+    if (this.state['password'] === this.state['password_verify']) {
+      event.preventDefault();
+      delete this.state['password_verify']  // maybe better way to do this? warning is displayed in console about changing controlled input to be uncontrolled
+      const data = { ...this.state };
 
-    const signUpUrl = 'http://localhost:8090/api/signup/';     // what port do we use here?
-    const fetchConfig = {
-      method: "post",
-      body: JSON.stringify(data),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    };
-
-    const response = await fetch(signUpUrl, fetchConfig);
-    if (response.ok) {
-      const newSignUp = await response.json();
-      console.log(newSignUp);
-      this.setState({
-        username: '',
-        email: '',
-        password: '',
-        password_verify: '',
-        first_name: '',
-        last_name: '',
-        address: '',
-      });
+      const signUpUrl = 'http://localhost:8200/api/users/';     // what port do we use here?
+      const fetchConfig = {
+        method: "post",
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+  
+      const response = await fetch(signUpUrl, fetchConfig);
+      if (response.ok) {
+        const newSignUp = await response.json();
+        console.log(newSignUp);
+        this.setState({
+          username: '',
+          email: '',
+          password: '',
+          first_name: '',
+          last_name: '',
+          address: '',
+        });
+      }
+    } else {
+      console.log('Sign up failed');  // maybe have a pop up to make sure password match? can't get this console.log to show up on fail
     }
+
   }
 
   render() {
