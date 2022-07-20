@@ -1,11 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './Homepage.js';
 import Footer from './Footer.js';
-<<<<<<< HEAD
-import './App.css';
-import Nav from './Nav.js';
-=======
->>>>>>> main
 import NavBar from "./NavBar";
 import SignUpForm from './SignUpForm';
 import SubscriptionsPage from "./SubscriptionsPage";
