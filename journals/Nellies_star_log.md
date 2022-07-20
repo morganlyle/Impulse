@@ -1,11 +1,22 @@
+## July 19, 2021
 
-## July 16, 2021
+* Added some styling to SignUpForm
+
+* Added new favicon
+
+* Started the About Us page
+
+I dug into favicons a bit today, hadn't realized that they're different from other kinds of image files and not easily generated from a photo I already have. It's small, but we like how professional it looks.
+
+I also started digging into using Bootstrap to create cards for the About Us page. They still need styling but are starting to look good.
+
+## July 18, 2021
 
 * Poller works now.
 
 * Got first version of front end on sign-up page working.
 
-Most of us had Docker issues with compose up, spent morning debugging. If error message re: absolute file path, then check yaml file for volume path, may need '/' or './' in front of the path. And more CR/LF issues! for non-mac users.
+Most of us had Docker issues with compose up, spent morning debugging. If error message re: absolute file path, then check yaml file for volume path, may need '/' or './' in front of the path. And more CR/LF issues! for the windows users.
 
 Evan and I worked on the sign-up page this afternoon. We'll change the styling, but it's a go for now. We had some trouble importing react-router-dom, so Adrian said to install npm on the docker command line. That worked!
 
