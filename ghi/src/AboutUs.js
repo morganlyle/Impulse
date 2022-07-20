@@ -14,7 +14,7 @@ export default function AboutUs() {
         {/* <div> */}
             <Card.Body>
             <Card.Title className='display-3 siteText'>About Impulse</Card.Title>
-              One day we realized there was a market gap for buying more things, all together, every month. So we hatched Impulse! Now you can get arugula, crocs and ladders all in one convenient place. Every month.
+             <Card.Text> One day we realized there was a market gap for buying more things, all together, every month. So we hatched Impulse! Now you can get arugula, crocs and ladders all in one convenient place. Every month.</Card.Text>
             </Card.Body>
         {/* </div> */}
       </Card>
