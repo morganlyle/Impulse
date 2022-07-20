@@ -23,6 +23,12 @@ code {
   font-weight: 600;
 }
 
+.inputText {
+  font-family: "Poiret One", cursive;
+  font-size: medium;
+  font-weight: 600;
+}
+
 .almond {
   color: #f1dac4;
 }
@@ -38,9 +44,11 @@ code {
 .oxford_blue {
   color: #161b33;
 }
+
 .ob_button {
   background-color: #161b33;
 }
+
 .xiketic {
   color: #0d0c1d;
 }
@@ -70,7 +78,22 @@ code {
   margin: 0 auto;
 }
 
-.bbcolor {
+.bbcolor_bottom {
   border-bottom: 2px solid;
   border-bottom-color: #161b33;
+}
+
+.bbcolor_top {
+  border-top: 2px solid;
+  border-top-color: #161b33;
+}
+
+.f_pad {
+  margin-top: 10px;
+  min-width: 182vh;
+}
+
+
+.shad_intense {
+  box-shadow: 5px 5px 10px;
 }
