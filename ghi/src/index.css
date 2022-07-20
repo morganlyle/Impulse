@@ -93,7 +93,10 @@ code {
   min-width: 182vh;
 }
 
-
 .shad_intense {
   box-shadow: 5px 5px 10px;
+}
+
+.f_space {
+  padding-left: 10px;
 }
