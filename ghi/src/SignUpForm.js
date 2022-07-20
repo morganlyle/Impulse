@@ -32,7 +32,7 @@ class SignUpForm extends React.Component {
 
   async handleSubmit(event) {
     event.preventDefault();
-    const data = {...this.state};
+    const data = { ...this.state };
 
     const signUpUrl = 'http://localhost:8090/api/signup/';     // what port do we use here?
     const fetchConfig = {
@@ -63,44 +63,44 @@ class SignUpForm extends React.Component {
     return (
       <div className="row">
         <div className="offset-3 col-6">
-          <div className="shadow-lg p-4 mt-4 heliotrope_gray">
-            <h1>Sign up for your subscription box!</h1>
+          <div className="shadow p-4 rounded mt-4 heliotrope_gray">
+            <h1 className="nameText pb-3">Sign up for your subscription box!</h1>
             <form onSubmit={this.handleSubmit} id="create-signup-form">
 
-              <div className="form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.name} placeholder="Username" type="text" id="username" className="form-control" />
+              <div className="inputText form-floating mb-3">
+                <input onChange={this.handleChange} value={this.state.username} placeholder="Username" type="text" id="username" className="siteText form-control" />
                 <label htmlFor="name">Username</label>
               </div>
 
-              <div className="form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.name} placeholder="Email address" type="text" id="email" className="form-control" />
+              <div className="inputText form-floating mb-3">
+                <input onChange={this.handleChange} value={this.state.name} placeholder="Email address" type="text" id="email" className="siteText form-control" />
                 <label htmlFor="name">Email address</label>
               </div>
 
-              <div className="form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.name} placeholder="Password" type="text" id="password" className="form-control" />
+              <div className="inputText form-floating mb-3">
+                <input onChange={this.handleChange} value={this.state.name} placeholder="Password" type="text" id="password" className="siteText form-control" />
                 <label htmlFor="name">Password</label>
               </div>
 
-              <div className="form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.name} placeholder="Enter password again" type="text" id="password_verify" className="form-control" />
+              <div className="inputText form-floating mb-3">
+                <input onChange={this.handleChange} value={this.state.name} placeholder="Enter password again" type="text" id="password_verify" className="siteText form-control" />
                 <label htmlFor="name">Enter password again</label>
               </div>
 
 
-              <div className="form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.first_name} placeholder="First Name" type="text" id="first_name" className="form-control" />
+              <div className="inputText form-floating mb-3">
+                <input onChange={this.handleChange} value={this.state.first_name} placeholder="First Name" type="text" id="first_name" className="siteText form-control" />
                 <label htmlFor="first_name">First Name</label>
               </div>
-              <div className="form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.last_name} placeholder="Last Name" type="text" id="last_name" className="form-control" />
+              <div className="inputText form-floating mb-3">
+                <input onChange={this.handleChange} value={this.state.last_name} placeholder="Last Name" type="text" id="last_name" className="siteText form-control" />
                 <label htmlFor="first_name">Last Name</label>
               </div>
-              <div className="form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.address} placeholder="Address" type="text" id="address" className="form-control" />
+              <div className="inputText form-floating mb-3">
+                <input onChange={this.handleChange} value={this.state.address} placeholder="Address" type="text" id="address" className="siteText form-control" />
                 <label htmlFor="first_name">Address</label>
               </div>
-              <button className="btn btn-light almond ob_button">Sign up</button>
+              <button className="btn btn-light siteText almond ob_button">Sign up</button>
             </form>
           </div>
         </div>
