@@ -1,20 +1,33 @@
-import React from 'react';
+// import React from 'react';
+import Card from 'react-bootstrap/Card';
 
-function AboutUs() {
+
+export default function AboutUs() {
     return (
-        <div className="px-4 py-5 my-5 text-center">
-            <h1 className="display-5 fw-bold">About Us</h1>
-            <div className="col-lg-6 mx-auto">
-                <p className="lead mb-4">
-                  Here are some paragraphs about how we started.
-                </p>
-                <p>
-                  One day we realized there was a market gap for buying more things, all together, every month. So we hatched Impulse! Now you can get arugula, crocs and ladders all in one convenient place. Every month.
+      <>
+      <h1 className='display-2 nameText text-center'>About Us</h1>
+      <p className="lead mb-4 text-center">
+        Here are some paragraphs about how we started.
+      </p>
+      <Card>
+      {/* <div className='container'> */}
+        {/* <div> */}
+            <Card.Body>
+            <Card.Title className='display-3 siteText'>About Impulse</Card.Title>
+              One day we realized there was a market gap for buying more things, all together, every month. So we hatched Impulse! Now you can get arugula, crocs and ladders all in one convenient place. Every month.
+            </Card.Body>
+        {/* </div> */}
+      </Card>
+        {/* <div> */}
+      <Card>
+            <Card.Body>
+            <Card.Title className='display-3 siteText'>About the Creators</Card.Title>
+              Our names spell MEAN, nothing average about us.
+            </Card.Body>
+      </Card>
+        {/* </div> */}
 
-                </p>
-            </div>
-        </div>
+      {/* </div> */}
+      </>
     );
 }
-
-export default AboutUs;
