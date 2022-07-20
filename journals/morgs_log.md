@@ -1,3 +1,9 @@
+# 7/19
+
+    Today we worked on:
+
+        We have our base pages set up! The sign up form is working and the Home page. There were still issues with Docker, but we are hopefully done with that. I know it is suppose to help seemliness work between different OS, but when we go from Windows to Mac sometimes it freaks out. We tried to use MDBootstrap but it has seemed to clash with regular bootstrap so we are removing it.
+
 # 7/18
 
     Today we worked on:
