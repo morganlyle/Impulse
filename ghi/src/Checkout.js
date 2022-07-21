@@ -139,5 +139,5 @@ export default function Checkout() {
                 </div>
             </Card>
         </>
-    )
-}
+    );
+};

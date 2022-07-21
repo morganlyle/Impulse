@@ -111,6 +111,11 @@
 //     );
 // }
 
+
+// IF THERE ARE ANY MERGE CONFLICTS, DELETE THIS FOOTER
+// KEEP MORGAN'S, HER'S IS BETTER!!! 
+// I WAS USING THIS ONE FOR SPACING/DESIGN PURPOSES
+// PLEASE ALSO DELETE THIS COMMENT THANK YOU VERY MUCH YOU'RE THE BEST TEAM A BUN COULD ASK FOR!!!
 import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
@@ -128,5 +133,5 @@ export default function NavBar() {
                 <span className="ms-auto pt-3 me-2">© 2022 Copyright Impulse Box</span>
             </div>
         </>
-    )
-}
+    );
+};

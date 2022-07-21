@@ -49,6 +49,6 @@ function MainPage() {
             </Card>
         </>
     );
-}
+};
 
 export default MainPage;
