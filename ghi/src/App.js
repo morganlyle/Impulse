@@ -3,6 +3,7 @@ import Homepage from './Homepage.js';
 import Footer from './Footer.js';
 import NavBar from "./NavBar";
 import SignUpForm from './SignUpForm';
+import Checkout from './Checkout';
 import SubscriptionsPage from "./SubscriptionsPage";
 import AboutUs from './AboutUs';
 
@@ -19,6 +20,7 @@ export default function App() {
             <Route path='signup/' element={<SignUpForm />} />
             <Route path='subscriptions/' element={<SubscriptionsPage />} />
             <Route path='aboutus/' element={<AboutUs />} />
+            <Route path='checkout/' element={<Checkout />} />
           </Routes>
         </div>
         <Footer />

@@ -15,7 +15,7 @@ from subscriptions_rest.models import ProductInventoryVO, ClothingInventoryVO
 
 
 def get_product_inventory():
-    response = requests.get("http://localhost:8080/api/product_inventory/")
+    response = requests.get("http://products:8000/api/product_inventory/")
     content = json.loads(response.content)
     for product in content['product_inventory']:
         ProductInventoryVO.objects.update_or_create(sku=product['sku'])

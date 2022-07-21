@@ -12,9 +12,11 @@ code {
     monospace;
 }
 
+/* TEXT GROUPING */
+
 .nameText {
   font-family: "Poiret One", cursive;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .siteText {
@@ -29,8 +31,14 @@ code {
   font-weight: 600;
 }
 
+/* COLOR GROUPING */
+
 .almond {
   color: #f1dac4;
+}
+
+.bgcolor {
+  background-color: #f1dac4;
 }
 
 .white {
@@ -38,6 +46,10 @@ code {
 }
 .heliotrope_gray {
   background-color: #a69cac;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #a69cac !important;
 }
 
 .purple_navy {
@@ -60,29 +72,23 @@ code {
   background-color: #161b33;
 }
 
+.dropdown-item.active {
+  background-color: #161b33;
+}
+
 .xiketic {
   color: #0d0c1d;
 }
+
+/* SIZING, MOVEMENT, DESIGN GROUPING */
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.bgcolor {
-  background-color: #f1dac4;
-}
-
-.photomarg {
-  padding-bottom: 28px;
-}
-
-.dropdown-item.active {
-  background-color: #161b33;
-}
-
-.dropdown-menu > li > a:hover {
-  background-color: #a69cac !important;
+.box_marg {
+  margin-bottom: 140px;
 }
 
 .center_image {
@@ -99,12 +105,34 @@ code {
   border-top-color: #161b33;
 }
 
-.f_pad {
-  margin-top: 10px;
-  min-width: 182vh;
+.b_cards {
+  border: 2px solid;
+  border-color: #161b33;
 }
 
+.f_pad {
+  position: fixed;
+  /* margin-top: 20px;
+  margin-bottom: 10px; */
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  border-bottom: 2px solid;
+  border-bottom-color: #161b33;
+}
 
 .shad_intense {
   box-shadow: 5px 5px 10px;
+}
+
+.f_space {
+  padding-left: 10px;
+}
+
+.shad_light {
+  box-shadow: 5px 5px 20px;
+}
+
+.shad_lighter {
+  box-shadow: 3px 3px 20px;
 }
