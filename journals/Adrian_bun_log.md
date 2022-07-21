@@ -1,3 +1,16 @@
+## July 20th, 2022
+
+Today we spent as good amount of time getting our react pages fully cleaned up and discussed getting our Auth to work. 
+We are reading the auth token cookbook and trying to make sure we fully understand what we're doing before we
+actually put our hands on any of the code.
+
+Journal Entry: 
+
+                Today I ended up helping Morgan work on her footer and we finally fully finished it!!
+        It looks very clean and matches our navbar extremely well. Getting that working was pretty much the
+        final step for "static" react content and the rest of the code should be very easy to implement.
+        I really hope we have minimum viable product by Friday!!!
+
 ## July 19th, 2022
 
 Whoo! Finally caught up with the journals. Not sure how I forgot seeing as I'm the one that

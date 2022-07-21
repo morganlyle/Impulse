@@ -44,6 +44,9 @@ def api_product(request):
     else:
         try:
             content = json.loads(request.body)
+            product_id = content["product_category"]
+            product_category = Product_Category.objects.get(id=product_id)
+            content["product_category"] = product_category
             product = Product.objects.create(**content)
             return JsonResponse(
                 product,
