@@ -110,8 +110,6 @@ code {
   border-color: #161b33;
 }
 
-<<<<<<< HEAD
-=======
 .f_pad {
   position: fixed;
   /* margin-top: 20px;
@@ -123,16 +121,14 @@ code {
   border-bottom-color: #161b33;
 }
 
->>>>>>> main
 .shad_intense {
   box-shadow: 5px 5px 10px;
 }
 
-<<<<<<< HEAD
 .f_space {
   padding-left: 10px;
 }
-=======
+
 .shad_light {
   box-shadow: 5px 5px 20px;
 }
@@ -140,4 +136,3 @@ code {
 .shad_lighter {
   box-shadow: 3px 3px 20px;
 }
->>>>>>> main
