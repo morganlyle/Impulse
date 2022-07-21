@@ -1,8 +1,8 @@
 volumes:
-  postgres-data:
-    external: true
-  pgadmin:
-    external: true
+    postgres-data:
+        external: true
+    pgadmin:
+        external: true
 services:
     postgres:
         image: postgres:14.2-bullseye
@@ -59,7 +59,7 @@ services:
             WAIT_TIMEOUT: 240
     ghi:
         image: node:lts-bullseye
-        command: /bin/bash run.sh
+        command: bash -c "npm install & npm start"
         working_dir: /app
         volumes:
             - ./ghi:/app

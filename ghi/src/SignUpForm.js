@@ -63,7 +63,7 @@ class SignUpForm extends React.Component {
     return (
       <div className="row">
         <div className="offset-3 col-6">
-          <div className="shadow p-4 rounded mt-4 heliotrope_gray">
+          <div className="b_cards shad_intense p-4 rounded mt-4 heliotrope_gray">
             <h1 className="nameText pb-3">Sign up for your subscription box!</h1>
             <form onSubmit={this.handleSubmit} id="create-signup-form">
 

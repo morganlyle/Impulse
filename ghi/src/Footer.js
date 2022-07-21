@@ -116,18 +116,16 @@ import { NavLink } from 'react-router-dom';
 export default function NavBar() {
     return (
         <>
-            <div>
-                <div href="/" className="d-flex align-items-center pb-2 mb-2 link-dark text-decoration-none bbcolor_top heliotrope_gray">
-                    <span className="ms-3 fs-2 fw-semibold nameText"></span>
-                    <span className="ms-2 fs-1 fw-semibold nameText almond">||</span>
-                    <span className="ms-1 mt-2 fs-4 fw-semibold nameText"></span>
-                    <span className=" ms-auto text-center">© 2022 Copyright Impulse Box</span>
-                    <NavLink className="text-right link-dark text-decoration-none" to="/aboutus">
-                        <button className="text-right btn btn-toggle rounded border-0 collapsed fs-5 fw-semibold siteText">
-                            Oh, about us? Well, for one, we're pretty great.
-                        </button>
-                    </NavLink>
-                </div>
+            <div href="/" className="d-flex align-items-center pb-2 mb-2 link-dark text-decoration-none f_pad bbcolor_top heliotrope_gray">
+                <NavLink className="text-left pt-2 link-dark text-decoration-none" to="/aboutus">
+                    <button className="btn btn-toggle rounded border-0 collapsed fs-5 fw-semibold siteText">
+                        Oh, about us? Well, for one, we're pretty great.
+                    </button>
+                </NavLink>
+                <span className="ms-2 fs-1 mt-2 fw-semibold nameText almond">||</span>
+                <span className="text-left ms-auto me-auto fs-2 fw-semibold nameText">aaafdfgffffffffffa</span>
+                <span className="ms-1 mt-2 fs-4 fw-semibold nameText"></span>
+                <span className="ms-auto pt-3 me-2">© 2022 Copyright Impulse Box</span>
             </div>
         </>
     )

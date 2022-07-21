@@ -9,19 +9,19 @@ export default function AboutUs() {
       <p className="lead mb-4 text-center">
         Here are some paragraphs about how we started.
       </p>
-      <Card>
+      <Card className='b_cards shad_intense p-4 rounded mt-4 heliotrope_gray'>
       {/* <div className='container'> */}
         {/* <div> */}
-            <Card.Body>
-            <Card.Title className='display-3 siteText'>About Impulse</Card.Title>
+            <Card.Body className='inputText'>
+            <Card.Title className='display-6 nameText'>About Impulse</Card.Title>
               One day we realized there was a market gap for buying more things, all together, every month. So we hatched Impulse! Now you can get arugula, crocs and ladders all in one convenient place. Every month.
             </Card.Body>
         {/* </div> */}
       </Card>
         {/* <div> */}
-      <Card>
-            <Card.Body>
-            <Card.Title className='display-3 siteText'>About the Creators</Card.Title>
+      <Card className='b_cards shad_intense p-4 rounded mt-4 heliotrope_gray'>
+            <Card.Body className='inputText'>
+            <Card.Title className='display-6 nameText'>About the Creators</Card.Title>
               Our names spell MEAN, nothing average about us.
             </Card.Body>
       </Card>
