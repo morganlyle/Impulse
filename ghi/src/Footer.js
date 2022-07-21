@@ -116,7 +116,7 @@ import { NavLink } from 'react-router-dom';
 export default function NavBar() {
     return (
         <>
-            <div href="/" className="d-flex align-items-center pb-2 mb-2 link-dark text-decoration-none f_pad bbcolor_top heliotrope_gray">
+            <div href="/" className="d-flex align-items-center link-dark text-decoration-none f_pad bbcolor_top heliotrope_gray">
                 <NavLink className="text-left pt-2 link-dark text-decoration-none" to="/aboutus">
                     <button className="btn btn-toggle rounded border-0 collapsed fs-5 fw-semibold siteText">
                         Oh, about us? Well, for one, we're pretty great.
