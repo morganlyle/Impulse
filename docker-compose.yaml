@@ -59,7 +59,7 @@ services:
             WAIT_TIMEOUT: 240
     ghi:
         image: node:lts-bullseye
-        command: bash -c "npm install & npm start"
+        command: /bin/bash run.sh
         working_dir: /app
         volumes:
             - ./ghi:/app
