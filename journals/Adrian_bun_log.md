@@ -1,3 +1,17 @@
+## July 21st, 2022
+
+Today we took on authorizationand oh my goodness was it kind of a lot. The whole team felt confused as to what
+to do until we ended up finding out the learn was very helpful and we just weren't reading far enough
+into it 😅
+
+Journal Entry:
+
+                I felt.. odd not being able to figure out the auth stuff. I have been very good about learning
+        the topics and applying the information where it's needed, but this was very difficult apply.
+        It was a very good reminder in the lesson of "I don't know everything about this yet and
+        I have a lot ahead of me. I just have to keep reminding myself that things will come to me the more I practice
+        and that is perfectly okay.
+
 ## July 20th, 2022
 
 Today we spent as good amount of time getting our react pages fully cleaned up and discussed getting our Auth to work. 
