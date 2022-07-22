@@ -40,7 +40,7 @@ class SignUpForm extends React.Component {
       delete this.state['password_verify']  // maybe better way to do this? warning is displayed in console about changing controlled input to be uncontrolled
       const data = { ...this.state };
 
-      const signUpUrl = 'http://localhost:8200/api/users/';     // what port do we use here?
+      const signUpUrl = 'http://localhost:8200/api/users/';
       const fetchConfig = {
         method: "post",
         body: JSON.stringify(data),
@@ -84,11 +84,11 @@ class SignUpForm extends React.Component {
                 <label htmlFor="name">Email address</label>
               </div>
               <div className="inputText form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.password} placeholder="Password" type="text" id="password" className="siteText form-control" />
+                <input onChange={this.handleChange} value={this.state.password} placeholder="Password" type="password" id="password" className="siteText form-control" />
                 <label htmlFor="name">Password</label>
               </div>
               <div className="inputText form-floating mb-3">
-                <input onChange={this.handleChange} value={this.state.password_verify} placeholder="Enter password again" type="text" id="password_verify" className="siteText form-control" />
+                <input onChange={this.handleChange} value={this.state.password_verify} placeholder="Enter password again" type="password" id="password_verify" className="siteText form-control" />
                 <label htmlFor="name">Enter password again</label>
               </div>
               <div className="inputText form-floating mb-3">
