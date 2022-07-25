@@ -64,3 +64,4 @@ class Receipt(models.Model):
 
 
 
+5

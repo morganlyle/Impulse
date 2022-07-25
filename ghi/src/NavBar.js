@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 export default function NavBar() {
     return (
         <>
-            <nav className="mb-3 pb-2 pt-2 heliotrope_gray navbar navbar-expand navbar bbcolor_bottom">
+            <nav className="mb-3 pb-2 pt-2 heliotrope_gray navbar navbar-expand navbar bbcolor_bottom shad_bottom">
                 <div className="container-fluid">
                     <NavLink className="navbar-brand siteText" to="/">Impulse</NavLink>
                     <span className="me-2 ms-1 fs-1 fw-semibold almond nameText">||</span>
@@ -18,14 +18,14 @@ export default function NavBar() {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="subscriptions/">Subscription Boxes</NavLink>
                             </li>
-                            <div style={{ paddingTop: '2px' }} className="dropdown">
+                            <div className="tiny_padding dropdown">
                                 <button className="pb-2 btn btn-toggle dropdown-toggle fw-semibold"
                                     type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                     Products
                                 </button>
                                 <div className="dropdown-menu dropdown-menu-light dropdown-collapse" aria-labelledby="dropdownMenuButton2">
-                                    <li><NavLink className="fs-4 dropdown-item" aria-current="page" to="#">Things</NavLink></li>
-                                    <li><NavLink className="fs-4 dropdown-item" aria-current="page" to="#">Clothing</NavLink></li>
+                                    <li><NavLink className="fs-4 dropdown-item" aria-current="page" to="things/">Things</NavLink></li>
+                                    <li><NavLink className="fs-4 dropdown-item" aria-current="page" to="clothing/">Clothing</NavLink></li>
                                 </div>
                             </div>
                             <li className="nav-item">
