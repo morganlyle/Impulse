@@ -6,7 +6,7 @@ import SignUpForm from './SignUpForm';
 import Checkout from './Checkout';
 import SubscriptionsPage from "./SubscriptionsPage";
 import AboutUs from './AboutUs';
-
+import LoginForm from './LoginForm';
 import './index.css';
 
 export default function App() {
@@ -20,6 +20,7 @@ export default function App() {
             <Route path='signup/' element={<SignUpForm />} />
             <Route path='subscriptions/' element={<SubscriptionsPage />} />
             <Route path='aboutus/' element={<AboutUs />} />
+            <Route path='login/' element={<LoginForm />} />
             <Route path='checkout/' element={<Checkout />} />
           </Routes>
         </div>

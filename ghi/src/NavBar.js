@@ -66,7 +66,11 @@ export default function NavBar() {
                                     <li><NavLink className="fs-4 dropdown-item" aria-current="page" to="#">Things</NavLink></li>
                                     <li><NavLink className="fs-4 dropdown-item" aria-current="page" to="#">Clothing</NavLink></li>
                                 </div>
+
                             </div>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="login/">Log In</NavLink>
+                            </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="signup/">Sign Up</NavLink>
                             </li>
