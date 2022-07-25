@@ -1,3 +1,25 @@
+## July 20, 2022
+
+Today, I worked on:
+
+* Fixing the SignUpForm component to make sure it was handling submissions properly on both the frontend and backend 
+
+Spent majority of the time trying to figure out how I wanted to implement password verification. I want to have message pop out to "re-verify password" when they don't match.
+
+## July 19, 2022
+
+Today, I worked on:
+
+* Resolving npm issues that were shutting down the ghi container for most of the day
+
+## July 18, 2022
+
+Today, Evan/Nellie pair worked on:
+
+* Building out the basic react component for the sign up form/page
+
+## July 14, 2022
+
 ## July 13, 2022
 
 Today, Evan/Nellie pair worked on:

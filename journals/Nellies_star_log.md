@@ -1,3 +1,10 @@
+## July 21, 2021
+
+* Worked on authentication feature.
+
+We spent the afternoon comprehending and gradually adding authentication to our app via the auth cookbook. When I tried to commit... we had crlf issues. I tried to fix with usual approaches like using `git config --global core.autocrlf false` twice, but no luck. We wrapped the day and will figure it out tomorrow.
+
+
 ## July 20, 2021
 
 * Completed styling for About Us page.
@@ -5,6 +12,7 @@
 I kept working on getting more familiar with React and Bootstrap. Tried out different classes for ClassName in tag until I was happy with default font size, and automatic separation of the cards in the About Us section.
 
 The rest of the time we pored over the Auth Cookbook. I looked back over the completed Fearless Frontend exercise for context, and we chatted about which step to take next; decided to start with trying openssl as a group tomorrow.
+
 
 ## July 19, 2021
 

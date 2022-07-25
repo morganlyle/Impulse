@@ -50,7 +50,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ALLOWED_HOSTS = ["localhost", "products", "subscriptions"]
+ALLOWED_HOSTS = ["localhost", "products", "subscriptions", "subscriptions-poller"]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",

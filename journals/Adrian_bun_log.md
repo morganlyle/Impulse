@@ -1,3 +1,30 @@
+## July 21st, 2022
+
+Today we took on authorizationand oh my goodness was it kind of a lot. The whole team felt confused as to what
+to do until we ended up finding out the learn was very helpful and we just weren't reading far enough
+into it 😅
+
+Journal Entry:
+
+                I felt.. odd not being able to figure out the auth stuff. I have been very good about learning
+        the topics and applying the information where it's needed, but this was very difficult apply.
+        It was a very good reminder in the lesson of "I don't know everything about this yet and
+        I have a lot ahead of me. I just have to keep reminding myself that things will come to me the more I practice
+        and that is perfectly okay.
+
+## July 20th, 2022
+
+Today we spent as good amount of time getting our react pages fully cleaned up and discussed getting our Auth to work. 
+We are reading the auth token cookbook and trying to make sure we fully understand what we're doing before we
+actually put our hands on any of the code.
+
+Journal Entry: 
+
+                Today I ended up helping Morgan work on her footer and we finally fully finished it!!
+        It looks very clean and matches our navbar extremely well. Getting that working was pretty much the
+        final step for "static" react content and the rest of the code should be very easy to implement.
+        I really hope we have minimum viable product by Friday!!!
+
 ## July 19th, 2022
 
 Whoo! Finally caught up with the journals. Not sure how I forgot seeing as I'm the one that

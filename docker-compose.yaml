@@ -1,8 +1,8 @@
 volumes:
-  postgres-data:
-    external: true
-  pgadmin:
-    external: true
+    postgres-data:
+        external: true
+    pgadmin:
+        external: true
 services:
     postgres:
         image: postgres:14.2-bullseye

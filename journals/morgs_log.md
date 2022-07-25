@@ -1,3 +1,15 @@
+# 7/21
+
+    Today we worked on:
+
+        Today we worked more on our pages, Adrian added a checkout page for us. We have started working on the Auth page but it was a bit confusing an a little slow going, hopefully we will be able to finish that up today and get the checkout feature up and running :)
+
+# 7/20
+
+    Today we worked on:
+
+        Today Adrian and I got the footer and header looking really nice and cohesive! Our group talked about starting the Auth and possibly assigning it to someone but we decided to do it has a group tomorrow!
+
 # 7/19
 
     Today we worked on:
