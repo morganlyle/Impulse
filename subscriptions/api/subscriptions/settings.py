@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 from pathlib import Path
 import dj_database_url  # type: ignore for sanity
+from datetime import timedelta
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -32,6 +33,7 @@ DEBUG = True
 INSTALLED_APPS = [
     "subscriptions_rest.apps.SubscriptionsRestConfig",
     "corsheaders",
+    "djwto",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -67,8 +69,10 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_CREDENTIALS = True
 
 DJWTO_MODE = "TWO-COOKIES"
-DJWTO_ACCESS_TOKEN_LIFETIME = None
+DJWTO_CSRF = False
+DJWTO_ACCESS_TOKEN_LIFETIME = timedelta(days=1)
 
+DJWTO_SAME_SITE = "LAX" if DEBUG else "NONE"
 
 ROOT_URLCONF = "subscriptions.urls"
 
