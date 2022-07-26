@@ -47,7 +47,7 @@ class LoginForm extends React.Component {
 
     render() {
         return (
-            <div style={{ paddingBottom: '150px' }} className="row">
+            <div style={{ paddingBottom: '180px' }} className="row">
                 <div className="offset-3 col-6">
                     <div className="b_cards shad_intense p-4 rounded mt-4 heliotrope_gray">
                         <h1 className="nameText pb-3">Log in!</h1>

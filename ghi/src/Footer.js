@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <>
             <div className="container nameText">
-                <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 mb-2 link-dark text-decoration-none b_cards heliotrope_gray ">
+                <footer className="d-flex shad_bottom flex-wrap justify-content-between rounded align-items-center py-3 my-4 mb-2 link-dark text-decoration-none b_cards heliotrope_gray ">
                     <span className="ms-3 fs-2 fw-semibold nameText"></span>
                     <span className="col d-flex align-items-center text-center justify-content-center link-dark px-2 text-muted">© 2022 Copyright Impulse Box</span>
                     <span className="ms-2 me-3 fs-1 fw-semibold nameText almond">||</span>
