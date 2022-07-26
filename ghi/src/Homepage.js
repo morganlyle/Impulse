@@ -23,7 +23,7 @@ function MainPage() {
                     </div>
                 </div>
             </div>
-            <Card className='ms-3 b_cards me-3 shad_intense rounded mt-1 heliotrope_gray'>
+            <Card className='ms-3 box_marg b_cards me-3 shad_intense rounded mt-1 heliotrope_gray'>
                 <Card.Title>
                     <Card.Body>
                         <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
