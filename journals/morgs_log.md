@@ -1,3 +1,9 @@
+# 7/25
+
+    Today we worked on:
+
+        I created a login page and added it to the nav bar, it is not 100% functional yet because we are still figuring out our JWT auth token, but is has the same theme as our page. It is taking a bit longer than we had wanted to implement. Adrian also created the card templates that we will be using for our products.
+
 # 7/21
 
     Today we worked on:

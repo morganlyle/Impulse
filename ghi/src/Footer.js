@@ -24,7 +24,7 @@ export default function Footer() {
                                 </NavLink>
                                 <span className="dropdown-menu text-right">
                                     <li><NavLink className="dropdown-item " to="https://www.linkedin.com/in/morganlyle1/">Morgan LinkedIn</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="https://www.linkedin.com/">Evan LinkedIn</NavLink></li>
+                                    <li><NavLink className="dropdown-item" to="https://www.linkedin.com/in/eyw92/">Evan LinkedIn</NavLink></li>
                                     <li><NavLink className="dropdown-item" to="https://www.linkedin.com/in/adrian-dorado/">Adrian LinkedIn</NavLink></li>
                                     <li><NavLink className="dropdown-item" to="https://www.linkedin.com/in/nellienelson/">Nellie LinkedIn</NavLink></li>
                                 </span>

@@ -23,6 +23,7 @@ export default function App() {
             <Route path='subscriptions/' element={<SubscriptionsPage />} />
             <Route path='aboutus/' element={<AboutUs />} />
             <Route path='things/' element={<Things />} />
+            <Route path='login/' element={<LoginForm />} />
             {/* <Route path='clothing/' element={<Clothing />} /> */}
             <Route path='checkout/' element={<Checkout />} />
           </Routes>
