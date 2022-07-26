@@ -1,3 +1,19 @@
+## July 25th, 2022
+
+Together, we tried getting the auth stuff to work to no avail, but we're gonna try again tomorrow and it should be better.
+I think it's more difficult do this sort of setup than before because it isn't as guided, but I'm sure we could put our brains
+together and find a good solution.
+
+Journal Entry:
+
+                Despite feeling lost, every time I look at the auth documentents, I feel like I get a bit closer to understanding
+        what's going on in them. I feel like I had a breakthrough and I'm gonna try it out now, hopefully it works. The journal will definitely
+        hear about it tomorrow if we/I do! Today I learned how to use inline CSS to help myself create CSS classes on the spot for testing.
+
+## July 22nd, 2022
+
+Mandatory fun! We fixed our main branch after borking it a bit and then headed off to mandatory fun!!
+
 ## July 21st, 2022
 
 Today we took on authorizationand oh my goodness was it kind of a lot. The whole team felt confused as to what
