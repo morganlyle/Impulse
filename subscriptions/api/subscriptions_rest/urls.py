@@ -9,7 +9,8 @@ from .views import (
     users_list,
     user_details,
     receipts_list,
-    show_receipt,   
+    show_receipt,
+    api_user_token,   
 )
 
 urlpatterns = [
@@ -21,5 +22,6 @@ urlpatterns = [
     path('receipts/<int:pk>/', show_receipt, name='show_receipt'),
     path('receipts/', receipts_list, name='receipt_list'),
     path('users/<int:pk>/', user_details, name='users_detail'),
-    path('users/', users_list, name='users_list')
+    path('users/', users_list, name='users_list'),
+    path('api/tokens/mine/', api_user_token, name="api_user_token"),
 ]
