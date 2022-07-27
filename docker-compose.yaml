@@ -25,7 +25,7 @@ services:
         depends_on:
             - postgres
         environment:
-            DJWTO_SIGNING_KEY: 517e7f819f5ef0f397e91a9a746a95fbdd5095a4c89665fe567d7df2e8095f95
+            # DJWTO_SIGNING_KEY: 517e7f819f5ef0f397e91a9a746a95fbdd5095a4c89665fe567d7df2e8095f95
             DATABASE_URL: postgres://products:password@postgres:5432/products
             WAIT_HOSTS: postgres:5432
             WAIT_TIMEOUT: 240
