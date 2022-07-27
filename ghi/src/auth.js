@@ -7,7 +7,7 @@ export function getToken() {
 }
 
 export async function getTokenInternal() {
-    const url = `${process.env.REACT_APP_SUBSCRIPTIONS}/api/users/me/token/`;
+    const url = `${process.env.REACT_APP_SUBSCRIPTIONS}/api/users/tokens/mine/`;
     try {
         const response = await fetch(url, {
             credentials: "include",
@@ -144,5 +144,5 @@ export function useToken() {
         return false;
     }
 
-    return [token, login, logout, signup, update];
+    return [login, logout, signup, update];
 }
