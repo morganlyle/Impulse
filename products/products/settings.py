@@ -34,7 +34,7 @@ DEBUG = True
 INSTALLED_APPS = [
     "products_rest.apps.ProductsRestConfig",
     "corsheaders",
-    "djwto",
+    # "djwto",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -70,9 +70,9 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
-DJWTO_MODE = "TWO-COOKIES"
-DJWTO_CSRF = False
-DJWTO_ACCESS_TOKEN_LIFETIME = timedelta(days=1)
+# DJWTO_MODE = "TWO-COOKIES"
+# DJWTO_CSRF = False
+# DJWTO_ACCESS_TOKEN_LIFETIME = timedelta(days=1)
 
 
 ROOT_URLCONF = "products.urls"
