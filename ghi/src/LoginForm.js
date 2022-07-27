@@ -35,7 +35,3 @@ export default function LoginForm() {
 
 };
 
-
-
-
-export default LoginForm;
