@@ -1,18 +1,37 @@
+## July 28, 2021
+
+
+## July 27, 2021
+
+* Got my repo back to working order. Whew
+
+* Worked out auth token creation. Also whew
+
+Finally got the second reinstall working right, after nuking the entire local file that wasn't working after first reinstall. Weird merges and fixes, had to delete djwto from production settings, urls and yaml yet again.
+
+Approaches to the auth issue: we tried changing the url and learing about what it was referencing. In devtools, the token still wasn't showing up; we couldn't get handleSubmit to work. Then tried to change the model to an abstract user, but couldn't migrate it because Django had conflicts with previous tables.
+
+Morgan checked the migration, saw that subscription wasn't getting assigned an id, fixed the migration so that it was... and that worked. After a week or so of working on auth, we finally have it.
+
+Design note: convo, should users have been a separate microservice? Consider in the future to isolate for troubleshooting.
+
 ## July 26, 2021
 
-## July 25, 2021
+* Tried adding djwto to products backend
+
+The aha-moment here is: if it's not needed, don't add it. Briefly discussed with team before adding djwto here and it seemed innocuous. But this step broke products backend. I tried fixes, but the best way forward was deleting the local repo, again.
 
 ## July 22, 2021
 
 * Worked on authentication feature.
 
-Deleted and re-cloned down from repo to fix yesterday's issues. Then we
+Deleted and re-cloned down from repo to fix yesterday's issues. Brought the local back to working and current.
 
 ## July 21, 2021
 
 * Worked on authentication feature.
 
-We spent the afternoon comprehending and gradually adding authentication to our app via the auth cookbook. When I tried to commit... we had crlf issues. I tried to fix with usual approaches like using `git config --global core.autocrlf false` twice, but no luck. We wrapped the day and will figure it out tomorrow.
+We spent the afternoon comprehending and gradually adding authentication to our app via the auth cookbook.  I tried to commit during pair-programming, but then had crlf issues. I tried to fix with usual approaches like using `git config --global core.autocrlf false` twice, but no luck. We wrapped the day and will figure it out tomorrow.
 
 
 ## July 20, 2021

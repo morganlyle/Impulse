@@ -11,7 +11,7 @@ export default function LoginForm() {
     const handleSubmit = async e => {
         e.preventDefault();
         await login(username, password);
-        console.log(token)
+        console.log("here's the token:", token);
     };
 
     return (
@@ -36,7 +36,4 @@ export default function LoginForm() {
     );
 
 };
-
-
-
 
