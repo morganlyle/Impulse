@@ -15,7 +15,7 @@ export default function Things() {
                     </div>
                 </div>
             </section>
-            <div class="album py-5 rounded heliotrope_gray mb-5 b_cards">
+            <div class="box_marg album py-5 rounded heliotrope_gray mb-5 b_cards">
                 <div class="container">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div class="col">

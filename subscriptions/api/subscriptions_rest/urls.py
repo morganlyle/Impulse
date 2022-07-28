@@ -23,5 +23,5 @@ urlpatterns = [
     path('receipts/', receipts_list, name='receipt_list'),
     path('users/<int:pk>/', user_details, name='users_detail'),
     path('users/', users_list, name='users_list'),
-    path('tokens/mine/', api_user_token, name="api_user_token"),
+    path('users/tokens/mine/', api_user_token, name="api_user_token"),
 ]

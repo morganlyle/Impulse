@@ -60,6 +60,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Subscription',
             fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('username', models.OneToOneField(on_delete=django.db.models.deletion.PROTECT, primary_key=True, related_name='subscription', serialize=False, to='subscriptions_rest.user')),
                 ('model_number', models.PositiveSmallIntegerField(unique=True)),
                 ('price', models.PositiveSmallIntegerField(default=30)),
