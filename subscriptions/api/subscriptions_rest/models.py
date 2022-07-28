@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class ProductInventoryVO(models.Model):
@@ -29,22 +30,22 @@ class ProductsBox(models.Model):
     def __str__(self):
         return self.name
 
-class User(models.Model):
-    username = models.CharField(max_length=16, unique=True)
-    password = models.CharField(max_length=50)
+class User(AbstractUser):
+    # username = models.CharField(max_length=16, unique=True)
+    # password = models.CharField(max_length=50)
     email = models.EmailField(max_length=250, unique = True)
-    first_name = models.CharField(max_length=50, blank=True)
-    last_name = models.CharField(max_length=50, blank=True)
+    # first_name = models.CharField(max_length=50, blank=True)
+    # last_name = models.CharField(max_length=50, blank=True)
     subscriptions = models.BooleanField(default=False)
     address = models.CharField(max_length=200)
 
-    def __str__(self):
-        return f'{self.username}, {self.email}'
+    # def __str__(self):
+    #     return f'{self.username}, {self.email}'
 
 class Subscription(models.Model):
-    username = models.OneToOneField(User, related_name='subscription', on_delete=models.PROTECT, primary_key=True)
-    model_number = models.PositiveSmallIntegerField(unique=True)
-    price = models.PositiveSmallIntegerField(default=30)
+    # username = models.OneToOneField(User, related_name='subscription', on_delete=models.PROTECT, primary_key=True)
+    model_number = models.PositiveSmallIntegerField(blank=True, null=True)
+    price = models.PositiveSmallIntegerField(default=30, blank=True, null=True)
     products = models.ForeignKey(ProductsBox, related_name='subscription', on_delete=models.PROTECT, null=True, blank=True)
     clothing = models.ForeignKey(ClothingBox, related_name='subscription', on_delete=models.PROTECT, null=True, blank=True)
 
@@ -52,8 +53,8 @@ class Subscription(models.Model):
         return f'{self.username}, {self.model_number}'
 
 class Receipt(models.Model):
-    username = models.ForeignKey(User, related_name="receipt",
-        on_delete=models.CASCADE)
+    # username = models.ForeignKey(User, related_name="receipt",
+    #     on_delete=models.CASCADE)
     order_number = models.PositiveSmallIntegerField(unique=True)
     price = models.CharField(max_length=50, default = "$36.99")
     model_number = models.ForeignKey(Subscription, related_name="receipt", on_delete=models.CASCADE)
@@ -62,6 +63,3 @@ class Receipt(models.Model):
     def __str__(self):
         return f'{self.username}, {self.order_number}'
 
-
-
-5
