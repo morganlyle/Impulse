@@ -25,14 +25,11 @@ class Migration(migrations.Migration):
                 ('objects', django.contrib.auth.models.UserManager()),
             ],
         ),
-<<<<<<< HEAD
-=======
         migrations.RenameField(
             model_name='user',
             old_name='subscriptions',
             new_name='subscribed',
         ),
->>>>>>> main
         migrations.RemoveField(
             model_name='receipt',
             name='username',
@@ -77,11 +74,6 @@ class Migration(migrations.Migration):
             field=models.ManyToManyField(blank=True, help_text='Specific permissions for this user.', related_name='user_set', related_query_name='user', to='auth.permission', verbose_name='user permissions'),
         ),
         migrations.AlterField(
-<<<<<<< HEAD
-            model_name='subscription',
-            name='model_number',
-            field=models.PositiveSmallIntegerField(blank=True, null=True),
-=======
             model_name='clothingbox',
             name='clothing_items',
             field=models.ManyToManyField(to='subscriptions_rest.clothinginventoryvo'),
@@ -110,7 +102,6 @@ class Migration(migrations.Migration):
             model_name='subscription',
             name='model_number',
             field=models.PositiveSmallIntegerField(null=True, unique=True),
->>>>>>> main
         ),
         migrations.AlterField(
             model_name='subscription',
@@ -118,14 +109,11 @@ class Migration(migrations.Migration):
             field=models.PositiveSmallIntegerField(blank=True, default=30, null=True),
         ),
         migrations.AlterField(
-<<<<<<< HEAD
-=======
             model_name='subscription',
             name='products',
             field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.PROTECT, to='subscriptions_rest.productsbox'),
         ),
         migrations.AlterField(
->>>>>>> main
             model_name='user',
             name='first_name',
             field=models.CharField(blank=True, max_length=150, verbose_name='first name'),
