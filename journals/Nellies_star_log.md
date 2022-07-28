@@ -1,3 +1,13 @@
+## July 26, 2021
+
+## July 25, 2021
+
+## July 22, 2021
+
+* Worked on authentication feature.
+
+Deleted and re-cloned down from repo to fix yesterday's issues. Then we
+
 ## July 21, 2021
 
 * Worked on authentication feature.
