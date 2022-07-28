@@ -43,7 +43,7 @@ def users_list(request):
         )
     else:
         content = json.loads(request.body)
-        user = User.objects.create(**content)
+        user = User.objects.create_user(**content)
         return JsonResponse(
             user, 
             encoder=UserEncoder, 

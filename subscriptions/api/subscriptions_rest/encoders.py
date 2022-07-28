@@ -10,6 +10,7 @@ class UserEncoder(ModelEncoder):
         'last_name', 
         'password', 
         'subscriptions',
+        'address',
         'id'
     ]
 

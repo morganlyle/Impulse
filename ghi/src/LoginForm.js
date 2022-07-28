@@ -6,9 +6,10 @@ export default function LoginForm() {
     const [login] = useToken();
     const [username, setUsername] = useState();
     const [password, setPassword] = useState();
-    const {token} = useAuthContext();
+    const { token } = useAuthContext();
 
-    const handleSubmit = async () => {
+    const handleSubmit = async e => {
+        e.preventDefault();
         await login(username, password);
         console.log("here's the token:", token);
     };

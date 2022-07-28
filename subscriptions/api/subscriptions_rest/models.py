@@ -18,48 +18,40 @@ class ClothingInventoryVO(models.Model):
 
 class ClothingBox(models.Model):
     name = models.CharField(max_length=100)
-    clothing_items = models.ManyToManyField(ClothingInventoryVO, related_name="clothing")
+    clothing_items = models.ManyToManyField(ClothingInventoryVO)
 
     def __str__(self):
         return self.name
 
 class ProductsBox(models.Model):
     name = models.CharField(max_length=100)
-    product_items = models.ManyToManyField(ProductInventoryVO, related_name="products")
+    product_items = models.ManyToManyField(ProductInventoryVO)
 
     def __str__(self):
         return self.name
 
 class User(AbstractUser):
-    # username = models.CharField(max_length=16, unique=True)
-    # password = models.CharField(max_length=50)
-    email = models.EmailField(max_length=250, unique = True)
-    # first_name = models.CharField(max_length=50, blank=True)
-    # last_name = models.CharField(max_length=50, blank=True)
+    email = models.EmailField(max_length=250, unique=True)
     subscribed = models.BooleanField(default=False)
     address = models.CharField(max_length=200)
 
-    # def __str__(self):
-    #     return f'{self.username}, {self.email}'
+    def __str__(self):
+        return f'{self.email}'
 
 class Subscription(models.Model):
-    # username = models.OneToOneField(User, related_name='subscription', on_delete=models.PROTECT, primary_key=True)
-    model_number = models.PositiveSmallIntegerField(blank=True, null=True)
-    price = models.PositiveSmallIntegerField(default=30, blank=True, null=True)
-    products = models.ForeignKey(ProductsBox, related_name='subscription', on_delete=models.PROTECT, null=True, blank=True)
-    clothing = models.ForeignKey(ClothingBox, related_name='subscription', on_delete=models.PROTECT, null=True, blank=True)
+    model_number = models.PositiveSmallIntegerField(unique=True, null=True)
+    price = models.PositiveSmallIntegerField(default=30, null=True, blank=True)
+    products = models.ForeignKey(ProductsBox, on_delete=models.PROTECT, null=True, blank=True)
+    clothing = models.ForeignKey(ClothingBox, on_delete=models.PROTECT, null=True, blank=True)
 
     def __str__(self):
-        return f'{self.username}, {self.model_number}'
+        return f'{self.model_number}'
 
 class Receipt(models.Model):
-    # username = models.ForeignKey(User, related_name="receipt",
-    #     on_delete=models.CASCADE)
     order_number = models.PositiveSmallIntegerField(unique=True)
-    price = models.CharField(max_length=50, default = "$36.99")
-    model_number = models.ForeignKey(Subscription, related_name="receipt", on_delete=models.CASCADE)
+    price = models.CharField(max_length=50, default = "$36.99", null=True, blank= True)
+    model_number = models.ForeignKey(Subscription,  on_delete=models.CASCADE)
     description = models.CharField(max_length=255, default="Here are your items")
 
     def __str__(self):
-        return f'{self.username}, {self.order_number}'
-
+        return f'{self.order_number}'
