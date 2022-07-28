@@ -6,7 +6,7 @@ import SignUpForm from './SignUpForm';
 import Checkout from './Checkout';
 import SubscriptionsPage from "./SubscriptionsPage";
 import Things from "./Things";
-// import Clothing from "./Clothing";
+import Clothing from "./Clothing";
 import AboutUs from './AboutUs';
 import LoginForm from './LoginForm';
 import './index.css';
@@ -25,7 +25,7 @@ export default function App() {
             <Route path='aboutus/' element={<AboutUs />} />
             <Route path='things/' element={<Things />} />
             <Route path='login/' element={<LoginForm />} />
-            {/* <Route path='clothing/' element={<Clothing />} /> */}
+            <Route path='clothing/' element={<Clothing />} />
             <Route path='checkout/' element={<Checkout />} />
           </Routes>
         </div>
