@@ -25,14 +25,11 @@ class Migration(migrations.Migration):
                 ('objects', django.contrib.auth.models.UserManager()),
             ],
         ),
-<<<<<<< HEAD
-=======
         migrations.RenameField(
             model_name='user',
             old_name='subscriptions',
             new_name='subscribed',
         ),
->>>>>>> main
         migrations.RemoveField(
             model_name='receipt',
             name='username',
