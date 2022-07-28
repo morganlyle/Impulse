@@ -6,9 +6,9 @@ export default function Clothing() {
             <section class="py-5 rounded b_cards text-center my-5 container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="display-1 siteText">Clothing!</h1>
-                        <p class="lead text-muted">What clothes could you be getting in your box this month?<br />
-                                                               👗 🎩 👡 🥾 <br />
+                        <h1 class="display-1 siteText">Styles!</h1>
+                        <p class="lead text-muted">What clothing and accessories could you be getting in your box this month?<br />
+                                                               👗 🎩 👡 🥾 ⏱ 💎<br />
                                                     If you don't like it, get free shipping and trade with other members!<br />
                                                     Below are some of the many possibilities...
 
