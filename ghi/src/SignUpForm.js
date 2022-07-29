@@ -37,7 +37,7 @@ export default function SignUpForm() {
                 <label htmlFor="name">Password</label>
               </div>
               <div className="inputText form-floating mb-3">
-                <input onChange={e => setFirstName(e.target.value)} placeholder="Firstame" type="text" id="firstName" value={firstName} className="siteText form-control" />
+                <input onChange={e => setFirstName(e.target.value)} placeholder="FirstName" type="text" id="firstName" value={firstName} className="siteText form-control" />
                 <label htmlFor="first_name">First Name</label>
               </div>
               <div className="inputText form-floating mb-3">
