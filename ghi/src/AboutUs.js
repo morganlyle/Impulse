@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 export default function AboutUs() {
   return (
     <>
-      <h1 className='display-2 nameText text-center'>About Us</h1>
+      <h1 className='display-2 mt-5 nameText text-center'>About Us</h1>
       <p className="lead mb-4 text-center">
         Here are some paragraphs about how we started.
       </p>

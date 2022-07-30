@@ -1,7 +1,7 @@
 export default function SubscriptionsPage() {
     return (
         <>
-            <h1 className='display-2 nameText'>Subscription Boxes</h1>
+            <h1 className='display-2 mt-3 nameText'>Subscription Boxes</h1>
             <div className='pb-5 container'>
                 <div className='row'>
                     <div className='col b_cards me-3 shad_intense p-4 rounded mt-4 heliotrope_gray'>

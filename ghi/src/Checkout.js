@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 
 export default function Checkout() {
+
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
+    const [address, setAddress] = useState('');
+    const [address2, setAddress2] = useState('');
+    const [country, setCountry] = useState('');
+    const [state, setState] = useState('');
+    const [zip, setZip] = useState('');
+    const [promo, setPromo] = useState('');
+
+    const handleSubmit = async e => {
+        e.preventDefault();
+    }
+
+
     return (
         <>
             <Card style={{ marginTop: '50px', marginBottom: '150px' }} className='heliotrope_gray b_cards shad_intense'>
@@ -50,30 +67,30 @@ export default function Checkout() {
                         </Card>
                         <form className=" mt-5 card bgcolor p-2 b_cards shad_light">
                             <div className="input-group">
-                                <input type="text" className="form-control" placeholder="Promo code" />
+                                <input onChange={e => setPromo(e.target.value)} value={promo} type="text" id='promo' className="form-control" placeholder="Promo code" />
                                 <button type="submit" className="btn btn-secondary">Redeem</button>
                             </div>
                         </form>
-                        <button class="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Continue to checkout</button>
+                        <button className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Continue to checkout</button>
                     </div>
                     <div className="col-md-7 col-lg-8">
                         <Card className='d-inline-flex pt-1 mb-4 align-items-center bgcolor b_cards shad_light'>
                             <h6 className='mx-3 nameText'>You're allllllmost there, we just need a few details first!</h6>
                         </Card>
                         <h4 className="mb-3 siteText">Billing address</h4>
-                        <form className="needs-validation" noValidate="" />
+                        <form onSubmit={handleSubmit} className="" noValidate="" />
                         <Card className='bgcolor p-4 b_cards shad_light'>
                             <div className="row g-3 nameText">
                                 <div className="col-sm-6">
                                     <label className="form-label">First name</label>
-                                    <input type="text" className="form-control" id="firstName" placeholder="" required="" />
+                                    <input onChange={e => setFirstName(e.target.value)} value={firstName} type="text" className="form-control" id="firstName" placeholder="" />
                                     <div className="invalid-feedback">
                                         Valid first name is required.
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <label className="form-label">Last name</label>
-                                    <input type="text" className="form-control" id="lastName" placeholder="" required="" />
+                                    <input onChange={e => setLastName(e.target.value)} value={lastName} type="text" className="form-control" id="lastName" placeholder="" required="" />
                                     <div className="invalid-feedback">
                                         Valid last name is required.
                                     </div>
@@ -82,7 +99,7 @@ export default function Checkout() {
                                     <label className="form-label">Username</label>
                                     <div className="input-group has-validation">
                                         <span className="input-group-text">@</span>
-                                        <input type="text" className="form-control" id="username" placeholder="Username" required="" />
+                                        <input onChange={e => setUsername(e.target.value)} value={username} type="text" className="form-control" id="username" placeholder="Username" required="" />
                                         <div className="invalid-feedback">
                                             Your username is required.
                                         </div>
@@ -90,25 +107,25 @@ export default function Checkout() {
                                 </div>
                                 <div className="col-12">
                                     <label className="form-label">Email <span className="text-muted">(Optional)</span></label>
-                                    <input type="email" className="form-control" id="email" placeholder="you@example.com" />
+                                    <input onChange={e => setEmail(e.target.value)} value={email} type="email" className="form-control" id="email" placeholder="you@example.com" />
                                     <div className="invalid-feedback">
                                         Please enter a valid email address for shipping updates.
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <label className="form-label">Address</label>
-                                    <input type="text" className="form-control" id="address" placeholder="1234 Main St" required="" />
+                                    <input onChange={e => setAddress(e.target.value)} value={address} type="text" className="form-control" id="address" placeholder="1234 Main St" required="" />
                                     <div className="invalid-feedback">
                                         Please enter your shipping address.
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <label className="form-label">Address 2 <span className="text-muted">(Optional)</span></label>
-                                    <input type="text" className="form-control" id="address2" placeholder="Apartment or suite" />
+                                    <input onChange={e => setAddress2(e.target.value)} value={address2} type="text" className="form-control" id="address2" placeholder="Apartment or suite" />
                                 </div>
                                 <div className="col-md-5">
                                     <label className="form-label">Country</label>
-                                    <select className="form-select" id="country" required="">
+                                    <select onChange={e => setCountry(e.target.value)} value={country} className="form-select" id="country" required="">
                                         <option value="">Choose...</option>
                                         <option>United States</option>
                                     </select>
@@ -118,7 +135,7 @@ export default function Checkout() {
                                 </div>
                                 <div className="col-md-4">
                                     <label className="form-label">State</label>
-                                    <select className="form-select" id="state" required="">
+                                    <select onChange={e => setState(e.target.value)} value={state} className="form-select" id="state" required="">
                                         <option value="">Choose...</option>
                                         <option>California</option>
                                     </select>
@@ -128,7 +145,7 @@ export default function Checkout() {
                                 </div>
                                 <div className="col-md-3">
                                     <label className="form-label">Zip</label>
-                                    <input type="text" className="form-control" id="zip" placeholder="" required="" />
+                                    <input onChange={e => setZip(e.target.value)} value={zip} type="text" className="form-control" id="zip" placeholder="" required="" />
                                     <div className="invalid-feedback">
                                         Zip code required.
                                     </div>
