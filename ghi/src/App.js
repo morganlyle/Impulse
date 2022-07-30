@@ -9,9 +9,11 @@ import Things from "./Things";
 import Clothing from "./Clothing";
 import AboutUs from './AboutUs';
 import LoginForm from './LoginForm';
+import ReceiptComplete from './ReceiptComplete.js';
 import './index.css';
 
 export default function App() {
+  
   return (
     <>
       <BrowserRouter>
@@ -27,6 +29,7 @@ export default function App() {
             <Route path='login/' element={<LoginForm />} />
             <Route path='clothing/' element={<Clothing />} />
             <Route path='checkout/' element={<Checkout />} />
+            <Route path='ReceiptComplete/' element={<ReceiptComplete />} />
           </Routes>
         </div>
         <Footer />

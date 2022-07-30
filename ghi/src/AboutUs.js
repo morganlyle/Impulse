@@ -10,7 +10,6 @@ export default function AboutUs() {
         Here are some paragraphs about how we started.
       </p>
       <Card className='shad_intense b_cards p-4 rounded mt-4 heliotrope_gray'>
-
         <Card.Body>
           <Card.Title className='display-3 siteText'>About Impulse</Card.Title>
           <Card.Text> One day we realized there was a market gap for buying more things, all together, every month. So we hatched Impulse! Now you can get arugula, crocs and ladders all in one convenient place. Every month.</Card.Text>
