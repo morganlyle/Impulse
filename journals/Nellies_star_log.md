@@ -1,5 +1,12 @@
 ## July 28, 2021
 
+* Implemented tokens! on Signup form.
+
+* Dressed up the Clothing page front-end, with content.
+
+We have working tokens now, it's so cool! Got all of yesterday's fixed code prettified and then pushed to all of us. We changed the Signup form from a class to function component, to make it a bit shorter and more versatile. And then implemented tokens there too. And they work!
+
+I gave the Clothing page some starter content, and changed the name to Styles because it includes accessories. Its React cards are ready for actual style products from our API source, next week.
 
 ## July 27, 2021
 
@@ -9,11 +16,11 @@
 
 Finally got the second reinstall working right, after nuking the entire local file that wasn't working after first reinstall. Weird merges and fixes, had to delete djwto from production settings, urls and yaml yet again.
 
-Approaches to the auth issue: we tried changing the url and learing about what it was referencing. In devtools, the token still wasn't showing up; we couldn't get handleSubmit to work. Then tried to change the model to an abstract user, but couldn't migrate it because Django had conflicts with previous tables.
+Approaches to the auth issue: we tried changing the url and learning about what it was referencing. In devtools, the token still wasn't showing up; we couldn't get handleSubmit to work. Then tried to change the model to an abstract user, but couldn't migrate it because Django had conflicts with previous tables.
 
 Morgan checked the migration, saw that subscription wasn't getting assigned an id, fixed the migration so that it was... and that worked. After a week or so of working on auth, we finally have it.
 
-Design note: convo, should users have been a separate microservice? Consider in the future to isolate for troubleshooting.
+Design note: we had convo, should users have been a separate microservice? Consider in the future to isolate for troubleshooting.
 
 ## July 26, 2021
 

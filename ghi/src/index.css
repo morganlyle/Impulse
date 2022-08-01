@@ -44,6 +44,7 @@ code {
 .white {
   color: #ffffff;
 }
+
 .heliotrope_gray {
   background-color: #a69cac;
 }
@@ -52,7 +53,7 @@ code {
   color: #a69cac;
 }
 
-.dropdown-menu > li > a:hover {
+.dropdown-menu>li>a:hover {
   background-color: #a69cac !important;
 }
 

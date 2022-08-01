@@ -46,3 +46,38 @@ Social Media Forums:
 * [Data model](docs/data-model.md)
 * [GHI](docs/ghi.md)
 * [Integrations](docs/integrations.md)
+
+
+
+## Want to test Impulse on your own machine? Want to make your own storefront based on Impulse? Follow these steps!
+
+For Mac users:
+* Fork, Clone, and Star the repository from [MEAN Coders](https://gitlab.com/mean-coders/module-three-project)
+* In terminal, run bash hard-reset.sh
+For soft resets: 
+* run soft-reset.sh 
+
+(dev note: hard-reset.sh MUST be run on first start or no databases will exist)
+
+For Windows users:
+* Fork, Clone, and Star the repository from [MEAN Coders](https://gitlab.com/mean-coders/module-three-project)
+* On first start, in powershell, run:
+    * docker volume create postgres-data
+    * docker volume create pgadmin
+    * docker-compose up --build
+For soft resets, in powershell:
+* docker-compose down 
+* docker-compose up --build
+
+(dev note: the hard-reset.sh and soft-reset.sh files can be ran on Windows with a git bash terminal or WSL)
+
+
+Congratulations, you've now installed Impulse on your local machine!
+
+For more functionality, once the containers are running:
+* create a superuser in the Products container via Docker CLI 
+* navigate to localhost:8080 and login with the new superuser account
+* Create products and clothing to populate the things and clothing pages
+* Subscription boxes are created in house and based on a monthly item selection from the product pool (receipts are created via the Checkout page.)
+
+
