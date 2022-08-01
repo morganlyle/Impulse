@@ -25,7 +25,7 @@ export default function NavBar() {
                             </button>
                             <div className="dropdown-menu dropdown-menu-light dropdown-collapse" aria-labelledby="dropdownMenuButton2">
                                 <li><NavLink className="fs-4 dropdown-item" aria-current="page" to="things/">Things</NavLink></li>
-                                <li><NavLink className="fs-4 dropdown-item" aria-current="page" to="clothing/">Clothing</NavLink></li>
+                                <li><NavLink className="fs-4 dropdown-item" aria-current="page" to="clothing/">Styles</NavLink></li>
                             </div>
                         </div>
                     </ul>

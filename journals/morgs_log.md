@@ -1,3 +1,15 @@
+# 7/27
+
+    Today we worked on:
+
+        Well it was an interesting day today. We needed to update our User model to AbstractUser to get our token working, which Django did NOT like at all. So we spent about 3 hours trying to clear that up and figure out why it was so mad when it is a built in feature. Several hours later we saw that when we did our first migration, it did not add an 'id' to our subscriptions model. So we put that in there and it fixed everything. Thanks Django, very cool of you 👍
+
+# 7/26
+
+    Today we worked on:
+
+        We are still working on Auth, this is a pretty wild thing to implement. For some reason we are pulling a token but it is just null. Hopefully we will get it working tomorrow or at least by the end of the week.
+
 # 7/25
 
     Today we worked on:
