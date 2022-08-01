@@ -1,6 +1,7 @@
 import email
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from uuid import uuid4
 
 # Create your models here.
 class ProductInventoryVO(models.Model):
@@ -56,6 +57,7 @@ class Receipt(models.Model):
     address2 = models.CharField(max_length=254)
     country = models.CharField(max_length=254)
     state = models.CharField(max_length=254)
+    username = models.CharField(max_length=254)
     order_number = models.PositiveSmallIntegerField(unique=True)
     price = models.CharField(max_length=50, default = "$36.99", null=True, blank= True)
     model_number = models.ForeignKey(Subscription,  on_delete=models.CASCADE)
