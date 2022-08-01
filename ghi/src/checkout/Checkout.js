@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 
 export default function Checkout() {
-
+    const getOrderNumber = (min, max) => 
+        Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1) + Math.ceil(min));
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [username, setUsername] = useState('');
@@ -12,6 +13,7 @@ export default function Checkout() {
     const [country, setCountry] = useState('');
     const [state, setState] = useState('');
     const [zip, setZip] = useState('');
+    const [orderNumber, setOrderNumber] = useState(getOrderNumber(1, 100000));
     const [promo, setPromo] = useState('');
 
     const handleSubmit = async e => {
@@ -146,6 +148,13 @@ export default function Checkout() {
                                 <div className="col-md-3">
                                     <label className="form-label">Zip</label>
                                     <input onChange={e => setZip(e.target.value)} value={zip} type="text" className="form-control" id="zip" placeholder="" required="" />
+                                    <div className="invalid-feedback">
+                                        Zip code required.
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <label className="form-label">Order Number</label>
+                                    <input readOnly onChange={e => setOrderNumber(e.target.value)} value={orderNumber} type="text" className="form-control" id="zip" placeholder="" required="" />
                                     <div className="invalid-feedback">
                                         Zip code required.
                                     </div>
