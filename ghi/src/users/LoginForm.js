@@ -8,6 +8,7 @@ export default function LoginForm() {
     const [password, setPassword] = useState();
     const { token } = useAuthContext();
 
+
     const handleSubmit = async e => {
         e.preventDefault();
         await login(username, password);
@@ -28,7 +29,7 @@ export default function LoginForm() {
                             <input onChange={e => setPassword(e.target.value)} placeholder="Password" type="password" id="password" value={password} className="siteText form-control" />
                             <label htmlFor="name">Password</label>
                         </div>
-                        <button className="btn btn-light siteText almond ob_button">Log In</button>
+                        <button className="btn siteText almond ob_button">Log In</button>
                     </form>
                 </div>
             </div>

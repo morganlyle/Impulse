@@ -1,3 +1,4 @@
+import email
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -48,10 +49,17 @@ class Subscription(models.Model):
         return f'{self.model_number}'
 
 class Receipt(models.Model):
+    first_name = models.CharField(max_length=32)
+    last_name = models.CharField(max_length=32)
+    email = models.EmailField()
+    address = models.CharField(max_length=254)
+    address2 = models.CharField(max_length=254)
+    country = models.CharField(max_length=254)
+    state = models.CharField(max_length=254)
     order_number = models.PositiveSmallIntegerField(unique=True)
     price = models.CharField(max_length=50, default = "$36.99", null=True, blank= True)
     model_number = models.ForeignKey(Subscription,  on_delete=models.CASCADE)
-    description = models.CharField(max_length=255, default="Here are your items")
+    # description = models.CharField(max_length=255, default="Here are your items")
 
     def __str__(self):
         return f'{self.order_number}'

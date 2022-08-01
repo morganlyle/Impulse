@@ -16,18 +16,16 @@ export default function Footer() {
                     <span className="ms-2 fs-1 fw-semibold nameText almond">||</span>
                     <ul className="nav col-md-4 mb-0 justify-content-center">
                         <li ><NavLink to="/" className="nav-link px-2 text-muted">Home</NavLink></li>
-                        <li><NavLink to="/products" className="nav-link px-2 text-muted">Products</NavLink></li>
-                        <li><NavLink to="/pricing" className="nav-link px-2 text-muted">Pricing</NavLink></li>
                         <ul className="navbar-nav text-right">
                             <li className=" ps-1 nav-item dropup ms-auto text-center">
                                 <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">                                    Links
                                 </NavLink>
-                                <span className="dropdown-menu text-right">
-                                    <li><NavLink className="dropdown-item " to="https://www.linkedin.com/in/morganlyle1/">Morgan LinkedIn</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="https://www.linkedin.com/in/eyw92/">Evan LinkedIn</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="https://www.linkedin.com/in/adrian-dorado/">Adrian LinkedIn</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="https://www.linkedin.com/in/nellienelson/">Nellie LinkedIn</NavLink></li>
-                                </span>
+                                <ul className="dropdown-menu text-right">
+                                    <li><a className="dropdown-item " href="https://www.linkedin.com/in/morganlyle1/">Morgan LinkedIn</a></li>
+                                    <li><a className="dropdown-item" href="https://www.linkedin.com/in/eyw92/">Evan LinkedIn</a></li>
+                                    <li><a className="dropdown-item" href="https://www.linkedin.com/in/adrian-dorado/">Adrian LinkedIn</a></li>
+                                    <li><a className="dropdown-item" href="https://www.linkedin.com/in/nellienelson/">Nellie LinkedIn</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </ul>

@@ -1,5 +1,6 @@
 // import React from 'react';
 import Card from 'react-bootstrap/Card';
+import TheTeam from './helpers/TheTeam';
 
 
 export default function AboutUs() {
@@ -19,6 +20,7 @@ export default function AboutUs() {
         <Card.Body>
           <Card.Title className='display-3 siteText'>About the Creators</Card.Title>
           Our names spell MEAN, nothing average about us.
+        <TheTeam />
         </Card.Body>
       </Card>
     </>
