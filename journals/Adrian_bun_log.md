@@ -1,3 +1,52 @@
+July 31st, 2022
+
+Super cool surprise journal entry!
+I got a bit nervous about missing some functionality and needing more time, so I decided to get a jump on functionality
+stuff we needed and I am pretty close to getting the base functionality down! Once a receipt prints in the database from the frontend,
+then that means everything is working and life is good!
+
+Journal Entry:
+
+                I definitely feel a bit bad working on the project without my team closeby, but people have busy lives and
+        I only did a little bit, so I shouldn't feel wholly bad for doing stuff on the project. I think they'll be happy 
+        that we're so close to the finish line!
+        I learned that I miss company when working on projects.
+
+
+July 28th, 2022
+
+We didn't have that much time to work together today due to some technical difficulties across the team and
+ended up just normalizing some text in the app and working on the design elements.
+
+Journal Entry:
+
+                It's so interesting to see how the aesthetics of a site change over time. 
+        I think we've gone through like four different navbars and footers. It's pretty funny to see
+        all the changes happen over time, it'd be neat to have a timelapse of that or something. 
+        I learned that design is one of my favorite things in React! Functionality and stuff to come this weekend.
+
+## July 27th, 2022
+
+I.. I am speechless. We got it to work, we printed a token and actually celebrated. It was such a good feeling to cheer
+with my team about this thing we've been struggling with for so long. Now the next thing to come is functionality and deployment!!
+
+Journal Entry:
+
+                WOW, I am so excited that we got this stuff working and, looking back on it, it shocks
+        me that we didn't get it sooner, but we FINALLY got it and I could say the thing I learned today was authorization.
+        Teamwork is pretty darn fun when you get to celebrate your victories. 
+
+## July 26th, 2022
+
+This week is still struggling with authorization and it's starting to feel bad, but we're gonna try again tomorrow.
+I feel odd being negative in these journals, but not every day is gonna be a good one in regards to code.
+
+Journal Entry:
+
+                We did get closer on the auth, but we didn't really have enough time to get everything together.
+        Tomorrow we're gonna try the rest of our ideas to get the auth working, I'm sure it's gonna be great!
+        I learned to take failures in stride and try again tomorrow, things will always be different the next day.
+
 ## July 25th, 2022
 
 Together, we tried getting the auth stuff to work to no avail, but we're gonna try again tomorrow and it should be better.
