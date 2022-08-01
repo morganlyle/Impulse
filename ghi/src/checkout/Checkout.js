@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 
 export default function Checkout() {
-    const getOrderNumber = (min, max) => 
+    const getOrderNumber = (min, max) =>
         Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1) + Math.ceil(min));
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -17,7 +17,10 @@ export default function Checkout() {
     const [promo, setPromo] = useState('');
 
     const handleSubmit = async e => {
-        e.preventDefault();
+        // e.preventDefault();
+        const data = e.target[0].value
+        console.log(data);
+        setFirstName('');
     }
 
 
@@ -69,18 +72,18 @@ export default function Checkout() {
                         </Card>
                         <form className=" mt-5 card bgcolor p-2 b_cards shad_light">
                             <div className="input-group">
-                                <input onChange={e => setPromo(e.target.value)} value={promo} type="text" id='promo' className="form-control" placeholder="Promo code" />
-                                <button type="submit" className="btn btn-secondary">Redeem</button>
+                                <label className="me-3 form-label">Order Number</label>
+                                <input readOnly onChange={e => setOrderNumber(e.target.value)} value={orderNumber} type="text" className="form-control" id="zip" placeholder="" required="" />
                             </div>
                         </form>
-                        <button className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Continue to checkout</button>
+                        <button form='create-Receipt-form' className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Continue to checkout</button>
                     </div>
                     <div className="col-md-7 col-lg-8">
                         <Card className='d-inline-flex pt-1 mb-4 align-items-center bgcolor b_cards shad_light'>
                             <h6 className='mx-3 nameText'>You're allllllmost there, we just need a few details first!</h6>
                         </Card>
                         <h4 className="mb-3 siteText">Billing address</h4>
-                        <form onSubmit={handleSubmit} className="" noValidate="" />
+                        <form onSubmit={handleSubmit} id='create-Receipt-form' />
                         <Card className='bgcolor p-4 b_cards shad_light'>
                             <div className="row g-3 nameText">
                                 <div className="col-sm-6">
@@ -152,13 +155,7 @@ export default function Checkout() {
                                         Zip code required.
                                     </div>
                                 </div>
-                                <div className="col-md-6">
-                                    <label className="form-label">Order Number</label>
-                                    <input readOnly onChange={e => setOrderNumber(e.target.value)} value={orderNumber} type="text" className="form-control" id="zip" placeholder="" required="" />
-                                    <div className="invalid-feedback">
-                                        Zip code required.
-                                    </div>
-                                </div>
+
                             </div>
                         </Card>
                     </div>
