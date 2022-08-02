@@ -1,23 +1,32 @@
 from encoders.json import ModelEncoder, UUIDEncoder
 
-from products_rest.models import Product_Category, Product, Product_Inventory, Clothing_Inventory
+from products_rest.models import Product, Clothing, Product_Inventory, Clothing_Inventory
 
-class ProductCategoryEncoder(ModelEncoder):
-    model = Product_Category
-    properties = [
-        "category",
-    ]
+# class ProductCategoryEncoder(ModelEncoder):
+#     model = Product_Category
+#     properties = [
+#         "category",
+#     ]
 
 class ProductEncoder(ModelEncoder):
     model = Product
     properties = [
         "name",
         "picture_url",
-        "product_category",
+        "description"
+        # "product_category",
     ]
-    encoders = {
-        "product_category": ProductCategoryEncoder(),
-    }
+    # encoders = {
+    #     "product_category": ProductCategoryEncoder(),
+    # }
+
+class ClothingEncoder(ModelEncoder):
+    model = Clothing
+    properties = [
+        "name",
+        "picture_url",
+        "description",
+    ]
 
 class ProductInventoryEncoder(ModelEncoder):
     model = Product_Inventory
@@ -38,9 +47,9 @@ class ClothingInventoryEncoder(ModelEncoder):
         "name",
         "color",
         "size",
-        "product_category",
+        # "product_category",
     ]
-    encoders = {
-        "product_category": ProductCategoryEncoder(),
-    }
+    # encoders = {
+    #     "product_category": ProductCategoryEncoder(),
+    # }
 
