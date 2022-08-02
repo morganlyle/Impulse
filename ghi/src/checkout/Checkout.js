@@ -14,7 +14,6 @@ export default function Checkout() {
     const [state, setState] = useState('');
     const [zip, setZip] = useState('');
     const [orderNumber, setOrderNumber] = useState(getOrderNumber(1, 100000));
-    const [promo, setPromo] = useState('');
 
     const handleSubmit = async e => {
         // e.preventDefault();
