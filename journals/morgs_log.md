@@ -1,3 +1,9 @@
+# 7/28
+
+    Today we worked on:
+
+        We got Auth to work!! Once we had the abstract user to work correctly, our tokens began populating! Basically our MVP is almost done which feels really good since we have all next week to work on this. I think that once we have our receipt model working we will be good to make everything nice and pretty!
+
 # 7/27
 
     Today we worked on:

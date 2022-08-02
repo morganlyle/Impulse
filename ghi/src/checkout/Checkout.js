@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
+import { NavLink } from 'react-router-dom';
 
 export default function Checkout() {
     const getOrderNumber = (min, max) =>
@@ -76,7 +77,9 @@ export default function Checkout() {
                                 <input readOnly onChange={e => setOrderNumber(e.target.value)} value={orderNumber} type="text" className="form-control" id="zip" placeholder="" required="" />
                             </div>
                         </form>
-                        <button form='create-Receipt-form' className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Continue to checkout</button>
+                        <NavLink to='/receipt'
+                            form='create-Receipt-form' className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Continue to checkout
+                        </NavLink>
                     </div>
                     <div className="col-md-7 col-lg-8">
                         <Card className='d-inline-flex pt-1 mb-4 align-items-center bgcolor b_cards shad_light'>
