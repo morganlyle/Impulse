@@ -56,14 +56,30 @@ class SubscriptionEncoder(ModelEncoder):
 class ReceiptEncoder(ModelEncoder):
     model = Receipt
     properties = [
-        'username', 
-        'order_number', 
-        'price', 
-        'model_number', 
-        'description'
+        'firstName',
+        'lastName',
+        'username',
+        'email',
+        'address',
+        'address2',
+        'country',
+        'state',
+        'zip',
+        'orderNumber',
+        'price',
+        'id',
+        # 'modelnumber',
     ]
+
+    # properties = [
+    #     'username', 
+    #     'order_number', 
+    #     'price', 
+    #     'model_number', 
+    #     'description'
+    # ]
     
-    encoders = {
-        'username': UserEncoder(),
-        'model_number': SubscriptionEncoder()
-    }
+    # encoders = {
+    #     'username': UserEncoder(),
+    #     # 'modelnumber': SubscriptionEncoder()
+    # }

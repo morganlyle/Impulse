@@ -1,4 +1,18 @@
-## July 28, 2021
+## Aug 2, 2022
+
+* Worked on content for Clothing and Products pages
+
+Continued reviewing React and anti-corruption layers.
+
+## Aug 1, 2022
+
+* Worked on content for Clothing and Products pages
+
+The API source we'd originally planned on isn't functioning (no API keys available), so after a thorough search, I'm giving Platzi Fake Store a shot.
+
+I started with hard-coding some images to get an idea of how they'd work with the page, but moving into text, I way prefer to loop over Platzi's data and populate with price, description etc. I spent the rest of the day reviewing React and Anti-Corruption Layers.
+
+## July 28, 2022
 
 * Implemented tokens! on Signup form.
 
@@ -8,7 +22,7 @@ We have working tokens now, it's so cool! Got all of yesterday's fixed code pret
 
 I gave the Clothing page some starter content, and changed the name to Styles because it includes accessories. Its React cards are ready for actual style products from our API source, next week.
 
-## July 27, 2021
+## July 27, 2022
 
 * Got my repo back to working order. Whew
 
@@ -22,26 +36,26 @@ Morgan checked the migration, saw that subscription wasn't getting assigned an i
 
 Design note: we had convo, should users have been a separate microservice? Consider in the future to isolate for troubleshooting.
 
-## July 26, 2021
+## July 26, 2022
 
 * Tried adding djwto to products backend
 
 The aha-moment here is: if it's not needed, don't add it. Briefly discussed with team before adding djwto here and it seemed innocuous. But this step broke products backend. I tried fixes, but the best way forward was deleting the local repo, again.
 
-## July 22, 2021
+## July 22, 2022
 
 * Worked on authentication feature.
 
 Deleted and re-cloned down from repo to fix yesterday's issues. Brought the local back to working and current.
 
-## July 21, 2021
+## July 21, 2022
 
 * Worked on authentication feature.
 
 We spent the afternoon comprehending and gradually adding authentication to our app via the auth cookbook.  I tried to commit during pair-programming, but then had crlf issues. I tried to fix with usual approaches like using `git config --global core.autocrlf false` twice, but no luck. We wrapped the day and will figure it out tomorrow.
 
 
-## July 20, 2021
+## July 20, 2022
 
 * Completed styling for About Us page.
 
@@ -50,7 +64,7 @@ I kept working on getting more familiar with React and Bootstrap. Tried out diff
 The rest of the time we pored over the Auth Cookbook. I looked back over the completed Fearless Frontend exercise for context, and we chatted about which step to take next; decided to start with trying openssl as a group tomorrow.
 
 
-## July 19, 2021
+## July 19, 2022
 
 * Added some styling to SignUpForm
 
@@ -62,7 +76,7 @@ I dug into favicons a bit today, hadn't realized that they're different from oth
 
 I also started digging into using Bootstrap to create cards for the About Us page. They still need styling but are starting to look good.
 
-## July 18, 2021
+## July 18, 2022
 
 * Poller works now.
 
@@ -73,11 +87,11 @@ Most of us had Docker issues with compose up, spent morning debugging. If error 
 Evan and I worked on the sign-up page this afternoon. We'll change the styling, but it's a go for now. We had some trouble importing react-router-dom, so Adrian said to install npm on the docker command line. That worked!
 
 
-## July 15, 2021
+## July 15, 2022
 
 CR/LF (Carriage return / line feed) issue took hours to discover! and a minute to fix. We needed this fix to get the poller working and then to continue onto working on frontend.
 
-## July 14, 2021
+## July 14, 2022
 
 * Worked on bugs in views on POST endpoints, and bugs in change of model to Clothing_Inventory
 
@@ -89,7 +103,7 @@ Did some pair coding as driver with Adrian navigating. They were super helpful! 
 
 I was trying to associate an input property for a POST endpoint like in inventory in CARCAR, when, say the vehicle model model had a foreign key to manufacturer, but it wasn't working. Adding a get query fixed it.
 
-## July 13, 2021
+## July 13, 2022
 
 * Worked on models, views and registration for products service
 
@@ -100,7 +114,7 @@ We used LiveShare for the first time, I like it, honestly.
 We couldn't get the POST endpoint to work, but we may not need it for the project, we'll add products through the admin page.
 
 
-## July 12, 2021
+## July 12, 2022
 
 * Collab'ed on more detailed context map, made flowchart of the 4 microservices.
 
@@ -113,7 +127,7 @@ We couldn't get the POST endpoint to work, but we may not need it for the projec
 It was a little scary to collapse almost half the project but I think it was a good discussion and consideration of how to integrate everything. It would have been way more complex than needed, otherwise. And better to do a fundamental change now than later.
 
 
-## July 11, 2021
+## July 11, 2022
 
 Today I worked on:
 
