@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react'
 
 export default function Clothing() {
-    const [products, setProducts] = useState([]);
+    const [clothes, setClothes] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:8080/products/").then(res => res.json()).then(
-            res => setProducts(res.products)
+        fetch("http://localhost:8080/clothing/").then(res => res.json()).then(
+            res => setClothes(res.clothes)
         )
-
     }, [])                        // square bracket is to load once and not ongoing
-    console.log(products)
+
     return (
         <>
             <section className="py-5 rounded b_cards text-center my-5 container">
@@ -27,20 +26,19 @@ export default function Clothing() {
 
 
 
-
             <div className="album py-5 rounded heliotrope_gray mb-5 b_cards">
                 <div className="container">
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                        {products?.map(product => {                 // the ? is 'optional chaining'
+                        {clothes?.map(clothing => {                 // the ? is 'optional chaining'
                             return (
                                 <>
                                     <div className="col">
                                         <div className="card shadow-sm">
-                                            <img className="bd-placeholder-img card-img-top" width="100%" height="100%" src={product.picture_url} alt="a clothing"></img>
+                                            <img className="bd-placeholder-img card-img-top" width="100%" height="100%" src={clothing.picture_url} alt="a clothing"></img>
                                             <div className="card-body">
-                                                <h6>{product.name}</h6>
-                                                <p className="card-text">new stuff here.</p>
+                                                <h5><center>{clothing.name}</center></h5>
+                                                <p className="card-text">{clothing.description}</p>
 
                                             </div>
                                         </div>
