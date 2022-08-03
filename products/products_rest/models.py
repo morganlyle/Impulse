@@ -4,31 +4,43 @@ from django.urls import reverse
 from uuid import uuid4
 
 
-class Product_Category(models.Model):         #like manufacturer in Inventory models  in CC
-    category = models.CharField(max_length=255)
+# class Product_Category(models.Model):         #like manufacturer in Inventory models  in CC
+#     category = models.CharField(max_length=255)
 
-    def get_api_url(self):
-        return reverse("api_product_category", kwargs={"pk": self.id})
-
-    # def __str__(self):
-    #     return self.category
+#     def get_api_url(self):
+#         return reverse("api_product_category", kwargs={"pk": self.id})
 
 
-class Product(models.Model):        # analogous to Veh Mod in Inventory models in CarCar
+
+class Product(models.Model):
     name = models.CharField(max_length=50)
     picture_url = models.URLField()
-
-    product_category = models.ForeignKey(
-        Product_Category,
-        related_name="product_category",
-        on_delete=models.CASCADE,
-    )
+    description = models.TextField(max_length=1024)
+    # product_category = models.ForeignKey(
+    #     Product_Category,
+    #     related_name="product_category",
+    #     on_delete=models.CASCADE,
+    # )
 
     def get_api_url(self):
         return reverse("api_product", kwargs={"pk": self.id})
 
     # def __str__(self):
     #     return self.name
+
+class Clothing(models.Model):
+    name = models.CharField(max_length=50)
+    picture_url = models.URLField()
+    description = models.TextField(max_length=1024)
+
+    # clothing_category = models.ForeignKey(
+    #     Product_Category,
+    #     related_name="clothing_category",
+    #     on_delete=models.CASCADE,
+    # )
+
+    def get_api_url(self):
+        return reverse("api_clothing", kwargs={"pk": self.id})
 
 
 class Product_Inventory(models.Model):
@@ -65,11 +77,11 @@ class Clothing_Inventory(models.Model):           # analogous to global Auto Inv
         null=True
     )
 
-    product_category = models.ForeignKey(
-        Product_Category,
-        related_name="clothing_inventory",
-        on_delete=models.CASCADE,
-    )
+    # product_category = models.ForeignKey(
+    #     Product_Category,
+    #     related_name="clothing_inventory",
+    #     on_delete=models.CASCADE,
+    # )
 
     def get_api_url(self):
         return reverse("api_clothing_inventory", kwargs={"pk": self.sku})
