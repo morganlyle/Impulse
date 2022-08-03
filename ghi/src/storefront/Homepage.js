@@ -20,10 +20,10 @@ function MainPage() {
                                                 fun recipe you thought of, that awkward dad joke, or that brilliant line of code.
                                                 <br/>
                                                 <br/>
-                                                Memory, but make it aesthetic; only availble in this month's "Back-To-Basics" Things Box.
+                                                Memory, but make it aesthetic; only available in this month's "Back-To-Basics" Things Box.
                         </p>
                         <hr className="featurette-divider" />
-                        <img className="card b_cards shad_light" width="100%" height="80%" src='field_notes.png' alt='no clothes :(' aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                        <img className="card b_cards shad_light" width="100%" height="80%" src='field_notes.png' alt='no things :(' aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
                     </div>
                     <div className='col b_cards ms-3 shad_intense p-4 rounded mt-4 heliotrope_gray'>
                         <h1 className='nameText text-right'>Style of The Month</h1>
@@ -33,7 +33,7 @@ function MainPage() {
                                                 The Timex California collection is full of <i>wonderful</i> colors for anyone who wants
                                                 to add a pop of color to their life and have a beautiful timepiece anywhere they're going. <br/>
                                                 <br/>
-                                                Timeless style for a modern age; only availble in this month's "Pop" Styles box.
+                                                Timeless style for a modern age; only available in this month's "Pop" Styles box.
                         </p>
                         <hr className="featurette-divider" />
                         <img className="card b_cards shad_light" width="100%" height="80%" src='timex.png' alt='no clothes :(' aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
