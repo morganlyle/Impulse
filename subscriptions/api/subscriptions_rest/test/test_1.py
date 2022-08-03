@@ -7,8 +7,8 @@ class TestViews(TestCase):
         User.objects.create(
             username="Test User",
             email="test@test.com",
-            first_name="Test",
-            last_name="Testy",
+            firstName="Test",
+            lastName="Testy",
             password="impulse",
         )
 
@@ -17,14 +17,6 @@ class TestViews(TestCase):
         client = Client()
         response = client.get(reverse("users_list"))
         self.assertEquals(response.status_code, 200)
-
-    
-    # def setUp(self):
-    #     self.client = Client()
-    #     self.response = self.client.get("app/LoginForm/")
-    #     self.content = self.response.content.decode("utf-8")
-    #     self.document = Document()
-    #     self.document.feed(self.content)
     
     # def test_login(self):
     #     User.objects.create_user("impulse", password="password1234")
