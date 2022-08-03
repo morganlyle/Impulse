@@ -5,14 +5,14 @@ from uuid import uuid4
 
 # Create your models here.
 class ProductInventoryVO(models.Model):
-    sku = models.PositiveSmallIntegerField(blank=True, null=True, unique=True)
+    name = models.CharField(max_length=255)
     product = models.CharField(max_length=200, blank = True)
 
     def __str__(self):
         return self.product
 
 class ClothingInventoryVO(models.Model):
-    sku = models.PositiveSmallIntegerField(blank=True, null=True, unique=True)
+    name = models.CharField(max_length=255)
     product = models.CharField(max_length=200, blank = True)
 
     def __str__(self):
