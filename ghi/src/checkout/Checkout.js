@@ -17,10 +17,32 @@ export default function Checkout() {
     const [promo, setPromo] = useState('');
 
     const handleSubmit = async e => {
-        // e.preventDefault();
-        const data = e.target[0].value
-        console.log(data);
-        setFirstName('');
+        e.preventDefault();
+        const receiptUrl = 'http://localhost:8200/api/receipts/'
+        const fetchConfig = {
+            method: "post",
+            body: JSON.stringify({
+                // firstName,
+                // lastName,
+                // username,
+                email,
+                // address,
+                // address2,
+                // country,
+                // state,
+                // zip,
+                // orderNumber,
+            }),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }
+        const response = await fetch(receiptUrl, fetchConfig);
+        if (response.ok) {
+            const newReceipt = await response.json();
+            console.log("New receipt generated: ", newReceipt)
+        }
+        // setFirstName('');
     }
 
 

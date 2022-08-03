@@ -18,6 +18,9 @@ export default function NavBar() {
                         <li className="nav-item">
                             <NavLink className="nav-link text-decoration-none link-dark" to="subscriptions/">Subscription Boxes</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link text-decoration-none link-dark" to="checkout/">Checkout</NavLink>
+                        </li>
                         <div className="dropdown">
                             <button className="pb-2 nav-link btn btn-toggle dropdown-toggle text-decoration-none link-dark fw-semibold"
                                 type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
