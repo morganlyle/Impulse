@@ -1,3 +1,15 @@
+# 8/2
+
+    Today we worked on:
+
+        Today we were getting our API set up. While we were doing that I also started looking into making our unit test. It seems straight forward but trying to get the first one done is always the hardest! Once we get that running I'm sure we'll get the next ones easy. I can't believe how well our site is coming together!!
+
+# 8/1
+
+    Today we worked on:
+
+        I started working on our actual subscription page that shows each box that we have, and a product that is in that box. Our buttons now take you to the checkout screen and once you have input your info you get taken to the receipt page! Pretty cool how much you can implement with React.
+
 # 7/28
 
     Today we worked on:
