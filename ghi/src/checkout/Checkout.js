@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card';
-import { NavLink } from 'react-router-dom';
+import { NavLink , useNavigate } from 'react-router-dom';
 
 export default function Checkout() {
     const getOrderNumber = (min, max) =>
@@ -14,26 +14,28 @@ export default function Checkout() {
     const [country, setCountry] = useState('');
     const [state, setState] = useState('');
     const [zip, setZip] = useState('');
-    const [orderNumber, setOrderNumber] = useState(getOrderNumber(1, 100000));
-    const [promo, setPromo] = useState('');
+    const [orderNumber, setOrderNumber] = useState(getOrderNumber(1, 1000000));
+    const navigate = useNavigate();
 
     const handleSubmit = async e => {
         e.preventDefault();
+        const data = {
+            firstName,
+            lastName,
+            username,
+            email,
+            address,
+            address2,
+            country,
+            state,
+            zip,
+            orderNumber,
+        }
+        console.log(data);
         const receiptUrl = 'http://localhost:8200/api/receipts/'
         const fetchConfig = {
             method: "post",
-            body: JSON.stringify({
-                // firstName,
-                // lastName,
-                // username,
-                email,
-                // address,
-                // address2,
-                // country,
-                // state,
-                // zip,
-                // orderNumber,
-            }),
+            body: JSON.stringify(data),
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -42,9 +44,10 @@ export default function Checkout() {
         if (response.ok) {
             const newReceipt = await response.json();
             console.log("New receipt generated: ", newReceipt)
+            navigate('/receipt');
         }
-        // setFirstName('');
     }
+
 
 
     return (
@@ -99,16 +102,16 @@ export default function Checkout() {
                                 <input readOnly onChange={e => setOrderNumber(e.target.value)} value={orderNumber} type="text" className="form-control" id="zip" placeholder="" required="" />
                             </div>
                         </form>
-                        <NavLink to='/receipt'
+                        <button
                             form='create-Receipt-form' className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Continue to checkout
-                        </NavLink>
+                        </button>
                     </div>
                     <div className="col-md-7 col-lg-8">
                         <Card className='d-inline-flex pt-1 mb-4 align-items-center bgcolor b_cards shad_light'>
                             <h6 className='mx-3 nameText'>You're allllllmost there, we just need a few details first!</h6>
                         </Card>
                         <h4 className="mb-3 siteText">Billing address</h4>
-                        <form onSubmit={handleSubmit} id='create-Receipt-form' />
+                        <form onSubmit={handleSubmit} id='create-Receipt-form'>
                         <Card className='bgcolor p-4 b_cards shad_light'>
                             <div className="row g-3 nameText">
                                 <div className="col-sm-6">
@@ -180,9 +183,9 @@ export default function Checkout() {
                                         Zip code required.
                                     </div>
                                 </div>
-
                             </div>
                         </Card>
+                        </form>
                     </div>
                 </div>
             </Card>

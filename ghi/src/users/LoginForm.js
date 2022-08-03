@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { useToken, useAuthContext } from './auth';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function LoginForm() {
     const [login] = useToken();
     const [username, setUsername] = useState();
     const [password, setPassword] = useState();
-    const { token } = useAuthContext();
+    const navigate = useNavigate();
 
 
     const handleSubmit = async e => {
         e.preventDefault();
         await login(username, password);
-        console.log("here's the token:", token);
+        navigate('/');
     };
 
     return (

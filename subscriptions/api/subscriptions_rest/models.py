@@ -50,17 +50,18 @@ class Subscription(models.Model):
         return f'{self.model_number}'
 
 class Receipt(models.Model):
-    firstname = models.CharField(max_length=32)
-    lastname = models.CharField(max_length=32)
+    firstName = models.CharField(max_length=32)
+    lastName = models.CharField(max_length=32)
     email = models.EmailField()
     address = models.CharField(max_length=254)
     address2 = models.CharField(max_length=254)
     country = models.CharField(max_length=254)
     state = models.CharField(max_length=254)
     username = models.CharField(max_length=254)
-    ordernumber = models.PositiveSmallIntegerField(unique=True)
+    orderNumber = models.PositiveIntegerField(unique=True)
+    zip = models.CharField(max_length=254)
     price = models.CharField(max_length=50, default = "$36.99", null=True, blank= True)
-    modelnumber = models.ForeignKey(Subscription,  on_delete=models.CASCADE)
+    # modelnumber = models.ForeignKey(Subscription,  on_delete=models.CASCADE)
     # description = models.CharField(max_length=255, default="Here are your items")
 
     def __str__(self):

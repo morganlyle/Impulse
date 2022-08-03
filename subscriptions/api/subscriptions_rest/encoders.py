@@ -56,17 +56,18 @@ class SubscriptionEncoder(ModelEncoder):
 class ReceiptEncoder(ModelEncoder):
     model = Receipt
     properties = [
-        # 'firstname',
-        # 'lastname',
-        # 'username',
+        'firstName',
+        'lastName',
+        'username',
         'email',
-        # 'address',
-        # 'address2',
-        # 'country',
-        # 'state',
-        # 'zip',
-        # 'ordernumber',
-        # 'price',
+        'address',
+        'address2',
+        'country',
+        'state',
+        'zip',
+        'orderNumber',
+        'price',
+        'id',
         # 'modelnumber',
     ]
 

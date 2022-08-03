@@ -223,17 +223,3 @@ def receipts_list(request):
             )
             response.status_code = 400
             return response
-        #     content = json.loads(request.body)
-        #     receipt = Receipt.objects.get(id=content['receipt'])
-        #     content['receipt'] = receipt
-        # except ClothingBox.DoesNotExist:
-        #     return JsonResponse(
-        #         {'message': "invalid id"},
-        #         status=400,
-        #     )
-        # receipt = Receipt.objects.create(**content)
-        # return JsonResponse(
-        #     receipt,
-        #     encoder=ReceiptEncoder,
-        #     safe=False
-        # )

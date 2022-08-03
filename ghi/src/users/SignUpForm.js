@@ -10,14 +10,10 @@ export default function SignUpForm() {
   const [email, setEmail] = useState();
   const [address, setAddress] = useState();
 
-  const { token } = useAuthContext();
-
   const handleSubmit = async e => {
       e.preventDefault();
       await signup(username, password, email, firstName, lastName);
-      console.log("here's the token:", token);
   };
-
   return (
 <div style={{ paddingBottom: '150px'}} className="row">
         <div className="offset-3 col-6">
