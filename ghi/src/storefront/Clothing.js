@@ -26,18 +26,19 @@ export default function Clothing() {
 
 
 
-            <div className="album py-5 rounded heliotrope_gray mb-5 b_cards">
-                <div className="container">
+            {/* <div className="album py-5 rounded heliotrope_gray mb-5 b_cards">
+                <div className="container"> */}
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
                         {clothes?.map(clothing => {                 // the ? is 'optional chaining'
                             return (
                                 <>
                                     <div className="col">
-                                        <div className="card shadow-sm">
-                                            <img className="bd-placeholder-img card-img-top" width="100%" height="100%" src={clothing.picture_url} alt="a clothing"></img>
-                                            <div className="card-body">
-                                                <h5><center>{clothing.name}</center></h5>
+                                        <div className="card shadow-lg b_cards">
+                                            <img className="card-img-top" width="100%" height="100%" src={clothing.picture_url} alt="a clothing"></img>
+                                            <div className="card-body nameText text-center heliotrope_gray cards-text-box">
+                                                <h4 className="siteText">{clothing.name}</h4>
+                                                <hr className="featurette-divider" />
                                                 <p className="card-text">{clothing.description}</p>
 
                                             </div>
@@ -50,8 +51,8 @@ export default function Clothing() {
 
 
                     </div>
-                </div>
-            </div>
+                {/* </div>
+            </div> */}
         </>
     )
 }

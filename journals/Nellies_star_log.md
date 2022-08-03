@@ -1,8 +1,8 @@
 ## Aug 2, 2022
 
-* Worked on content for Clothing and Products pages
+* Completed content for Clothing and Products pages
 
-Continued reviewing React and anti-corruption layers.
+Since we already built in APIs, we didn't need our page content to have them. To make changes simpler, we deleted our entire Product Category model, and created a Clothing model. Then I added photos and text via admin for the product cards on the Clothing and Products pages
 
 ## Aug 1, 2022
 
