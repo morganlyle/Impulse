@@ -1,3 +1,7 @@
+August 1st, 2022
+
+
+
 July 31st, 2022
 
 Super cool surprise journal entry!
