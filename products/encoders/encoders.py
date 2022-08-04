@@ -13,7 +13,8 @@ class ProductEncoder(ModelEncoder):
     properties = [
         "name",
         "picture_url",
-        "description"
+        "description",
+        "id"
         # "product_category",
     ]
     # encoders = {
@@ -26,6 +27,7 @@ class ClothingEncoder(ModelEncoder):
         "name",
         "picture_url",
         "description",
+        "id"
     ]
 
 class ProductInventoryEncoder(ModelEncoder):
