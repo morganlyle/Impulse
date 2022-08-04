@@ -52,9 +52,9 @@ export default function Checkout() {
 
     return (
         <>
-            <Card style={{ marginTop: '50px', marginBottom: '150px' }} className='heliotrope_gray b_cards shad_intense'>
+            <Card style={{ marginTop: '50px', marginBottom: '150px' }} className='heliotrope_gray b_cards shad_bottom'>
                 <div style={{ padding: '50px' }} className="row g-5 nameText font-weight-bold">
-                    <div className='b_cards p-3 text-center rounded siteText display-2 shad_lighter'>Checkout</div>
+                    <div className='b_cards p-3 text-center rounded siteText display-2 shad_bottom'>Checkout</div>
                     <div className="col-md-5 col-lg-4 order-md-last">
                         <h4 className="d-flex justify-content-between align-items-center mb-3">
                             <span className="nameText">Your cart</span>
@@ -67,7 +67,7 @@ export default function Checkout() {
                                         <h6 className="my-0">Impulse Box</h6>
                                         <small className="text-muted">A box of lovely treasures, headed your way! 🎁📨📪</small>
                                     </div>
-                                    <span className="text-muted">$12</span>
+                                    <span className="text-muted">$32</span>
                                 </li>
                                 <li className="list-group-item d-flex justify-content-between">
                                     <span>Total (USD)</span>
@@ -83,7 +83,7 @@ export default function Checkout() {
                             </div>
                         </form>
                         <button
-                            form='create-Receipt-form' className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Continue to checkout
+                            form='create-Receipt-form' className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Get your box!
                         </button>
                     </div>
                     <div className="col-md-7 col-lg-8">
