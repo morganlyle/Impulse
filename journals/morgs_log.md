@@ -1,3 +1,9 @@
+# 8/3
+
+    Today we worked on:
+
+        Today we got the backend of receipts up and running. I started working on the unit test that we need to implement but was getting a lot of weird django errors. So after some digging it turned out that we needed to go into the pgadmin webpage itself and give our subscriptions and products permission to create databases on their own, so that it can run the tests. Once we did this we got hte first test to pass!! Felt pretty good after struggling with it for awhile. Next up is to just complete the last of the test and then start deployment!
+
 # 8/2
 
     Today we worked on:

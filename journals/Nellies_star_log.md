@@ -1,8 +1,20 @@
+## Aug 3, 2022
+
+* Improved formatting on Clothing and Products pages.
+
+* Updated About Us section card.
+
+* Stored data from admin in JSON files to integrate with models tomorrow.
+
+Sometimes "brute force" is the best force, or something. I tried to solve a formatting issue with the cards on Clothing and Products pages, where the boxes weren't the same size - the ones with more text kept being taller. I tried a lot to use cool things like flexbox and grid, but the thing that finally worked? Was setting the min height and max height to the same. I just chose an amount of pixels, 200 or so, that worked for the card with the most text. Et voila.
+
+Also made these two pages look more like the rest of the site with changes like deleting the background container, changed color, added border, etc.
+
 ## Aug 2, 2022
 
-* Worked on content for Clothing and Products pages
+* Completed content for Clothing and Products pages
 
-Continued reviewing React and anti-corruption layers.
+Since we already built in APIs, we didn't need our page content to have them. To make changes simpler, we deleted our entire Product Category model, and created a Clothing model. Then I added photos and text via admin for the product cards on the Clothing and Products pages
 
 ## Aug 1, 2022
 
@@ -10,7 +22,7 @@ Continued reviewing React and anti-corruption layers.
 
 The API source we'd originally planned on isn't functioning (no API keys available), so after a thorough search, I'm giving Platzi Fake Store a shot.
 
-I started with hard-coding some images to get an idea of how they'd work with the page, but moving into text, I way prefer to loop over Platzi's data and populate with price, description etc. I spent the rest of the day reviewing React and Anti-Corruption Layers.
+I started with hard-coding some images to get an idea of how they'd work with the page, but moving into text, I way prefer to loop over Platzi's data and populate with price, description etc. I spent the rest of the day reviewing React and looking back to Anti-Corruption Layers.
 
 ## July 28, 2022
 
@@ -127,7 +139,7 @@ We couldn't get the POST endpoint to work, but we may not need it for the projec
 It was a little scary to collapse almost half the project but I think it was a good discussion and consideration of how to integrate everything. It would have been way more complex than needed, otherwise. And better to do a fundamental change now than later.
 
 
-## July 11, 2022
+## Earthdate: July 11, 2022
 
 Today I worked on:
 
