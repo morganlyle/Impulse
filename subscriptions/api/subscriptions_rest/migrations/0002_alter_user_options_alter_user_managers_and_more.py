@@ -73,27 +73,13 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='receipt',
             name='firstName',
-<<<<<<< HEAD
-            field=models.CharField(default=5, max_length=32),
-            preserve_default=False,
-        ),
-        migrations.AddField(
-            model_name='receipt',
-            name='lastName',
-=======
->>>>>>> main
             field=models.CharField(default=1, max_length=32),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='receipt',
-<<<<<<< HEAD
-            name='orderNumber',
-            field=models.PositiveIntegerField(default=1, unique=True),
-=======
             name='lastName',
             field=models.CharField(default=1, max_length=32),
->>>>>>> main
             preserve_default=False,
         ),
         migrations.AddField(
