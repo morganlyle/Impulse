@@ -1,3 +1,10 @@
+## Aug 4, 2022
+
+* Wrote code to convert product dictionary lists to Django fixtures
+
+
+In coding the Django fixture dictionary lists, I had to review that when appending a list of dictionaries with a for loop, I need to append a *copy* of the current dictionary. Otherwise that step acts like a pointer and updates all dictionaries in the container list, even previously appended ones.
+
 ## Aug 3, 2022
 
 * Improved formatting on Clothing and Products pages.
@@ -6,7 +13,7 @@
 
 * Stored data from admin in JSON files to integrate with models tomorrow.
 
-Sometimes "brute force" is the best force, or something. I tried to solve a formatting issue with the cards on Clothing and Products pages, where the boxes weren't the same size - the ones with more text kept being taller. I tried a lot to use cool things like flexbox and grid, but the thing that finally worked? Was setting the min height and max height to the same. I just chose an amount of pixels, 200 or so, that worked for the card with the most text. Et voila.
+Sometimes "brute force" is the best force, or something. I worked on a persistent formatting issue with the cards on Clothing and Products pages, where the boxes weren't the same size - the ones with more text kept being taller. The fix here was to set max height and min height to the same value for the cards, after many unsuccessful tries via the flexbox and grid documentation.
 
 Also made these two pages look more like the rest of the site with changes like deleting the background container, changed color, added border, etc.
 
@@ -139,7 +146,7 @@ We couldn't get the POST endpoint to work, but we may not need it for the projec
 It was a little scary to collapse almost half the project but I think it was a good discussion and consideration of how to integrate everything. It would have been way more complex than needed, otherwise. And better to do a fundamental change now than later.
 
 
-## Earthdate: July 11, 2022
+## July 11, 2022
 
 Today I worked on:
 
