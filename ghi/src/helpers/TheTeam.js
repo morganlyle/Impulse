@@ -11,6 +11,10 @@ export default function TheTeam() {
                             <div className="card-body text-center">
                                 <h5 className="card-title mb-0">Morgan Lyle</h5>
                                 <div className="card-text text-black-50">Full Stack Developer</div>
+                                <hr className="featurette-divider" />
+                                <p className="card-text text-left">
+                                    About me!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -20,6 +24,7 @@ export default function TheTeam() {
                             <div className="card-body text-center">
                                 <h5 className="card-title mb-0">Team Member</h5>
                                 <div className="card-text text-black-50">Web Developer</div>
+
                             </div>
                         </div>
                     </div>
