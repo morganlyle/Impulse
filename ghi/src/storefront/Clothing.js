@@ -10,10 +10,10 @@ export default function Clothing() {
 
     return (
         <>
-            <section className="py-5 rounded b_cards text-center my-5 container">
+            <section className="py-5 rounded b_cards text-center my-5  heliotrope_gray container">
                 <div className="row py-lg-5">
-                    <div className="col-lg-6 col-md-8 mx-auto">
-                        <h1 className="display-1 siteText">Styles!</h1>
+                    <div className="col-md-8 mx-auto">
+                        <h1 className="display-5 nameText">Styles!</h1>
                         <p className="lead text-muted">What clothing and accessories could you be getting in your box this month?<br />
                             👗 🎩 👡 🥾 ⏱ 💎<br />
                             If you don't like it, get free shipping and trade with other members!<br />

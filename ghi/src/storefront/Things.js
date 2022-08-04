@@ -10,10 +10,10 @@ export default function Things() {
 
     return (
         <>
-            <section className="py-5 rounded b_cards text-center my-5 container">
+            <section className="py-5 rounded b_cards text-center my-5  heliotrope_gray container">
                 <div className="row py-lg-5">
-                    <div className="col-lg-6 col-md-8 mx-auto">
-                        <h1 className="display-1 siteText">All of the things</h1>
+                    <div className="col-md-8 mx-auto">
+                        <h1 className="display-5 nameText">All of the things</h1>
                         <p className="lead text-muted">What could you be getting in your box this month?<br />
                                                     Sometimes it's a one thing, other times it's a different thing.<br />
                                                     Whatever it is, you're gonna be excited that it showed up.<br />
