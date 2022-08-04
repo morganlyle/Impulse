@@ -1,5 +1,41 @@
+August 3rd, 2022
+
+Two more days till project turn in! We have like.. 95% percent functionality, we just need to tie up some loose ends and make the site look
+a bit more cohesive! Should be pretty easy, I really like doing React and CSS, so it feels like the flow is super nice whenever I work on it.
+
+Journal Entry:
+
+                Today we got the receipts to post to our database and it's so cool!! I think that was the last big bit of functionality that
+        we needed to do to make the site fully operational! There's login and signup with auth, full products pages, forms, everything looks great!!
+        Honestly, I didn't learn much today as today was a solid bit of doing fundamentals and there's always a benefit to dealing with the
+        fundamentals again. Hey, I guess that's what I learned today!
+
+
+August 2nd, 2022
+
+Three more days till we have to submit and things feel a bit less tense. Maybe there's some sort of zen in the chaos, I feel like I
+thrive in places like this though.
+
+Journal Entry:
+
+                Today we got the products and clothing pages populated and Impulse is starting to feel like a real website!
+        I love seeing a project come together, it's like watching a plant grow or something... equally satisfying? I'm not necessarily a wordsmith,
+        but programming is fun!
+        Today I got a lot of experience walking someone through a complex chunk of code and making sure they comprehended it. 
+        It was very good SEIR practice!
+
+
 August 1st, 2022
 
+This is the final week for the project and things are starting to feel a little tense and I'm feeling the stress of needing to get things done.
+I think this week is gonna go well though and we're gonna get a ton done!
+
+Journal Entry:
+
+                We started this week by having a meeeting about the last bits of the project that are left and dividing up the tasks.
+        We really don't have all that much left, but it's this last stuff that always feels the most stressful because there's always tiny road
+        blocks that feel so huge in the last few days.
+        Today I learned about modifying migration files manually and, while it feels scary, it also feels like a super power!
 
 
 July 31st, 2022

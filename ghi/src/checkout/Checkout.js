@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
-import { NavLink , useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Checkout() {
     const getOrderNumber = (min, max) =>
@@ -52,47 +52,27 @@ export default function Checkout() {
 
     return (
         <>
-            <Card style={{ marginTop: '50px', marginBottom: '150px' }} className='heliotrope_gray b_cards shad_intense'>
+            <Card style={{ marginTop: '50px', marginBottom: '150px' }} className='heliotrope_gray b_cards shad_bottom'>
                 <div style={{ padding: '50px' }} className="row g-5 nameText font-weight-bold">
-                    <div className='b_cards p-3 text-center rounded siteText display-2 shad_lighter'>Checkout</div>
+                    <div className='b_cards p-3 text-center rounded siteText display-2 shad_bottom'>Checkout</div>
                     <div className="col-md-5 col-lg-4 order-md-last">
                         <h4 className="d-flex justify-content-between align-items-center mb-3">
                             <span className="nameText">Your cart</span>
-                            <span className="badge bgcolor xiketic rounded-pill shad_intense">3</span>
+                            <span className="badge bgcolor xiketic rounded-pill shad_intense">1</span>
                         </h4>
                         <Card className='bgcolor p-4 b_cards shad_light'>
                             <ul className="list-group">
                                 <li className="list-group-item  d-flex justify-content-between lh-sm">
                                     <div>
-                                        <h6 className="my-0">Product name</h6>
-                                        <small className="text-muted">Brief description</small>
+                                        <h6 className="my-0">Impulse Box</h6>
+                                        <small className="text-muted">A box of lovely treasures, headed your way! 🎁📨📪</small>
                                     </div>
-                                    <span className="text-muted">$12</span>
-                                </li>
-                                <li className="list-group-item d-flex justify-content-between lh-sm">
-                                    <div>
-                                        <h6 className="my-0">Second product</h6>
-                                        <small className="text-muted">Brief description</small>
-                                    </div>
-                                    <span className="text-muted">$8</span>
-                                </li>
-                                <li className="list-group-item d-flex justify-content-between lh-sm">
-                                    <div>
-                                        <h6 className="my-0">Third item</h6>
-                                        <small className="text-muted">Brief description</small>
-                                    </div>
-                                    <span className="text-muted">$5</span>
-                                </li>
-                                <li className="list-group-item d-flex justify-content-between bg-light">
-                                    <div className="text-success">
-                                        <h6 className="my-0">Promo code</h6>
-                                        <small>EXAMPLECODE</small>
-                                    </div>
-                                    <span className="text-success">-$5</span>
+                                    <span className="text-muted">$32</span>
                                 </li>
                                 <li className="list-group-item d-flex justify-content-between">
                                     <span>Total (USD)</span>
-                                    <strong>$20</strong>
+                                    <strong>$36.99</strong>
+                                    <strong>Free Shipping!</strong>
                                 </li>
                             </ul>
                         </Card>
@@ -103,7 +83,7 @@ export default function Checkout() {
                             </div>
                         </form>
                         <button
-                            form='create-Receipt-form' className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Continue to checkout
+                            form='create-Receipt-form' className="text-right btn bgcolor mt-5 btn-lg b_cards shad_light" type="submit">Get your box!
                         </button>
                     </div>
                     <div className="col-md-7 col-lg-8">

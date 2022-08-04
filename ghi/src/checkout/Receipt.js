@@ -18,7 +18,7 @@ export default function Receipt() {
 
     return (
         <>
-            <Card style={{ marginTop: '50px', marginBottom: '150px' }} className='heliotrope_gray b_cards shad_intense'>
+            <Card style={{ marginTop: '50px', marginBottom: '150px' }} className='heliotrope_gray b_cards shad_bottom'>
                 <div style={{ padding: '50px' }} className="row g-5 nameText font-weight-bold">
                     <div className='b_cards p-3 text-center rounded siteText display-2 shad_lighter'>You're all set!</div>
                     <div className="col-md-5 col-lg-4 order-md-last">

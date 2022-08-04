@@ -1,92 +1,83 @@
 [
   {
-    "models": "products_rest.Products",
+    "models": "products_rest.clothing",
     "pk": 1,
     "fields": {
       "name": "Skort jumpsuit",
       "picture_url": "https://cdn.lorem.space/images/fashion/.cache/640x480/mike-von-TPUGbQmyVwE-unsplash.jpg",
-      "description": "Calling this piece a shorts jumpsuit doesn't really do it justice. Languid, slinky, and that elusive combo of glam and comfort.",
-      "id": 5
+      "description": "Calling this piece a shorts jumpsuit doesn't really do it justice. Languid, slinky, and that elusive combo of glam and comfort."
     }
   },
   {
-    "models": "products_rest.Products",
+    "models": "products_rest.clothing",
     "pk": 2,
     "fields": {
       "name": "Batik sundress",
       "picture_url": "https://cdn.lorem.space/images/fashion/.cache/640x480/leon-ell-C8Q_zR8PDlA-unsplash.jpg",
-      "description": "Go from day to night in this bright, flattering dress.",
-      "id": 3
+      "description": "Go from day to night in this bright, flattering dress."
     }
   },
   {
-    "models": "products_rest.Products",
+    "models": "products_rest.clothing",
     "pk": 3,
     "fields": {
       "name": "Polarized sunglasses",
       "picture_url": "https://cdn.lorem.space/images/fashion/.cache/640x480/ivana-cajina-_7LbC5J-jw4-unsplash.jpg",
-      "description": "See everything with the utmost crispness in any natural lighting.",
-      "id": 2
+      "description": "See everything with the utmost crispness in any natural lighting."
     }
   },
   {
-    "models": "products_rest.Products",
+    "models": "products_rest.clothing",
     "pk": 4,
     "fields": {
       "name": "Sunglasses, with built-in earrings!",
       "picture_url": "https://cdn.lorem.space/images/fashion/.cache/640x480/atikh-bana-_KaMTEmJnxY-unsplash.jpg",
-      "description": "Accused of over-accessorizing? Prove them wrong, there's no such thing.",
-      "id": 7
+      "description": "Accused of over-accessorizing? Prove them wrong, there's no such thing."
     }
   },
   {
-    "models": "products_rest.Products",
+    "models": "products_rest.clothing",
     "pk": 5,
     "fields": {
       "name": "Carhartt x Nike",
       "picture_url": "https://cdn.lorem.space/images/shoes/.cache/640x480/maksim-larin-NOpsC3nWTzY-unsplash.jpg",
-      "description": "I guess Carhartt makes shoes now? Or Nike makes Carhartts? Who can keep up, but I have to say I love these.",
-      "id": 8
+      "description": "I guess Carhartt makes shoes now? Or Nike makes Carhartts? Who can keep up, but I have to say I love these."
     }
   },
   {
-    "models": "products_rest.Products",
+    "models": "products_rest.clothing",
     "pk": 6,
     "fields": {
       "name": "T-shirt",
       "picture_url": "https://cdn.lorem.space/images/fashion/.cache/640x480/ian-dooley-TT-ROxWj9nA-unsplash.jpg",
-      "description": "This skeleton is ready to peace right out.",
-      "id": 4
+      "description": "This skeleton is ready to peace right out."
     }
   },
   {
-    "models": "products_rest.Products",
+    "models": "products_rest.clothing",
     "pk": 7,
     "fields": {
       "name": "Tomato crewneck",
       "picture_url": "https://cdn.lorem.space/images/fashion/.cache/640x480/brooke-cagle-z1B9f48F5dc-unsplash.jpg",
-      "description": "Get ready for heirloom season with this comfy sweater!",
-      "id": 1
+      "description": "Get ready for heirloom season with this comfy sweater!"
     }
   },
   {
-    "models": "products_rest.Products",
+    "models": "products_rest.clothing",
     "pk": 8,
     "fields": {
       "name": "Key necklace",
       "picture_url": "https://cdn.lorem.space/images/fashion/.cache/640x480/felipe-galvan-AhfrA5VQNpM-unsplash.jpg",
-      "description": "Inspired by when we were kids and carried our housekey like this. But with Swarovski crystals!",
-      "id": 6
+      "description": "Inspired by when we were kids and carried our housekey like this. But with Swarovski crystals!"
     }
   },
   {
-    "models": "products_rest.Products",
+    "models": "products_rest.clothing",
     "pk": 9,
     "fields": {
       "name": "Black leather Nikes",
       "picture_url": "https://cdn.lorem.space/images/shoes/.cache/640x480/andres-jasso-PqbL_mxmaUE-unsplash.jpg",
-      "description": "You can wear these with dressier clothes than most sneakers would dare. But not with motorcycle leathers.",
-      "id": 9
+      "description": "You can wear these with dressier clothes than most sneakers would dare. But not with motorcycle leathers."
     }
   }
 ]

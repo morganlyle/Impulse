@@ -10,7 +10,7 @@ function MainPage() {
             </div>
             <div className='pb-5 container'>
                 <div className='row'>
-                    <div className='col b_cards me-3 shad_intense p-4 rounded mt-4 heliotrope_gray'>
+                    <div className='col b_cards me-3 shad_bottom p-4 rounded mt-4 heliotrope_gray'>
                         <h1 className='nameText text-left'>Thing of The Month</h1>
                         <hr className="featurette-divider" />
                         <h3 className='siteText text-decoration-underline'>Field Notes Wallet + Notepad and Pen</h3>
@@ -25,7 +25,7 @@ function MainPage() {
                         <hr className="featurette-divider" />
                         <img className="card b_cards shad_light" width="100%" height="80%" src='field_notes.png' alt='no things :(' aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
                     </div>
-                    <div className='col b_cards ms-3 shad_intense p-4 rounded mt-4 heliotrope_gray'>
+                    <div className='col b_cards ms-3 shad_bottom p-4 rounded mt-4 heliotrope_gray'>
                         <h1 className='nameText text-right'>Style of The Month</h1>
                         <hr className="featurette-divider" />
                         <h3 className='siteText text-decoration-underline'>The Timex California Collection</h3>

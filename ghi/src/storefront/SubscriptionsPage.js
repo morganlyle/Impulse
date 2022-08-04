@@ -7,7 +7,7 @@ export default function SubscriptionsPage() {
             <h1 className='display-2 mt-3 nameText'>Subscription Boxes</h1>
             <div className='pb-5 container'>
                 <div className='row'>
-                    <div className='col b_cards me-3 shad_intense p-4 rounded mt-4 heliotrope_gray'>
+                    <div className='col b_cards me-3 shad_bottom p-4 rounded mt-4 heliotrope_gray'>
                         <h1 className='display-3 siteText text-left'>Things Box</h1>
                         <NavLink to="/checkout" className='btn btn-light almond ob_button text-right'>Add to Cart!</NavLink>
                         <hr className="featurette-divider" />
@@ -21,7 +21,7 @@ export default function SubscriptionsPage() {
                         <img className="card b_cards shad_light" width="100%" height="80%" src='https://m.media-amazon.com/images/I/515QgxNovlL._AC_SX679_.jpg' alt='no clothes :(' aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
                     </div>
 
-                    <div className='col b_cards ms-3 shad_intense p-4 rounded mt-4 heliotrope_gray'>
+                    <div className='col b_cards ms-3 shad_bottom p-4 rounded mt-4 heliotrope_gray'>
                         <h1 className='display-3 siteText text-right'>Styles Box</h1>
                         <NavLink to="/checkout" className='btn btn-light almond ob_button text-left'>Add to Cart!</NavLink>
                         <hr className="featurette-divider" />
