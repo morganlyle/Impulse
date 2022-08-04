@@ -1,1 +1,92 @@
-[{'models': 'products_rest.Products', 'pk': 1, 'fields': {'name': 'Epic hammer', 'picture_url': 'https://cdn.lorem.space/images/movie/.cache/640x480/thor-2011.jpg', 'description': 'When you have this hammer, all your problems will start to look like a Loki.', 'id': 2}}, {'models': 'products_rest.Products', 'pk': 2, 'fields': {'name': 'Fresh cut fruit', 'picture_url': 'https://cdn.lorem.space/images/drink/.cache/640x480/wendy-aros-routman-qH-JPcFXUTY-unsplash.jpg', 'description': 'Ready to mix up and sit poolside.', 'id': 3}}, {'models': 'products_rest.Products', 'pk': 3, 'fields': {'name': 'Replica Apple Watch', 'picture_url': 'https://cdn.lorem.space/images/watch/.cache/640x480/daniel-korpai-oOlPR-Fwd7A-unsplash.jpg', 'description': "Use your phone to keep track of your workouts, but want a timepiece that's au courant? This is your answer.  We don't need any stinkin' numbers, we're adults here!", 'id': 4}}, {'models': 'products_rest.Products', 'pk': 4, 'fields': {'name': 'Tall stool or small table', 'picture_url': 'https://cdn.lorem.space/images/furniture/.cache/640x480/ruslan-bardash-4kTbAMRAHtQ-unsplash.jpg', 'description': "Need extra seating on hand, or a base for a large planter? We've got you covered.", 'id': 5}}, {'models': 'products_rest.Products', 'pk': 5, 'fields': {'name': 'Minimalist bedframe', 'picture_url': 'https://cdn.lorem.space/images/hotel/.cache/640x480/pexels-pixabay-271619.jpg', 'description': 'Sleek, squarish, but oh-so-dreamy. Set up your room like a chic hotel!', 'id': 1}}, {'models': 'products_rest.Products', 'pk': 6, 'fields': {'name': 'Salt bae poster', 'picture_url': 'https://cdn.lorem.space/images/burger/.cache/640x480/mae-mu-I7A_pHLcQK8-unsplash.jpg', 'description': 'Probably just out of frame, salt bae is dusting this fresh food with the exact perfect seasoning.', 'id': 6}}, {'models': 'products_rest.Products', 'pk': 7, 'fields': {'name': 'Mouthwatering focaccia poster', 'picture_url': 'https://cdn.lorem.space/images/pizza/.cache/640x480/pexels-pixabay-162744.jpg', 'description': "Is this focaccia or pastry dough? Are those banana slices? With this on your wall, your guests who couldn't decide if the dress was blue or gold will have a heyday.", 'id': 7}}, {'models': 'products_rest.Products', 'pk': 8, 'fields': {'name': 'Cool coffee table book', 'picture_url': 'https://cdn.lorem.space/images/furniture/.cache/640x480/nathalie-jolie-6-xcHVkwj0c-unsplash.jpg', 'description': "It doesn't have to live on a coffee table, looks pretty good on this stool actually.", 'id': 8}}, {'models': 'products_rest.Products', 'pk': 9, 'fields': {'name': 'Indoor/ Outdoor bench', 'picture_url': 'https://cdn.lorem.space/images/fashion/.cache/640x480/roland-hechanova-1eedDSknxoY-unsplash.jpg', 'description': 'Grace your entryway, front yard or back porch with this simple yet sturdy bench.', 'id': 9}}]
+[
+  {
+    "models": "products_rest.Products",
+    "pk": 1,
+    "fields": {
+      "name": "Epic hammer",
+      "picture_url": "https://cdn.lorem.space/images/movie/.cache/640x480/thor-2011.jpg",
+      "description": "When you have this hammer, all your problems will start to look like a Loki.",
+      "id": 2
+    }
+  },
+  {
+    "models": "products_rest.Products",
+    "pk": 2,
+    "fields": {
+      "name": "Fresh cut fruit",
+      "picture_url": "https://cdn.lorem.space/images/drink/.cache/640x480/wendy-aros-routman-qH-JPcFXUTY-unsplash.jpg",
+      "description": "Ready to mix up and sit poolside.",
+      "id": 3
+    }
+  },
+  {
+    "models": "products_rest.Products",
+    "pk": 3,
+    "fields": {
+      "name": "Replica Apple Watch",
+      "picture_url": "https://cdn.lorem.space/images/watch/.cache/640x480/daniel-korpai-oOlPR-Fwd7A-unsplash.jpg",
+      "description": "Use your phone to keep track of your workouts, but want a timepiece that's au courant? This is your answer.  We don't need any stinkin' numbers, we're adults here!",
+      "id": 4
+    }
+  },
+  {
+    "models": "products_rest.Products",
+    "pk": 4,
+    "fields": {
+      "name": "Tall stool or small table",
+      "picture_url": "https://cdn.lorem.space/images/furniture/.cache/640x480/ruslan-bardash-4kTbAMRAHtQ-unsplash.jpg",
+      "description": "Need extra seating on hand, or a base for a large planter? We've got you covered.",
+      "id": 5
+    }
+  },
+  {
+    "models": "products_rest.Products",
+    "pk": 5,
+    "fields": {
+      "name": "Minimalist bedframe",
+      "picture_url": "https://cdn.lorem.space/images/hotel/.cache/640x480/pexels-pixabay-271619.jpg",
+      "description": "Sleek, squarish, but oh-so-dreamy. Set up your room like a chic hotel!",
+      "id": 1
+    }
+  },
+  {
+    "models": "products_rest.Products",
+    "pk": 6,
+    "fields": {
+      "name": "Salt bae poster",
+      "picture_url": "https://cdn.lorem.space/images/burger/.cache/640x480/mae-mu-I7A_pHLcQK8-unsplash.jpg",
+      "description": "Probably just out of frame, salt bae is dusting this fresh food with the exact perfect seasoning.",
+      "id": 6
+    }
+  },
+  {
+    "models": "products_rest.Products",
+    "pk": 7,
+    "fields": {
+      "name": "Mouthwatering focaccia poster",
+      "picture_url": "https://cdn.lorem.space/images/pizza/.cache/640x480/pexels-pixabay-162744.jpg",
+      "description": "Is this focaccia or pastry dough? Are those banana slices? With this on your wall, your guests who couldn't decide if the dress was blue or gold will have a heyday.",
+      "id": 7
+    }
+  },
+  {
+    "models": "products_rest.Products",
+    "pk": 8,
+    "fields": {
+      "name": "Cool coffee table book",
+      "picture_url": "https://cdn.lorem.space/images/furniture/.cache/640x480/nathalie-jolie-6-xcHVkwj0c-unsplash.jpg",
+      "description": "It doesn't have to live on a coffee table, looks pretty good on this stool actually.",
+      "id": 8
+    }
+  },
+  {
+    "models": "products_rest.Products",
+    "pk": 9,
+    "fields": {
+      "name": "Indoor/ Outdoor bench",
+      "picture_url": "https://cdn.lorem.space/images/fashion/.cache/640x480/roland-hechanova-1eedDSknxoY-unsplash.jpg",
+      "description": "Grace your entryway, front yard or back porch with this simple yet sturdy bench.",
+      "id": 9
+    }
+  }
+]

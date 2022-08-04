@@ -21,7 +21,7 @@ class TestViews(TestCase):
         client = Client()
         response = client.get(reverse("receipt_list"))
         self.assertEquals(response.status_code, 200)
-        # *working*
+
         
     def test_pages_load_properly(self):
         response = self.client.get('http://localhost:3000/')
