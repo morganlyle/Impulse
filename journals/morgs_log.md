@@ -1,8 +1,14 @@
+# 8/4
+
+    Today I worked on:
+
+        The test are all finished and we tweaked the css a little bit to make the colors different on the website. Some models got changed pretty late so we had to go and essentially wipe everyone's volumes and containers because they had the old migration and models data in them which was a bit of a hassle since all new pgadmin's had to be made afterwards as well for our test. But our site is fully functioning and now we just have to get the database on the website!!
+
 # 8/3
 
     Today we worked on:
 
-        Today we got the backend of receipts up and running. I started working on the unit test that we need to implement but was getting a lot of weird django errors. So after some digging it turned out that we needed to go into the pgadmin webpage itself and give our subscriptions and products permission to create databases on their own, so that it can run the tests. Once we did this we got hte first test to pass!! Felt pretty good after struggling with it for awhile. Next up is to just complete the last of the test and then start deployment!
+        Today we got the backend of receipts up and running. I started working on the unit test that we need to implement but was getting a lot of weird django errors. So after some digging it turned out that we needed to go into the pgadmin webpage itself and give our subscriptions and products permission to create databases on their own, so that it can run the tests. Once we did this we got the first test to pass!! Felt pretty good after struggling with it for a bit. Next up is to just complete the last of the test and then start deployment!
 
 # 8/2
 
