@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {useAuthContext, useToken} from './auth';
+import {useToken} from './auth';
 
 export default function SignUpForm() {
   const [,,signup] = useToken();
