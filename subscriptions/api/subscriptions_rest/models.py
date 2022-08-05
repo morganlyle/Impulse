@@ -9,14 +9,14 @@ class ProductInventoryVO(models.Model):
     product = models.CharField(max_length=200, blank = True)
 
     def __str__(self):
-        return self.product
+        return f'{self.name}'
 
 class ClothingInventoryVO(models.Model):
     name = models.CharField(max_length=255)
     product = models.CharField(max_length=200, blank = True)
 
     def __str__(self):
-        return self.product
+        return self.name
 
 class ClothingBox(models.Model):
     name = models.CharField(max_length=100)

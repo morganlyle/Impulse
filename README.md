@@ -72,12 +72,28 @@ Congratulations, you've now installed Impulse on your local machine!
 
 Once the containers are running:
 
-- go into the Docker CLI for products
-- enter this: `python manage.py loaddata inventory.json`
+- Enter the Docker CLI for products
+- Enter: `python manage.py loaddata inventory.json`
 - Things and Styles pages should now be populated with product cards!
 
 - Subscription boxes are created in house and based on a monthly item selection from the product pool, so those are the only things you can buy.
-  - Add one to your cart and do the checkout form. This should take you to an adorable receipt page!
+- Add one to your cart and do the checkout form. This should take you to an adorable receipt page!
+
+Unit Tests exist for Impulse and can be enabled by following these steps:
+
+- navigate to the pgadmin container here: [PgAdmin](http://localhost:8060)
+- Login with the supplied username and password on the docker-compose.yaml file under the 'pgadmin' service.
+- Once logged in, register the server by right clicking server then Register > Server.
+- In the window pop-up, provide a name for the database
+- Navigate to the connections tab on top of the pop-up window, Host name/address will be 'postgres'
+- Username will be postgres (as we need to be able to provide admin permission)
+- Password is supplied in the docker-compose.yaml under the 'postgres' service
+- Save the password for ease of access and save the form, the pop-up should disappear.
+- Once the server is registered, click the dropdown on servers, then the dropdown for Login/Group Roles
+- Right-click products, click properties in the pop-up, navigate to 'Privileges' in the pop-up
+- Make sure create databases is toggled on and save.
+- Repeat the same steps for subscriptions
+- This allows for test-databases to be created in the project
 
 
 To run tests:
@@ -91,5 +107,6 @@ Set up pgadmin:
   - Right-click on subscriptions >> Properties. Click on Privileges. On Create databases? slide the slider right.
 
 Then:
-- go into the Docker CLI for subscriptions or products.
-- enter this: `python manage.py test`
+- Enter the Docker CLI or use the bash command to enter the container from terminal
+- Enter: `python manage.py test`
+- This should run the tests for the individual service, repeat the steps in the other service to test that one.
