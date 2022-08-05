@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
+import { states } from './states'
 import { useNavigate } from 'react-router-dom';
 
 export default function Checkout() {
+
     const getOrderNumber = (min, max) =>
         Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1) + Math.ceil(min));
     const [firstName, setFirstName] = useState('');
@@ -16,6 +18,8 @@ export default function Checkout() {
     const [zip, setZip] = useState('');
     const [orderNumber, setOrderNumber] = useState(getOrderNumber(1, 1000000));
     const navigate = useNavigate();
+
+
 
     const handleSubmit = async e => {
         e.preventDefault();
@@ -150,7 +154,12 @@ export default function Checkout() {
                                         <label className="form-label">State</label>
                                         <select onChange={e => setState(e.target.value)} value={state} className="form-select" id="state" required="">
                                             <option value="">Choose...</option>
-                                            <option>California</option>
+                                            {states?.map(s => {
+                                                return (
+                                                    <option>{s}</option>
+                                                );
+                                            })}
+
                                         </select>
                                         <div className="invalid-feedback">
                                             Please provide a valid state.

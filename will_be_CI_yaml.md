@@ -1,3 +1,6 @@
+<!-- This will be .gitlab-ci.yml file: -->
+
+
 stages:
   - test   # Run tests first
   - build  # Run build after tests
@@ -41,10 +44,11 @@ build-front-end-job:
     - npm run build
 
 
-# first page of CD instructions has example sections also for:
-# build-back-end-job
-# deploy-back-end-job-heroku
-# heroku-release
-# pages (to deploy with GitLab Pages)
+<!-- first page of CD instructions has example sections also for:
 
-# I don't understand commit tags
+build-back-end-job
+deploy-back-end-job-heroku
+heroku-release
+pages (to deploy with GitLab Pages)
+
+I don't understand commit tags -->
