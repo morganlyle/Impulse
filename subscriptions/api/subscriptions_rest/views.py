@@ -13,9 +13,9 @@ from .encoders import (
 )
 
 from subscriptions_rest.models import (
-    ProductInventoryVO, 
-    ClothingInventoryVO, 
-    ClothingBox, 
+    ProductInventoryVO,
+    ClothingInventoryVO,
+    ClothingBox,
     ProductsBox,
     Receipt,
     Subscription,
@@ -45,8 +45,8 @@ def users_list(request):
         content = json.loads(request.body)
         user = User.objects.create_user(**content)
         return JsonResponse(
-            user, 
-            encoder=UserEncoder, 
+            user,
+            encoder=UserEncoder,
             safe=False
         )
 
@@ -89,8 +89,8 @@ def product_box_list(request):
             }
             product_box = ProductsBox.objects.create(**content)
             return JsonResponse(
-                product_box, 
-                encoder=ProductBoxEncoder, 
+                product_box,
+                encoder=ProductBoxEncoder,
                 safe=False
             )
         except:
@@ -134,7 +134,7 @@ def subscriptions_list(request):
             encoder=SubscriptionEncoder,
             safe=False
         )
-    
+
 @require_http_methods(['GET'])
 def clothing_inventory_vo_list(request):
     if request.method == 'GET':
@@ -163,14 +163,14 @@ def clothing_box_list(request):
                 {'message': "invalid id"},
                 status=400,
             )
-        
+
         clothing_box = ClothingBox.objects.create(**content)
         return JsonResponse(
             clothing_box,
             encoder=ClothingBoxEncoder,
             safe=False
         )
-        
+
 @require_http_methods(['GET','DELETE'])
 def clothing_box_detail(request, pk):
     if request.method == 'GET':
@@ -181,10 +181,10 @@ def clothing_box_detail(request, pk):
             response = JsonResponse({"message": "Does not exist"})
             response.status_code = 404
             return response
-    else: 
+    else:
         count, _ = ClothingBox.objects.filter(id=pk).delete()
         return JsonResponse({"deleted": count > 0})
-    
+
 
 @require_http_methods(['GET', 'DELETE'])
 def show_receipt(request, pk):
@@ -196,7 +196,7 @@ def show_receipt(request, pk):
             response = JsonResponse({"message": "Does not exist"})
             response.status_code = 404
             return response
-    else: 
+    else:
         count, _ = receipt.objects.filter(id=pk).delete()
         return JsonResponse({"deleted": count > 0})
 
@@ -209,17 +209,17 @@ def receipts_list(request):
             encoder=ReceiptEncoder
         )
     else:
-        try:
-            content = json.loads(request.body)
-            receipt = Receipt.objects.create(**content)
-            return JsonResponse(
-                receipt,
-                encoder=ReceiptEncoder,
-                safe=False,
-            )
-        except:
-            response = JsonResponse(
-                {"message": "Could not generate receipt"}
-            )
-            response.status_code = 400
-            return response
+        # try:
+        content = json.loads(request.body)
+        receipt = Receipt.objects.create(**content)
+        return JsonResponse(
+            receipt,
+            encoder=ReceiptEncoder,
+            safe=False,
+        )
+        # except:
+        #     response = JsonResponse(
+        #         {"message": "Could not generate receipt"}
+        #     )
+        #     response.status_code = 400
+        #     return response

@@ -4,11 +4,12 @@ from .models import (
 )
 
 
-@admin.register(Product)
-class ProductAdmin(admin.ModelAdmin):
-    pass
+# @admin.register(Product)
+# class ProductAdmin(admin.ModelAdmin):
+#     pass
 
 admin.site.register(Product_Inventory)
+admin.site.register(Product)
 admin.site.register(Clothing)
 # admin.site.register(Product_Category)
 admin.site.register(Clothing_Inventory)

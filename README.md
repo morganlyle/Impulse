@@ -69,9 +69,18 @@ For Windows users:
 
 Congratulations, you've now installed Impulse on your local machine!
 
-For more functionality, once the containers are running:
 
-- create a superuser in the Products container via Docker CLI
-- navigate to localhost:8080 and login with the new superuser account
-- Create products and clothing to populate the things and clothing pages
-- Subscription boxes are created in house and based on a monthly item selection from the product pool (receipts are created via the Checkout page.)
+Once the containers are running:
+
+- go into the Docker CLI for products
+- enter this: `python manage.py loaddata inventory.json`
+- Things and Styles pages should now be populated with product cards!
+
+- Subscription boxes are created in house and based on a monthly item selection from the product pool, so those are the only things you can buy.
+  - Add one to your cart and do the checkout form. This should take you to an adorable receipt page!
+
+
+To run tests:
+
+- go into the Docker CLI for subscriptions or products.
+- enter this: `python manage.py test`
