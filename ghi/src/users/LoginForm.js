@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function LoginForm() {
     const [login] = useToken();
-    const [username, setUsername] = useState();
-    const [password, setPassword] = useState();
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
 

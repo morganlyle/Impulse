@@ -33,7 +33,6 @@ export default function Checkout() {
         }
         console.log(data);
         const receiptUrl = `${process.env.REACT_APP_SUBSCRIPTIONS}/api/receipts/`
-
         const fetchConfig = {
             method: "post",
             body: JSON.stringify(data),
