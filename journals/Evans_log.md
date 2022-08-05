@@ -1,3 +1,21 @@
+## August 4, 2022
+
+## August 3, 2022
+
+## August 2, 2022
+
+## August 1, 2022
+
+## July 28, 2022
+
+## July 27, 2022
+
+## July 26, 2022
+
+## July 25, 2022
+
+## July 21, 2022
+
 ## July 20, 2022
 
 Today, I worked on:

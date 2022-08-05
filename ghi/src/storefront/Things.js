@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 export default function Things() {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:8080/products/").then(res => res.json()).then(
+        fetch(`${process.env.REACT_APP_PRODUCTS}/products/`).then(res => res.json()).then(
             res => setProducts(res.products)
         )
     }, [])
