@@ -52,4 +52,5 @@ export const states = [ "AK - Alaska",
                 "WA - Washington", 
                 "WI - Wisconsin", 
                 "WV - West Virginia", 
-                "WY - Wyoming"]
+                "WY - Wyoming"
+            ]
