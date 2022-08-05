@@ -51,7 +51,7 @@ For Mac users:
 - Fork, Clone, and Star the repository from [MEAN Coders](https://gitlab.com/mean-coders/module-three-project)
 - In terminal, run bash hard-reset.sh
   For soft resets:
-- run soft-reset.sh
+- run bash soft-reset.sh
 
 (dev note: hard-reset.sh MUST be run on first start or no databases will exist)
 
@@ -82,5 +82,14 @@ Once the containers are running:
 
 To run tests:
 
+Set up pgadmin:
+- go to localhost:8060/login in the browser. Log in with any email and password.
+- Click on Add New Server; name it `postgres-data`
+- Click on Connection tab. For Host name and Username: `postgres`; password: `test-databases`. Save.
+- On the right side, click Servers >> Login/Group Roles
+  - Right-click on products >> Properties. Click on Privileges. On Create databases? slide the slider right.
+  - Right-click on subscriptions >> Properties. Click on Privileges. On Create databases? slide the slider right.
+
+Then:
 - go into the Docker CLI for subscriptions or products.
 - enter this: `python manage.py test`
