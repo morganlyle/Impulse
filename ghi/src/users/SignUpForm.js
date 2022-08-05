@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import React, {useState} from 'react';
-import {useToken} from './auth';
-=======
 import React, { useState } from 'react';
 import { useToken } from './auth';
->>>>>>> bf069afb4f1167338e831c0c017d317524eb1e4a
 
 export default function SignUpForm() {
   const [, , signup] = useToken();
