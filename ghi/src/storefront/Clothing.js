@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 export default function Clothing() {
     const [clothes, setClothes] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:8080/clothing/").then(res => res.json()).then(
+        fetch(`${process.env.REACT_APP_PRODUCTS}/clothing/`).then(res => res.json()).then(
             res => setClothes(res.clothes)
         )
     }, [])                        // square bracket is to load once and not ongoing

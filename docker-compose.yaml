@@ -75,6 +75,7 @@ services:
       REACT_APP_SUBSCRIPTIONS: http://localhost:8200
       REACT_APP_SUBSCRIPTIONS_POLLER: http://localhost:8100
       REACT_APP_PRODUCTS: http://localhost:8080
+      REACT_APP: http://localhost:3000
   pgadmin:
     image: dpage/pgadmin4
     volumes:

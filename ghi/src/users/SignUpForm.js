@@ -3,12 +3,12 @@ import {useAuthContext, useToken} from './auth';
 
 export default function SignUpForm() {
   const [,,signup] = useToken();
-  const [username, setUsername] = useState();
-  const [password, setPassword] = useState();
-  const [firstName, setFirstName] = useState();
-  const [lastName, setLastName] = useState();
-  const [email, setEmail] = useState();
-  const [address, setAddress] = useState();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
 
   const handleSubmit = async e => {
       e.preventDefault();
