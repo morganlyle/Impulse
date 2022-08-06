@@ -208,7 +208,7 @@ Output:
 ## Create a instance of a receipt
 
 * **Method**: 'POST'
-* **Path**: /api/subscriptions
+* **Path**: /api/receipts
 
 Input:
 
