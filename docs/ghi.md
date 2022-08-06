@@ -14,11 +14,6 @@ This is the sign up page for the app
 This is the page that will quiz users and assign products based 
 on the quiz
 
-![Quiz Page](wireframes/quizimpulse.png)
-
-## Subscription Boxes Page
-This is the page that shows the overview of the subscription boxes 
-available to the user
 
 ![Subscription Box Overview](wireframes/subscriptionsPage.png)
 

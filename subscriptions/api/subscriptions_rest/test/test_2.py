@@ -2,6 +2,7 @@ from django.test import TestCase, Client
 from django.urls import reverse
 from subscriptions_rest.models import Receipt, User
 
+# Tests by Adrian and Morgan
 class TestViews(TestCase):
         
     def test_login_works(self):

@@ -13,7 +13,11 @@ export default function TheTeam() {
                                 <div className="card-text text-black-50">Full Stack Developer</div>
                                 <hr className="featurette-divider" />
                                 <p className="card-text text-left">
-                                    About me!
+                                    Morgan is our design specialist and most honest coder;
+                                    she *will* let the team know if something needs to look better
+                                    and we love her for it.<br />
+                                    She also wanted us to mention she once scored 31 / 4 / 16 as Caitlyn in League of Legends.<br />
+                                    GG.
                                 </p>
                             </div>
                         </div>
@@ -40,7 +44,7 @@ export default function TheTeam() {
                                 <hr className="featurette-divider" />
                                 <p className="card-text text-left">
                                     Adrian is our sleepiest engineer, but for good reason;
-                                    they're our resident "Nocturnal Coder".<br/>
+                                    they're our resident "Nocturnal Coder".<br />
                                     They have a particular fondness for coding until the
                                     sun rises and solving the toughest problems the team has.
                                 </p>

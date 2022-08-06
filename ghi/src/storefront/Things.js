@@ -27,12 +27,8 @@ export default function Things() {
                     </div>
                 </div>
             </section>
-
-            {/* <div className="album py-5 rounded heliotrope_gray mb-5 b_cards">
-                <div className="container"> */}
             <div className='mx-5 row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3'>
                 {products?.map(product => {
-                    // the ? is 'optional chaining'
                     return (
                         <>
                             <div className='col'>
@@ -55,8 +51,6 @@ export default function Things() {
                     )
                 })}
             </div>
-            {/* </div>
-            </div> */}
         </>
     )
 }

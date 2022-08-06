@@ -10,7 +10,7 @@
 | email_address | string | yes | no |
 | password | string | no | no |
 
-The user entity is for customers and potential customers logging in, shopping and eventually checking out.
+The user entity is for customers and potential customers logging in, shopping, and eventually checking out.
 ___
 ` `
 ` `

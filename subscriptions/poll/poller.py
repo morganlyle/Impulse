@@ -16,24 +16,25 @@ from subscriptions_rest.models import ProductInventoryVO, ClothingInventoryVO
 products_url = f"{os.environ['PRODUCTS']}/products"
 clothing_url = f"{os.environ['PRODUCTS']}/clothing"
 
+
 def get_product_inventory():
     response = requests.get(products_url)
     content = json.loads(response.content)
-    for product in content['products']:
-        ProductInventoryVO.objects.update_or_create(id=product['id'])
+    for product in content["products"]:
+        ProductInventoryVO.objects.update_or_create(id=product["id"])
 
 
 def get_clothing_inventory():
     response = requests.get(clothing_url)
     content = json.loads(response.content)
-    for clothing in content['clothes']:
-        ClothingInventoryVO.objects.update_or_create(id=clothing['id'])
+    for clothing in content["clothes"]:
+        ClothingInventoryVO.objects.update_or_create(id=clothing["id"])
 
 
 def poll():
     while True:
         try:
-            print('Subscriptions poller polling for data')
+            print("Subscriptions poller polling for data")
             get_product_inventory()
             get_clothing_inventory()
         except Exception as e:

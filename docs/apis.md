@@ -9,12 +9,11 @@ Input:
 
 ```json
 {
-  "first_name": string,
-  "last_name": string,
   "username": string,
-  "home_address": string,
-  "email_address": string,
-  "password": string
+  "password": string,
+  "email": string,
+  "subscribed": booleanField(default=False),
+  "address": string,
 }
 ```
 
@@ -22,12 +21,13 @@ Output:
 
 ```json
 {
-  "first_name": string,
-  "last_name": string,
   "username": string,
-  "home address": string,
-  "email address": string,
-  "password": string
+	"email": string,
+	"first_name": string,
+	"last_name": string,
+	"password": string,
+	"address": string,
+	"id": integer
 }
 ```
 
@@ -40,8 +40,8 @@ Input:
 
 ```json
 {
-  "username": foreignkey (user),
-  "products": manytomany (products)
+  "name": string,
+  "products": manytomany
 }
 ```
 

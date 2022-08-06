@@ -20,7 +20,7 @@ export default function AboutUs() {
         <Card.Body>
           <Card.Title className='display-3 siteText'>About the Creators</Card.Title>
           Our names spell MEAN, nothing average about us.
-        <TheTeam />
+          <TheTeam />
         </Card.Body>
       </Card>
     </>

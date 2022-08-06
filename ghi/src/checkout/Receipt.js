@@ -27,7 +27,7 @@ export default function Receipt() {
                         </h4>
                         <Card className='bgcolor p-4 b_cards shad_light'>
                             <div className='b_cards rounded'>
-                                <img  width="100%" height="80%" src={randBun} alt='no cute :('></img>
+                                <img width="100%" height="80%" src={randBun} alt='no cute :('></img>
                             </div>
                         </Card>
                         <NavLink className='link-dark' to='/'>

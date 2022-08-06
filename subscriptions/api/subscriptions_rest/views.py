@@ -209,17 +209,17 @@ def receipts_list(request):
             encoder=ReceiptEncoder
         )
     else:
-        # try:
-        content = json.loads(request.body)
-        receipt = Receipt.objects.create(**content)
-        return JsonResponse(
-            receipt,
-            encoder=ReceiptEncoder,
-            safe=False,
-        )
-        # except:
-        #     response = JsonResponse(
-        #         {"message": "Could not generate receipt"}
-        #     )
-        #     response.status_code = 400
-        #     return response
+        try:
+            content = json.loads(request.body)
+            receipt = Receipt.objects.create(**content)
+            return JsonResponse(
+                receipt,
+                encoder=ReceiptEncoder,
+                safe=False,
+            )
+        except:
+            response = JsonResponse(
+                {"message": "Could not generate receipt"}
+            )
+            response.status_code = 400
+            return response
