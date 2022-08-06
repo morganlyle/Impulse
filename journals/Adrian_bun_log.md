@@ -6,6 +6,7 @@ that we're just finally at the end of this and we get to move onto some other pr
 Journal Entry:
 
                 It's the last bit of stress before turn in. Cleaning up our code, making sure there are no strange comments left in stuff.
+        There really isn't all that much left to do and that makes me kind of sad
 
 August 4th, 2022
 
