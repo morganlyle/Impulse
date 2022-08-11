@@ -4,7 +4,8 @@ import { NavLink } from 'react-router-dom';
 export default function SubscriptionsPage() {
     return (
         <>
-            <h1 className='display-2 mt-3 nameText'>Subscription Boxes</h1>
+            <h1 className='text-center display-2 mt-3 nameText'>Subscription Boxes</h1>
+            <hr className="featurette-divider" />
             <div className='pb-5 container'>
                 <div className='row'>
                     <div className='col b_cards me-3 shad_bottom p-4 rounded mt-4 heliotrope_gray'>
