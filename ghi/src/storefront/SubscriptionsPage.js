@@ -4,8 +4,16 @@ import { NavLink } from 'react-router-dom';
 export default function SubscriptionsPage() {
     return (
         <>
-            <h1 className='text-center display-2 mt-3 nameText'>Subscription Boxes</h1>
-            <hr className="featurette-divider" />
+            <h1 className='display-2 mt-3 text-center nameText'>Subscription Boxes</h1>
+            <p className='nameText text-center'>These are some extra highlights from this month's boxes!
+                <br />
+                <br />
+                The Product of the month featured on our front page and these products <br />
+                definitely make it into the box, but our team
+                makes sure you get some extra  <br />
+                thematic goodies to match your new stuff!
+            </p>
+            <hr className='featurette-divider mb-4'></hr>
             <div className='pb-5 container'>
                 <div className='row'>
                     <div className='col b_cards me-3 shad_bottom p-4 rounded mt-4 heliotrope_gray'>
@@ -21,7 +29,6 @@ export default function SubscriptionsPage() {
                         <hr className="featurette-divider" />
                         <img className="card b_cards shad_light" width="100%" height="80%" src='https://m.media-amazon.com/images/I/515QgxNovlL._AC_SX679_.jpg' alt='no clothes :(' aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
                     </div>
-
                     <div className='col b_cards ms-3 shad_bottom p-4 rounded mt-4 heliotrope_gray'>
                         <h1 className='display-3 siteText text-right'>Styles Box</h1>
                         <NavLink to="/checkout" className='btn btn-light almond ob_button text-left'>Add to Cart!</NavLink>

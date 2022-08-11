@@ -1,3 +1,22 @@
+August 5th, 2022
+
+Project. Turn-in. Day. It's finally here. It felt like it was never gonna get here, but it finally is and we get to submit! I feel so happy
+that we're just finally at the end of this and we get to move onto some other projects!
+
+Journal Entry:
+
+                It's the last bit of stress before turn in. Cleaning up our code, making sure there are no strange comments left in stuff.
+        There really isn't all that much left to do and that makes me kind of sad
+
+August 4th, 2022
+
+Today is the last day before turn in! I'm super excited to see what everyone thinks of our project next week. We're probably gonna try our hand at adding some functionality next week as we need a bit more than MVP, I feel, but it feels so good to be almost done with this.
+
+Journal Entry:
+
+                I'm really excited for tomorrow; I think I really look forward to the stress of turn in day and.. 
+        wow there actually might be something wrong with me?
+
 August 3rd, 2022
 
 Two more days till project turn in! We have like.. 95% percent functionality, we just need to tie up some loose ends and make the site look

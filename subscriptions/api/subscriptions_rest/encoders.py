@@ -67,19 +67,5 @@ class ReceiptEncoder(ModelEncoder):
         'zip',
         'orderNumber',
         'price',
-        'id',
-        # 'modelnumber',
+        'id'
     ]
-
-    # properties = [
-    #     'username', 
-    #     'order_number', 
-    #     'price', 
-    #     'model_number', 
-    #     'description'
-    # ]
-    
-    # encoders = {
-    #     'username': UserEncoder(),
-    #     # 'modelnumber': SubscriptionEncoder()
-    # }

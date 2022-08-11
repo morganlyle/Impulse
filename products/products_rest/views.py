@@ -4,7 +4,12 @@ from django.views.decorators.http import require_http_methods
 import json
 
 from .models import Clothing_Inventory, Product_Inventory, Product, Clothing
-from encoders.encoders import ProductEncoder, ClothingEncoder, ClothingInventoryEncoder, ProductInventoryEncoder
+from encoders.encoders import (
+    ProductEncoder,
+    ClothingEncoder,
+    ClothingInventoryEncoder,
+    ProductInventoryEncoder,
+)
 
 
 @require_http_methods(["GET", "POST"])
@@ -25,11 +30,10 @@ def api_product(request):
                 safe=False,
             )
         except:
-            response = JsonResponse(
-                {"message": "Could not create the product"}
-            )
+            response = JsonResponse({"message": "Could not create the product"})
             response.status_code = 400
             return response
+
 
 @require_http_methods(["GET", "POST"])
 def api_clothing(request):
@@ -50,11 +54,10 @@ def api_clothing(request):
                 safe=False,
             )
         except:
-            response = JsonResponse(
-                {"message": "Could not create the clothing"}
-            )
+            response = JsonResponse({"message": "Could not create the clothing"})
             response.status_code = 400
             return response
+
 
 @require_http_methods(["GET", "POST"])
 def api_product_inventory(request):
@@ -81,7 +84,6 @@ def api_product_inventory(request):
             return response
 
 
-
 @require_http_methods(["GET", "POST"])
 def api_clothing_inventory(request):
     if request.method == "GET":
@@ -95,7 +97,6 @@ def api_clothing_inventory(request):
             content = json.loads(request.body)
             content = {
                 **content,
-                # "product_category": Product_Category.objects.get(category=content["product_category"])
             }
             clothing_inventory = Clothing_Inventory.objects.create(**content)
             return JsonResponse(

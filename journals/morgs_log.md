@@ -2,7 +2,7 @@
 
     Last day!!!
 
-        We finished our site yesterday, and today we just did a little tweaking on some design stuff, making sure that everything is uniform to make it look nice and like a real website!! This has been a great project to work on, I feel like I have learned so much in the past few weeks. We can't wait to deploy next week :)
+        We finished our site yesterday, and today we just did a little tweaking on some design stuff, making sure that everything is uniform to make it look nice and like a real website!! This has been a great project to work on, I feel like I have learned so much in the past few weeks. We can't wait to deploy next week 🙂
 
 # 8/4
 

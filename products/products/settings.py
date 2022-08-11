@@ -66,6 +66,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
+DJANGO_PRODUCTS = 'http://localhost:8080/'
 
 ROOT_URLCONF = "products.urls"
 

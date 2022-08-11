@@ -9,14 +9,14 @@ class ProductInventoryVO(models.Model):
     product = models.CharField(max_length=200, blank = True)
 
     def __str__(self):
-        return self.product
+        return f'{self.name}'
 
 class ClothingInventoryVO(models.Model):
     name = models.CharField(max_length=255)
     product = models.CharField(max_length=200, blank = True)
 
     def __str__(self):
-        return self.product
+        return self.name
 
 class ClothingBox(models.Model):
     name = models.CharField(max_length=100)
@@ -61,8 +61,6 @@ class Receipt(models.Model):
     orderNumber = models.PositiveIntegerField(unique=True)
     zip = models.CharField(max_length=254)
     price = models.CharField(max_length=50, default = "$36.99", null=True, blank= True)
-    # modelnumber = models.ForeignKey(Subscription,  on_delete=models.CASCADE)
-    # description = models.CharField(max_length=255, default="Here are your items")
 
     def __str__(self):
         return f'{self.order_number}'

@@ -5,8 +5,8 @@ function MainPage() {
     return (
         <>
             <div className="inline-block text-center">
-                {/* <h1 className='pt-4 display-3 fw-bold nameText'>Impulse</h1> */}
-                <h1 className=' mt-5 mb-4 py-4 display-5 fw-bold nameText'>Your one stop shop for anything you might need! 💖</h1>
+                <h1 className='rounded mt-5 mb-4 py-4 display-5 fw-bold nameText'>Your one stop shop for anything you might need! 💖</h1>
+                <hr className='featurette-divider mb-4'></hr>
             </div>
             <div className='pb-5 container'>
                 <div className='row'>
@@ -44,7 +44,5 @@ function MainPage() {
         </>
     );
 };
-
-
 
 export default MainPage;
