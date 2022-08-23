@@ -12,17 +12,6 @@ import LoginForm from './users/LoginForm';
 import Receipt from './checkout/Receipt.js';
 import './index.css';
 
-// async function loadAllProducts() {
-//   const response = await fetch('http://localhost:8080/products');
-//   if (response.ok) {
-//     const data = await response.json();
-//     const products = data.products;
-//   } else {
-//     console.error(response);
-//   }
-// }
-// loadAllProducts();
-
 
 export default function App() {
 

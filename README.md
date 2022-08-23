@@ -1,11 +1,8 @@
 ## Impulse
 
-- Adrian
-- Evan
-- Morgan
-- Nellie
-
 - The one stop shop for subscription boxes with impulse buys catered directly to you!
+
+![Getting started](docs/homepagepic.png)
 
 ## Intended Market
 
@@ -69,7 +66,6 @@ For Windows users:
 
 Congratulations, you've now installed Impulse on your local machine!
 
-
 Once the containers are running:
 
 - Enter the Docker CLI for products
@@ -95,10 +91,10 @@ Unit Tests exist for Impulse and can be enabled by following these steps:
 - Repeat the same steps for subscriptions
 - This allows for test-databases to be created in the project
 
-
 To run tests:
 
 Set up pgadmin:
+
 - go to localhost:8060/login in the browser. Log in with any email and password.
 - Click on Add New Server; name it `postgres-data`
 - Click on Connection tab. For Host name and Username: `postgres`; password: `test-databases`. Save.
@@ -107,6 +103,7 @@ Set up pgadmin:
   - Right-click on subscriptions >> Properties. Click on Privileges. On Create databases? slide the slider right.
 
 Then:
+
 - Enter the Docker CLI or use the bash command to enter the container from terminal
 - Enter: `python manage.py test`
 - This should run the tests for the individual service, repeat the steps in the other service to test that one.

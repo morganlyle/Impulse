@@ -35,7 +35,7 @@ export default function Checkout() {
             zip,
             orderNumber,
         }
-        console.log(data);
+
         const receiptUrl = `${process.env.REACT_APP_SUBSCRIPTIONS}/api/receipts/`
         const fetchConfig = {
             method: "post",
