@@ -1,9 +1,8 @@
+![Getting started](docs/homepage.png)
+
 ## Impulse
 
 - The one stop shop for subscription boxes with impulse buys catered directly to you!
-
-![Getting started](docs/homepagepic.png)
-
 ## Intended Market
 
 - Anyone who is curious about trying new things or anyone who is delighted by the novelty of things and stuff.
